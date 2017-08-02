@@ -1,0 +1,17 @@
+{
+  "name": "cuketest_web_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^2.30.1",
+    "geckodriver": "^1.7.1",
+    "iedriver": "^3.4.0",
+    "selenium-webdriver": "^3.4.0"
+  }
+}
