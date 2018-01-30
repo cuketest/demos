@@ -2,7 +2,7 @@
 Feature: Web Selenium Test
 url:https://cuketest.github.io/apps/bootstrap-calculator/
 
-  Scenario: calculator
+  Background: calculator
     Given open url "https://cuketest.github.io/apps/bootstrap-calculator/"
     When I click 1 + 1
     Then I click the =

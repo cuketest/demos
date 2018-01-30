@@ -1,8 +1,6 @@
 // setDefaultTimeout
-module.exports = function configure () {
-    
-    this.setDefaultTimeout(60 * 1000);
-};
+var { defineSupportCode } = require('cucumber');
 
-
-
+defineSupportCode(function ({ setDefaultTimeout }) {
+    setDefaultTimeout(60 * 1000)
+})

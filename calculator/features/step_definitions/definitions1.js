@@ -1,36 +1,41 @@
 ///// Your step definitions /////
 // use this.Given(), this.When() and this.Then() to declare step definitions
-var driver = require('../support/world').driver;
-var assert = require('assert');
-module.exports = function () {
-    this.Given(/^open url "([^"]*)"$/, function (arg1) {
-        return this.driver.get(arg1);
+let { Given, When, Then } = require('cucumber')
+let { driver } = require('../support/web_driver')
+let { By } = require('selenium-webdriver')
+
+let assert = require('assert')
+
+Given(/^open url "([^"]*)"$/, function (arg1) {
+    return driver.get(arg1);
+});
+
+Then(/^I click the =$/, function () {
+    return driver.findElement({ linkText: '=' }).click();
+});
+Then(/^I should  get the result "([^"]*)"$/, function (arg1) {
+    driver.findElement({ id: 'calculator-result' }).getText().then(text => {
+        return assert.deepEqual(text, arg1);
     });
-    this.When(/^I click (\d+) \+ (\d+)$/, function (arg1, arg2) {
-        this.driver.findElement({ linkText: arg1 }).click();
-        this.driver.findElement({ linkText: '+' }).click();
-        this.driver.findElement({ linkText: arg2 }).click();
+});
+Then(/^History panel should has "([^"]*)" text$/, function (arg1) {
+    driver.findElement({ id: 'calc-history-list' }).getText().then(text => {
+        return assert.deepEqual(text, arg1);
     });
-    this.Then(/^I click the =$/, function () {
-        return this.driver.findElement({ linkText: '=' }).click();
+});
+When(/^I click the "([^"]*)"$/, function (arg1) {
+    return driver.findElement({ linkText: arg1 }).click();
+});
+
+Then(/^History panel should be null$/, function () {
+    return driver.findElement({ id: 'calc-history-list' }).getText().then(function (text) {
+        return assert.deepEqual(text, '');
     });
-    this.Then(/^I should  get the result "([^"]*)"$/, function (arg1) {
-        this.driver.findElement({ id: 'calculator-result' }).getText().then(text => {
-            return assert.deepEqual(text, arg1);
-        });
-    });
-    this.Then(/^History panel should has "([^"]*)" text$/, function (arg1) {
-        this.driver.findElement({ id: 'calc-history-list' }).getText().then(text => {
-            return assert.deepEqual(text, arg1);
-        });
-    });
-    this.When(/^I click the "([^"]*)"$/, function (arg1) {
-        return this.driver.findElement({ linkText: arg1 }).click();
-    });
-    
-    this.Then(/^History panel should be null$/, function () {
-        return this.driver.findElement({ id: 'calc-history-list' }).getText().then(function (text) {
-            return assert.deepEqual(text, '');
-        });
-    });
-};
+});
+
+When(/^I click (\d+) \+ (\d+)$/, function (arg1, arg2) {
+    console.log(arg1, arg2)
+    driver.findElement(By.css('[data-key="49"]')).click();
+    driver.findElement(By.css('[data-constant="SUM"]')).click();
+    return driver.findElement(By.css('[data-key="49"]')).click();
+});
