@@ -52,6 +52,7 @@ The following categories are available:
 <table>
  <tr>
   <td><a href="bdd-samples/math">Math</a></td>
+  <td><a href="bdd-samples/calc-zh">Calc (Chinese)</a></td>
  </tr>
 </table>
 
