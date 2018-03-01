@@ -26,7 +26,7 @@ The following categories are available:
 * **web-samples**: Web UI testing samples
 * **bdd-samples**: samples that demos the feature of Cucumber, which is a Behavior Driven Development (BDD) framework for test automation.
 
-###API Samples
+### API Samples
 <table>
  <tr>
   <td><a href="api-samples/Package">Simple Service</a></td>
@@ -34,7 +34,7 @@ The following categories are available:
  </tr>
 </table>
 
-###Web Samples
+### Web Samples
 
 <table>
  <tr>
@@ -47,7 +47,7 @@ The following categories are available:
  </tr>
 </table>
 
-###BDD Samples
+### BDD Samples
 
 <table>
  <tr>
