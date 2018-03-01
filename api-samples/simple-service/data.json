@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "therebelrobot",
+      "location": "USA"
+    },
+    {
+      "id": 2,
+      "name": "visiting-user",
+      "location": "UK"
+    },
+    {
+      "id": 4,
+      "name": "zack",
+      "location": "china"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-mock",
+      "body": "The internet is cool!",
+      "author": "therebelrobot",
+      "userId": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment from author",
+      "votes": 20,
+      "postId": 1,
+      "userId": 1
+    }
+  ]
+}
