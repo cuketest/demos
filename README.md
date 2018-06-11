@@ -25,6 +25,7 @@ The following categories are available:
 * **api-samples**: contains the API testing samples
 * **web-samples**: Web UI testing samples
 * **bdd-samples**: samples that demos the feature of Cucumber, which is a Behavior Driven Development (BDD) framework for test automation.
+* **win-samples**: samples that demos how to run the automate Windows Application using [CukeTest](http://cuketest.com) and [LeanRunner](http://www.leanpro.cn/leanrunner)
 
 ### API Samples
 <table>
@@ -56,9 +57,17 @@ The following categories are available:
  </tr>
 </table>
 
+### Windows Samples
+
+<table>
+ <tr>
+  <td><a href="win-samples/Win10Calendar">Windows 10 Calendar(Chinese)</a></td>
+ </tr>
+</table>
+
 ## See also
 * To download CukeTest, go to [cuketest.com](http://cuketest.com), you can install either Windows Desktop version, or Windows Store version if you are using Windows 10.
-* You can read [CukeTest documentation](http://cuketest.com/en/SUMMARY) online without installing CukeTest. [here](http://cuketest.com/zh-CN/SUMMARY) is Chinese version.
+* You can read [CukeTest documentation](http://cuketest.com/en/summary) online without installing CukeTest. [here](http://cuketest.com/zh-cn/summary) is Chinese version.
 * Go to [cucumber.js](https://github.com/cucumber/cucumber-js) to get cucumber.js documentation.
 
 ## Contributions
