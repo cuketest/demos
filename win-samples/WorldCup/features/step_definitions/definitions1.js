@@ -8,10 +8,8 @@ const path = require('path')
 let modelfile = path.join(__dirname, '../../models/calendar.tmodel')
 
 
-const { TestModel } = require("leanrunner");
+const { TestModel } = require("leanpro.win");
 var model = TestModel.loadModel(modelfile);
-
-
 
 
 Given(/^打开日历客户端$/, async function () {
@@ -44,10 +42,7 @@ When(/^设置如下事件到日历中"([^"]*)","([^"]*)","([^"]*)"$/, async func
     await model.getEdit("Start time1").clearAll();
     await model.getEdit("Start time1").set(time);
 
-
-
     await model.getButton("Save and close").click(0, 0, 1);
     await cuketest.delay(2000)
-
 });
 

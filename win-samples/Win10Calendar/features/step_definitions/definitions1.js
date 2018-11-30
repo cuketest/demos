@@ -1,6 +1,7 @@
 
 const { Given, When, Then } = require('cucumber');
-const { TestModel, Util } = require("leanrunner");
+const { TestModel } = require("leanpro.win");
+const { Util } = require('leanpro.common')
 
 const assert = require('assert')
 const path = require('path');
