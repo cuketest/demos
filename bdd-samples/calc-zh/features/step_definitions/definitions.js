@@ -18,7 +18,3 @@ When(/^我按"([^"]*)"按钮$/, (op) => {
 Then(/^我应该在屏幕上看到的结果是(\d+)$/, (arg1) => {
     assert.equal(this.result, arg1, 'expect ' + arg1 + ', get ', this.result);
 });
-
-Then(/^按"([^"]*)"$/, function (arg1) {
-
-});
