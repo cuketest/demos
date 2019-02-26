@@ -1,0 +1,145 @@
+﻿{
+  "ntype": "app",
+  "process": null,
+  "controls": [
+    {
+      "ntype": "uia",
+      "nname": "Window",
+      "description": null,
+      "identifyProperties": {
+        "type": "Window",
+        "className": "WeChatMainWndForPC"
+      },
+      "cachedProperties": {
+        "type": "Window",
+        "className": "WeChatMainWndForPC",
+        "title": "微信",
+        "boundingRectangle": "92,49,860,640"
+      },
+      "image": {
+        "imgPath": "Window.png",
+        "rect": "0,0,880,660"
+      },
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "Window1",
+          "description": null,
+          "identifyProperties": {
+            "type": "Window",
+            "className": "#32770",
+            "title": "打开"
+          },
+          "cachedProperties": {
+            "type": "Window",
+            "className": "#32770",
+            "title": "打开",
+            "boundingRectangle": "194,27,683,480"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "文件名(N):",
+              "description": null,
+              "identifyProperties": {
+                "type": "ComboBox",
+                "automationId": "1148",
+                "name": "文件名(N):"
+              },
+              "cachedProperties": {
+                "automationId": "1148",
+                "type": "ComboBox",
+                "className": "ComboBox",
+                "name": "文件名(N):",
+                "accessKey": "Alt+n",
+                "boundingRectangle": "394,430,258,26"
+              },
+              "children": [
+                {
+                  "ntype": "uia",
+                  "nname": "文件名(N):1",
+                  "description": null,
+                  "identifyProperties": {
+                    "type": "Edit",
+                    "automationId": "1148",
+                    "name": "文件名(N):"
+                  },
+                  "cachedProperties": {
+                    "automationId": "1148",
+                    "type": "Edit",
+                    "className": "Edit",
+                    "name": "文件名(N):",
+                    "accessKey": "Alt+n",
+                    "boundingRectangle": "398,435,234,17"
+                  },
+                  "image": {
+                    "imgPath": "3a2205b4-5684-4ef7-b567-bd4cd2961417.png",
+                    "rect": "0,0,254,37"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "Window3",
+          "description": null,
+          "identifyProperties": {
+            "type": "Window",
+            "className": "#32770",
+            "title": "打开"
+          },
+          "cachedProperties": {
+            "type": "Window",
+            "className": "#32770",
+            "title": "打开",
+            "boundingRectangle": "41,31,683,480"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "打开(O)",
+              "description": null,
+              "identifyProperties": {
+                "type": "SplitButton",
+                "automationId": "1",
+                "name": "打开(O)"
+              },
+              "cachedProperties": {
+                "automationId": "1",
+                "type": "SplitButton",
+                "className": "Button",
+                "name": "打开(O)",
+                "accessKey": "Alt+o",
+                "boundingRectangle": "511,465,88,26"
+              },
+              "image": {
+                "imgPath": "打开(O).png",
+                "rect": "0,0,108,46"
+              }
+            }
+          ]
+        },
+        {
+          "ntype": "virtual",
+          "nname": "发送文件",
+          "description": null,
+          "identifyProperties": {
+            "boundingRectangle": "361,99,32,48",
+            "align": "2"
+          }
+        },
+        {
+          "ntype": "virtual",
+          "nname": "发送",
+          "description": null,
+          "identifyProperties": {
+            "boundingRectangle": "29,11,72,26",
+            "align": "3"
+          }
+        }
+      ]
+    }
+  ]
+}

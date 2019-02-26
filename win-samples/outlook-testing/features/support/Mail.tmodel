@@ -1,0 +1,475 @@
+﻿{
+  "ntype": "app",
+  "process": null,
+  "controls": [
+    {
+      "ntype": "uia",
+      "nname": "任务栏",
+      "description": "",
+      "identifyProperties": {
+        "type": "Pane",
+        "className": "Shell_TrayWnd"
+      },
+      "cachedProperties": {
+        "type": "Pane",
+        "className": "Shell_TrayWnd",
+        "name": "任务栏",
+        "boundingRectangle": "0,728,1366,40"
+      },
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "开始",
+          "description": "",
+          "identifyProperties": {
+            "type": "Button",
+            "className": "Start"
+          },
+          "cachedProperties": {
+            "type": "Button",
+            "className": "Start",
+            "name": "开始",
+            "boundingRectangle": "0,728,48,40"
+          },
+          "image": {
+            "imgPath": "开始.png",
+            "rect": "0,1,48,40"
+          }
+        }
+      ]
+    },
+    {
+      "ntype": "uia",
+      "nname": "Window",
+      "description": "",
+      "identifyProperties": {
+        "type": "Window",
+        "className": "Windows.UI.Core.CoreWindow"
+      },
+      "cachedProperties": {
+        "type": "Window",
+        "className": "Windows.UI.Core.CoreWindow",
+        "title": "启动",
+        "boundingRectangle": "0,0,1366,728"
+      },
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "Window1",
+          "description": "",
+          "identifyProperties": {
+            "type": "Window",
+            "automationId": "SplitViewFrameXAMLWindow"
+          },
+          "cachedProperties": {
+            "automationId": "SplitViewFrameXAMLWindow",
+            "type": "Window",
+            "boundingRectangle": "0,100,972,628"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "固定的磁贴",
+              "description": "",
+              "identifyProperties": {
+                "type": "List",
+                "automationId": "groupItems"
+              },
+              "cachedProperties": {
+                "automationId": "groupItems",
+                "type": "List",
+                "className": "TileListView",
+                "name": "固定的磁贴",
+                "boundingRectangle": "320,100,652,628"
+              },
+              "children": [
+                {
+                  "ntype": "uia",
+                  "nname": "生活动态 组标头",
+                  "description": "",
+                  "identifyProperties": {
+                    "type": "Group",
+                    "automationId": "{c6bc50a7-b60b-4789-aebe-5d2518d41a9f}"
+                  },
+                  "cachedProperties": {
+                    "automationId": "{c6bc50a7-b60b-4789-aebe-5d2518d41a9f}",
+                    "type": "Group",
+                    "className": "TileListViewItem",
+                    "name": "生活动态 组标头",
+                    "helptext": "激活即可重命名组",
+                    "boundingRectangle": "320,113,316,32"
+                  },
+                  "children": [
+                    {
+                      "ntype": "uia",
+                      "nname": "Mail",
+                      "description": "",
+                      "identifyProperties": {
+                        "type": "ListItem",
+                        "automationId": "tile-P~microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail"
+                      },
+                      "cachedProperties": {
+                        "automationId": "tile-P~microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail",
+                        "type": "ListItem",
+                        "className": "TileListViewItem",
+                        "name": "邮件\nnoreply\n用户留言 from leanpro.cn",
+                        "boundingRectangle": "428,149,204,100"
+                      },
+                      "image": {
+                        "imgPath": "邮件noreply用户留言 from leanpro.cn.png",
+                        "rect": "1,1,204,100"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ntype": "uia",
+      "nname": "Window2",
+      "description": "",
+      "identifyProperties": {
+        "type": "Window",
+        "className": "ApplicationFrameWindow"
+      },
+      "cachedProperties": {
+        "type": "Window",
+        "className": "ApplicationFrameWindow",
+        "title": "收件箱 - Outlook ‎- 邮件",
+        "boundingRectangle": "-8,-8,1382,744"
+      },
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "Window3",
+          "description": "",
+          "identifyProperties": {
+            "type": "Window",
+            "className": "Windows.UI.Core.CoreWindow"
+          },
+          "cachedProperties": {
+            "type": "Window",
+            "className": "Windows.UI.Core.CoreWindow",
+            "title": "邮件",
+            "boundingRectangle": "0,0,1366,728"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "Pane",
+              "description": "",
+              "identifyProperties": {
+                "type": "Pane",
+                "automationId": "Silhouette"
+              },
+              "cachedProperties": {
+                "automationId": "Silhouette",
+                "type": "Pane",
+                "boundingRectangle": "0,0,1366,728"
+              },
+              "children": [
+                {
+                  "ntype": "uia",
+                  "nname": "导航",
+                  "description": "",
+                  "identifyProperties": {
+                    "type": "Group",
+                    "automationId": "NavigationPane"
+                  },
+                  "cachedProperties": {
+                    "automationId": "NavigationPane",
+                    "type": "Group",
+                    "className": "NavigationPane",
+                    "name": "导航",
+                    "boundingRectangle": "0,0,200,728"
+                  },
+                  "children": [
+                    {
+                      "ntype": "uia",
+                      "nname": "Pane1",
+                      "description": "",
+                      "identifyProperties": {
+                        "type": "Pane",
+                        "automationId": "RubberBand"
+                      },
+                      "cachedProperties": {
+                        "automationId": "RubberBand",
+                        "type": "Pane",
+                        "className": "ScrollViewer",
+                        "boundingRectangle": "0,80,200,548"
+                      },
+                      "children": [
+                        {
+                          "ntype": "uia",
+                          "nname": "New mail",
+                          "description": "",
+                          "identifyProperties": {
+                            "type": "Button",
+                            "automationId": "NewButton"
+                          },
+                          "cachedProperties": {
+                            "automationId": "NewButton",
+                            "type": "Button",
+                            "className": "InvokeButton",
+                            "name": "新邮件",
+                            "boundingRectangle": "0,80,200,48"
+                          },
+                          "image": {
+                            "imgPath": "新邮件.png",
+                            "rect": "0,1,200,48"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ntype": "uia",
+      "nname": "Window4",
+      "description": null,
+      "identifyProperties": {
+        "type": "Window",
+        "className": "ApplicationFrameWindow",
+        "title": "Inbox - Outlook ‎- Mail"
+      },
+      "cachedProperties": {
+        "type": "Window",
+        "className": "ApplicationFrameWindow",
+        "title": "Inbox - Outlook ‎- Mail",
+        "boundingRectangle": "-8,-8,1382,744"
+      },
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "Window5",
+          "description": null,
+          "identifyProperties": {
+            "type": "Window",
+            "className": "Windows.UI.Core.CoreWindow",
+            "title": "Mail"
+          },
+          "cachedProperties": {
+            "type": "Window",
+            "className": "Windows.UI.Core.CoreWindow",
+            "title": "Mail",
+            "boundingRectangle": "0,0,1366,728"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "Pane2",
+              "description": null,
+              "identifyProperties": {
+                "type": "Pane",
+                "automationId": "Silhouette"
+              },
+              "cachedProperties": {
+                "automationId": "Silhouette",
+                "type": "Pane",
+                "boundingRectangle": "0,0,1366,728"
+              },
+              "children": [
+                {
+                  "ntype": "uia",
+                  "nname": "Reading Pane",
+                  "description": null,
+                  "identifyProperties": {
+                    "type": "Group",
+                    "automationId": "ReadingPaneModern",
+                    "name": "Reading Pane"
+                  },
+                  "cachedProperties": {
+                    "automationId": "ReadingPaneModern",
+                    "type": "Group",
+                    "className": "ReadingPaneModern",
+                    "name": "Reading Pane",
+                    "boundingRectangle": "500,32,866,696"
+                  },
+                  "children": [
+                    {
+                      "ntype": "uia",
+                      "nname": "Reading Pane1",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Group",
+                        "automationId": "ReadingPaneModern",
+                        "name": "Reading Pane"
+                      },
+                      "cachedProperties": {
+                        "automationId": "ReadingPaneModern",
+                        "type": "Group",
+                        "className": "NamedContainerAutomationPeer",
+                        "name": "Reading Pane",
+                        "boundingRectangle": "500,32,866,696"
+                      },
+                      "children": [
+                        {
+                          "ntype": "uia",
+                          "nname": "Custom",
+                          "description": null,
+                          "identifyProperties": {
+                            "type": "Custom",
+                            "automationId": "ReadingPaneWordHost"
+                          },
+                          "cachedProperties": {
+                            "automationId": "ReadingPaneWordHost",
+                            "type": "Custom",
+                            "boundingRectangle": "501,129,865,598"
+                          },
+                          "children": [
+                            {
+                              "ntype": "uia",
+                              "nname": "Custom1",
+                              "description": null,
+                              "identifyProperties": {
+                                "type": "Custom"
+                              },
+                              "cachedProperties": {
+                                "type": "Custom",
+                                "boundingRectangle": "537,129,793,123"
+                              },
+                              "children": [
+                                {
+                                  "ntype": "uia",
+                                  "nname": "Draft Header",
+                                  "description": null,
+                                  "identifyProperties": {
+                                    "type": "Custom",
+                                    "automationId": "DraftHeader",
+                                    "name": "Draft Header"
+                                  },
+                                  "cachedProperties": {
+                                    "automationId": "DraftHeader",
+                                    "type": "Custom",
+                                    "name": "Draft Header",
+                                    "boundingRectangle": "537,129,793,123"
+                                  },
+                                  "children": [
+                                    {
+                                      "ntype": "uia",
+                                      "nname": "Addressing",
+                                      "description": null,
+                                      "identifyProperties": {
+                                        "type": "Group",
+                                        "automationId": "AddressingPane",
+                                        "name": "Addressing"
+                                      },
+                                      "cachedProperties": {
+                                        "automationId": "AddressingPane",
+                                        "type": "Group",
+                                        "className": "AddressingPane",
+                                        "name": "Addressing",
+                                        "boundingRectangle": "537,170,720,40"
+                                      },
+                                      "children": [
+                                        {
+                                          "ntype": "uia",
+                                          "nname": "To:",
+                                          "description": null,
+                                          "identifyProperties": {
+                                            "type": "Edit",
+                                            "automationId": "SearchBox",
+                                            "name": "To: "
+                                          },
+                                          "cachedProperties": {
+                                            "automationId": "SearchBox",
+                                            "type": "Edit",
+                                            "className": "RichEditBox",
+                                            "name": "To: ",
+                                            "boundingRectangle": "566,170,651,32"
+                                          },
+                                          "image": {
+                                            "imgPath": "f602125a-da07-4190-9664-d12f0285ac37.png",
+                                            "rect": "1,1,651,32"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "ntype": "uia",
+                                      "nname": "Subject",
+                                      "description": null,
+                                      "identifyProperties": {
+                                        "type": "Edit",
+                                        "automationId": "SubjectTextBox",
+                                        "name": "Subject"
+                                      },
+                                      "cachedProperties": {
+                                        "automationId": "SubjectTextBox",
+                                        "type": "Edit",
+                                        "className": "TextBox",
+                                        "name": "Subject",
+                                        "boundingRectangle": "537,211,793,40"
+                                      },
+                                      "image": {
+                                        "imgPath": "Subject.png",
+                                        "rect": "1,1,793,40"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "ntype": "uia",
+                              "nname": "Message",
+                              "description": null,
+                              "identifyProperties": {
+                                "type": "Document",
+                                "automationId": "RootFocusControl",
+                                "name": "Message"
+                              },
+                              "cachedProperties": {
+                                "automationId": "RootFocusControl",
+                                "type": "Document",
+                                "className": "_WwG",
+                                "name": "Message",
+                                "boundingRectangle": "501,129,865,598"
+                              },
+                              "children": [
+                                {
+                                  "ntype": "uia",
+                                  "nname": "Message1",
+                                  "description": null,
+                                  "identifyProperties": {
+                                    "type": "Edit",
+                                    "automationId": "Body",
+                                    "name": "Message"
+                                  },
+                                  "cachedProperties": {
+                                    "automationId": "Body",
+                                    "type": "Edit",
+                                    "name": "Message",
+                                    "boundingRectangle": "501,129,865,598"
+                                  },
+                                  "image": {
+                                    "imgPath": "Message.png",
+                                    "rect": "1,1,865,598"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

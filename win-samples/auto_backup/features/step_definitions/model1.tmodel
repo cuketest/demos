@@ -1,0 +1,135 @@
+﻿{
+  "ntype": "app",
+  "process": null,
+  "controls": [
+    {
+      "ntype": "uia",
+      "nname": "Window",
+      "description": "",
+      "identifyProperties": {
+        "type": "Window",
+        "className": "DuiHostWnd"
+      },
+      "cachedProperties": {
+        "type": "Window",
+        "className": "DuiHostWnd",
+        "title": "欢迎使用百度网盘",
+        "boundingRectangle": "121,3,1118,698"
+      },
+      "image": {
+        "imgPath": "Window.png",
+        "rect": "0,0,1138,711"
+      },
+      "children": [
+        {
+          "ntype": "virtual",
+          "nname": "上传",
+          "description": null,
+          "identifyProperties": {
+            "boundingRectangle": "185,88,83,33",
+            "align": "0"
+          }
+        }
+      ]
+    },
+    {
+      "ntype": "uia",
+      "nname": "Window1",
+      "description": "",
+      "identifyProperties": {
+        "type": "Window",
+        "className": "DuiHostWnd",
+        "title": "欢迎使用百度网盘"
+      },
+      "cachedProperties": {
+        "type": "Window",
+        "className": "DuiHostWnd",
+        "title": "欢迎使用百度网盘",
+        "boundingRectangle": "10,62,1118,578"
+      },
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "Window2",
+          "description": "",
+          "identifyProperties": {
+            "type": "Window",
+            "className": "#32770",
+            "title": "请选择文件/文件夹"
+          },
+          "cachedProperties": {
+            "type": "Window",
+            "className": "#32770",
+            "title": "请选择文件/文件夹",
+            "boundingRectangle": "284,133,571,437"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "文件名(N):",
+              "description": "",
+              "identifyProperties": {
+                "type": "ComboBox",
+                "automationId": "1148",
+                "name": "文件名(N):"
+              },
+              "cachedProperties": {
+                "automationId": "1148",
+                "type": "ComboBox",
+                "className": "ComboBox",
+                "name": "文件名(N):",
+                "accessKey": "Alt+n",
+                "boundingRectangle": "487,491,246,21"
+              },
+              "children": [
+                {
+                  "ntype": "uia",
+                  "nname": "文件名(N):1",
+                  "description": "",
+                  "identifyProperties": {
+                    "type": "Edit",
+                    "automationId": "1148",
+                    "name": "文件名(N):"
+                  },
+                  "cachedProperties": {
+                    "automationId": "1148",
+                    "type": "Edit",
+                    "className": "Edit",
+                    "name": "文件名(N):",
+                    "accessKey": "Alt+n",
+                    "boundingRectangle": "490,496,224,13"
+                  },
+                  "image": {
+                    "imgPath": "49e53ab0-a846-42e0-abf8-3d3a9dc4f722.png",
+                    "rect": "0,0,244,33"
+                  }
+                }
+              ]
+            },
+            {
+              "ntype": "uia",
+              "nname": "存入百度网盘",
+              "description": "",
+              "identifyProperties": {
+                "type": "Button",
+                "automationId": "1",
+                "name": "存入百度网盘"
+              },
+              "cachedProperties": {
+                "automationId": "1",
+                "type": "Button",
+                "className": "Button",
+                "name": "存入百度网盘",
+                "boundingRectangle": "751,491,90,23"
+              },
+              "image": {
+                "imgPath": "存入百度网盘.png",
+                "rect": "0,0,110,43"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
