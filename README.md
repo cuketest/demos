@@ -1,4 +1,4 @@
-# Node.js Test Automation Samples
+# Node.js Cucumber Test Automation Samples
 
 This repo contains samples that demonstrate how to use do test automations using Node.js. 
 The samples uses Cucumber.js to do various kinds of test automations, including Windows app, Web UI, API, mobile etc.
@@ -83,8 +83,8 @@ Development (BDD) framework for test automation.[CukeTest](http://cuketest.com) 
 </table>
 
 ## See also
-* To download CukeTest, go to [cuketest.com](http://cuketest.com), you can install either Windows Desktop version, or Windows Store version if you are using Windows 10.
-* You can read [CukeTest documentation](http://cuketest.com/en/summary) online without installing CukeTest. [here](http://cuketest.com/zh-cn/summary) is Chinese version.
+* To download CukeTest, go to [cuketest.com](http://cuketest.com). CukeTest supports Windows, Mac, Linux platforms, please download the corresponding version.
+* You can read [CukeTest documentation](http://cuketest.com/en) online without installing CukeTest.
 * Go to [cucumber.js](https://github.com/cucumber/cucumber-js) to get cucumber.js documentation.
 
 ## Contributions
@@ -95,7 +95,7 @@ We will add them to the repo once we confirm it works and serve the tutorial pur
 
 ************
 
-#Node.js测试自动化示例
+# Node.js Cucumber 测试自动化示例
 
 此代码库包含演示如何使用Node.js进行测试自动化的示例。 
 这些示例使用Cucumber.js进行各种测试自动化，包括Windows应用程序，Web UI，API，移动设备等。
@@ -103,7 +103,7 @@ We will add them to the repo once we confirm it works and serve the tutorial pur
 这些样例使用Cucumber.js 5.x. 建议使用[CukeTest](http://cuketest.com)应用程序打开并运行它们，
 这可以提高你的工作效率。它有内置的Cucumber.js，这意味着你只需要安装实际的自动化的npm包。
 
-##使用样例
+## 使用样例
 
 要获取示例代码，请克隆存储库，或将其作为zip文件下载并在本地提取。
 
@@ -119,7 +119,7 @@ We will add them to the repo once we confirm it works and serve the tutorial pur
 
 > **注意：** 带有“-zh”的文件夹末尾是带有中文特征文件的样例。
 
-##按类别分类
+## 按类别分类
 可以使用以下类别：
 * **win-samples**：演示如何使用自动化Windows应用程序运行的示例 
 * **web-samples**：Web UI测试样例
@@ -178,12 +178,12 @@ We will add them to the repo once we confirm it works and serve the tutorial pur
  </tr>
 </table>
 
-## 也可以看看
-* 要下载CukeTest，请访问[cuketest.com](http://cuketest.com)，如果您使用的是Windows 10，则可以安装Windows桌面版或Windows Store版。
-* 您可以在线阅读[CukeTest文档](http://cuketest.com/en/summary)而无需安装CukeTest。[这里](http://cuketest.com/zh-cn/summary)是中文版。
+## 其它信息
+* 要下载CukeTest，请访问[cuketest.com](http://cuketest.com)，CukeTest支持Windows、Mac、Linux，请下载对应的版本。
+* 您可以在线阅读[CukeTest文档](http://cuketest.com/zh-cn)。
 * 转到[cucumber.js](https://github.com/cucumber/cucumber-js)获取cucumber.js文档。
 
-##贡献
+## 贡献
 
 欢迎您通过发送给我们提供更多样例。发送pull request或新建问题来描述您的样例。
 一旦我们确认它有效并将其用于教程目的，我们就会将它们添加到样例代码库中。 
