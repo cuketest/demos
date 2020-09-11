@@ -67,15 +67,18 @@
                       "description": "",
                       "identifyProperties": {
                         "type": "Button",
-                        "automationId": "Day_2018-06-10T00:00:00Z"
+                        "automationId": "Day_2019-07-17T00:00:00Z"
                       },
                       "cachedProperties": {
-                        "automationId": "Day_2018-06-10T00:00:00Z",
+                        "automationId": "Day_2019-07-17T00:00:00Z",
                         "type": "Button",
                         "className": "Day",
-                        "name": "2018年6月10日，没有事件",
-                        "boundingRectangle": "1206,115,158,121",
-                        "imgPath": "b9a0ee95-9e56-451a-93f9-f8d3215eb8d3.png"
+                        "name": "2019年7月17日, no events",
+                        "boundingRectangle": "659,180,136,158"
+                      },
+                      "image": {
+                        "imgPath": "b9a0ee95-9e56-451a-93f9-f8d3215eb8d3.png",
+                        "rect": "0,0,136,158"
                       }
                     },
                     {
@@ -84,15 +87,18 @@
                       "description": "",
                       "identifyProperties": {
                         "type": "Button",
-                        "automationId": "Appointment_2018-06-10T00:00:00Z_Node.js Party"
+                        "automationId": "Appointment_2019-07-17T00:00:00Z_Node.js Party"
                       },
                       "cachedProperties": {
-                        "automationId": "Appointment_2018-06-10T00:00:00Z_Node.js Party",
+                        "automationId": "Appointment_2019-07-17T00:00:00Z_Node.js Party",
                         "type": "Button",
                         "className": "Appointment",
-                        "name": "Node.js Party; 2018年6月10日, All day; Free; ",
-                        "boundingRectangle": "1206,151,156,24",
-                        "imgPath": "f2c66b71-9045-49f7-ad61-abba7933a6b7.png"
+                        "name": "Node.js Party; 2019年7月17日, All day; Free; ",
+                        "boundingRectangle": "659,225,134,30"
+                      },
+                      "image": {
+                        "imgPath": "f2c66b71-9045-49f7-ad61-abba7933a6b7.png",
+                        "rect": "0,0,134,30"
                       }
                     }
                   ]
@@ -126,7 +132,9 @@
                         "type": "Edit",
                         "className": "RichEditBox",
                         "name": "地点",
-                        "boundingRectangle": "853,202,328,32",
+                        "boundingRectangle": "853,202,328,32"
+                      },
+                      "image": {
                         "imgPath": "f7180f66-2ca2-408d-b1bf-3cb6c661e868.png"
                       }
                     },
@@ -143,7 +151,9 @@
                         "type": "Button",
                         "className": "InvokeButton",
                         "name": "更多详细信息 ",
-                        "boundingRectangle": "963,254,114,32",
+                        "boundingRectangle": "963,254,114,32"
+                      },
+                      "image": {
                         "imgPath": "c11bf79d-0360-40ea-ac6c-792145b43a67.png"
                       }
                     },
@@ -161,7 +171,9 @@
                         "className": "TextBox",
                         "name": "事件名称",
                         "helptext": "事件名称",
-                        "boundingRectangle": "913,98,268,37",
+                        "boundingRectangle": "913,98,268,37"
+                      },
+                      "image": {
                         "imgPath": "ef993637-bfed-4cad-b723-15fb7b7cbf3f.png"
                       }
                     }
@@ -179,7 +191,9 @@
                     "automationId": "Body",
                     "type": "Edit",
                     "name": "Event description",
-                    "boundingRectangle": "108,446,724,225",
+                    "boundingRectangle": "108,446,724,225"
+                  },
+                  "image": {
                     "imgPath": "12a8fa25-191f-45f9-9542-775a744dd20a.png"
                   }
                 },
@@ -242,26 +256,7 @@
                                 "className": "RibbonTabContents",
                                 "name": "Lower Ribbon",
                                 "boundingRectangle": "107,80,957,40"
-                              },
-                              "children": [
-                                {
-                                  "ntype": "uia",
-                                  "nname": "Save and close",
-                                  "description": "",
-                                  "identifyProperties": {
-                                    "type": "Button",
-                                    "automationId": "SaveAndClose2"
-                                  },
-                                  "cachedProperties": {
-                                    "automationId": "SaveAndClose2",
-                                    "type": "Button",
-                                    "className": "InvokeButton",
-                                    "name": "Save and close",
-                                    "boundingRectangle": "107,80,145,40",
-                                    "imgPath": "b92ba748-9ccc-48b4-b2c4-f3b5b5b6d0e3.png"
-                                  }
-                                }
-                              ]
+                              }
                             }
                           ]
                         }
@@ -329,7 +324,9 @@
                                 "type": "Button",
                                 "className": "InvokeButton",
                                 "name": "Delete",
-                                "boundingRectangle": "1090,243,157,40",
+                                "boundingRectangle": "1090,243,157,40"
+                              },
+                              "image": {
                                 "imgPath": "39a07a21-f5b9-436e-acc7-87a2b60b0e60.png"
                               }
                             }
@@ -382,7 +379,9 @@
                             "className": "TextBox",
                             "name": "事件名称",
                             "helptext": "事件名称",
-                            "boundingRectangle": "175,196,605,56",
+                            "boundingRectangle": "175,196,605,56"
+                          },
+                          "image": {
                             "imgPath": "2543847d-4120-493d-9f80-fae3d7ab56fa.png"
                           }
                         },
@@ -400,7 +399,9 @@
                             "type": "Button",
                             "className": "InvokeButton",
                             "name": "日期选取器",
-                            "boundingRectangle": "473,332,32,32",
+                            "boundingRectangle": "473,332,32,32"
+                          },
+                          "image": {
                             "imgPath": "f41a9806-d447-4279-858b-69b34f0ce3eb.png"
                           }
                         },
@@ -419,8 +420,10 @@
                             "className": "InvokeButton",
                             "name": "日期选取器",
                             "boundingRectangle": "473,388,32,32",
-                            "imgPath": "4ccd8bc5-2302-4fb6-9234-4c8324784cce.png",
                             "index": "1"
+                          },
+                          "image": {
+                            "imgPath": "4ccd8bc5-2302-4fb6-9234-4c8324784cce.png"
                           }
                         }
                       ]
@@ -485,7 +488,9 @@
                                 "type": "Button",
                                 "className": "Day",
                                 "name": "2018年6月10日",
-                                "boundingRectangle": "366,472,40,34",
+                                "boundingRectangle": "366,472,40,34"
+                              },
+                              "image": {
                                 "imgPath": "7ac90b9a-9b21-4cb2-ae4c-f20a3950e03f.png"
                               }
                             },
@@ -502,7 +507,9 @@
                                 "type": "Button",
                                 "className": "Day",
                                 "name": "2018年6月15日",
-                                "boundingRectangle": "286,562,40,34",
+                                "boundingRectangle": "286,562,40,34"
+                              },
+                              "image": {
                                 "imgPath": "a70b574e-8391-4647-828e-46afba0d9562.png"
                               }
                             }
@@ -528,7 +535,9 @@
                 "type": "ComboBox",
                 "className": "TextBox",
                 "name": "结束日期",
-                "boundingRectangle": "151,388,322,32",
+                "boundingRectangle": "151,388,322,32"
+              },
+              "image": {
                 "imgPath": "8c165a9c-5e93-4b8d-8034-2c9557597a3f.png"
               }
             },
@@ -546,7 +555,9 @@
                 "type": "ComboBox",
                 "className": "TextBox",
                 "name": "开始日期",
-                "boundingRectangle": "151,332,322,32",
+                "boundingRectangle": "151,332,322,32"
+              },
+              "image": {
                 "imgPath": "dc00b87b-037c-4230-b17a-d564d26ed452.png"
               }
             },
@@ -563,7 +574,9 @@
                 "type": "Edit",
                 "className": "RichEditBox",
                 "name": "地点",
-                "boundingRectangle": "107,276,726,32",
+                "boundingRectangle": "107,276,726,32"
+              },
+              "image": {
                 "imgPath": "511f87ef-1362-4699-8c1e-53ee7c836c69.png"
               }
             }
@@ -600,7 +613,9 @@
             "type": "Button",
             "className": "Start",
             "name": "开始",
-            "boundingRectangle": "0,728,48,40",
+            "boundingRectangle": "0,728,48,40"
+          },
+          "image": {
             "imgPath": "8a576829-b7d2-4119-b51a-a92b249d226d.png"
           }
         }
@@ -685,7 +700,9 @@
                         "type": "ListItem",
                         "className": "TileListViewItem",
                         "name": "日历\n星期四\n7",
-                        "boundingRectangle": "324,149,100,100",
+                        "boundingRectangle": "324,149,100,100"
+                      },
+                      "image": {
                         "imgPath": "443b9c10-ba07-4155-bf69-d5cb0e540924.png"
                       }
                     }
@@ -704,9 +721,172 @@
                     "type": "ListItem",
                     "className": "TileListViewItem",
                     "name": "日历\n星期四\n7",
-                    "boundingRectangle": "324,149,100,100",
+                    "boundingRectangle": "324,149,100,100"
+                  },
+                  "image": {
                     "imgPath": "9307c965-41ab-4205-a0ad-674fd9c76289.png"
                   }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ntype": "uia",
+      "nname": "Window",
+      "description": null,
+      "identifyProperties": {
+        "type": "Window",
+        "className": "ApplicationFrameWindow",
+        "title": "Node Party - Event ‎- Calendar"
+      },
+      "cachedProperties": {
+        "type": "Window",
+        "className": "ApplicationFrameWindow",
+        "title": "Node Party - Event ‎- Calendar",
+        "boundingRectangle": "50,40,1296,937"
+      },
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "Window2",
+          "description": null,
+          "identifyProperties": {
+            "type": "Window",
+            "className": "Windows.UI.Core.CoreWindow",
+            "title": "Calendar"
+          },
+          "cachedProperties": {
+            "type": "Window",
+            "className": "Windows.UI.Core.CoreWindow",
+            "title": "Calendar",
+            "boundingRectangle": "59,40,1278,928"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "Pane2",
+              "description": null,
+              "identifyProperties": {
+                "type": "Pane",
+                "automationId": "Silhouette"
+              },
+              "cachedProperties": {
+                "automationId": "Silhouette",
+                "type": "Pane",
+                "boundingRectangle": "59,40,1278,928"
+              },
+              "children": [
+                {
+                  "ntype": "uia",
+                  "nname": "Custom1",
+                  "description": null,
+                  "identifyProperties": {
+                    "type": "Custom",
+                    "automationId": "x_customRibbon"
+                  },
+                  "cachedProperties": {
+                    "automationId": "x_customRibbon",
+                    "type": "Custom",
+                    "boundingRectangle": "193,80,1071,111"
+                  },
+                  "children": [
+                    {
+                      "ntype": "uia",
+                      "nname": "Ribbon1",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Tab",
+                        "className": "RibbonTabList",
+                        "name": "Ribbon"
+                      },
+                      "cachedProperties": {
+                        "type": "Tab",
+                        "className": "RibbonTabList",
+                        "name": "Ribbon",
+                        "boundingRectangle": "193,80,102,60"
+                      },
+                      "children": [
+                        {
+                          "ntype": "uia",
+                          "nname": "Home1",
+                          "description": null,
+                          "identifyProperties": {
+                            "type": "TabItem",
+                            "className": "RibbonTab",
+                            "name": "Home"
+                          },
+                          "cachedProperties": {
+                            "type": "TabItem",
+                            "className": "RibbonTab",
+                            "name": "Home",
+                            "boundingRectangle": "193,80,102,60"
+                          },
+                          "children": [
+                            {
+                              "ntype": "uia",
+                              "nname": "Lower Ribbon1",
+                              "description": null,
+                              "identifyProperties": {
+                                "type": "Pane",
+                                "className": "RibbonTabContents",
+                                "name": "Lower Ribbon"
+                              },
+                              "cachedProperties": {
+                                "type": "Pane",
+                                "className": "RibbonTabContents",
+                                "name": "Lower Ribbon",
+                                "boundingRectangle": "193,140,859,50"
+                              },
+                              "children": [
+                                {
+                                  "ntype": "uia",
+                                  "nname": "Actions",
+                                  "description": null,
+                                  "identifyProperties": {
+                                    "type": "Group",
+                                    "className": "RibbonChunk",
+                                    "name": "Actions"
+                                  },
+                                  "cachedProperties": {
+                                    "type": "Group",
+                                    "className": "RibbonChunk",
+                                    "name": "Actions",
+                                    "boundingRectangle": "193,140,199,50"
+                                  },
+                                  "children": [
+                                    {
+                                      "ntype": "uia",
+                                      "nname": "Save",
+                                      "description": null,
+                                      "identifyProperties": {
+                                        "type": "Button",
+                                        "automationId": "SaveAndCloseItem",
+                                        "name": "Save"
+                                      },
+                                      "cachedProperties": {
+                                        "automationId": "SaveAndCloseItem",
+                                        "type": "Button",
+                                        "className": "InvokeButton",
+                                        "name": "Save",
+                                        "boundingRectangle": "193,140,93,50"
+                                      },
+                                      "image": {
+                                        "imgPath": "Save.png",
+                                        "rect": "0,0,93,50"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }

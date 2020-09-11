@@ -148,6 +148,20 @@ We will add them to the repo once we confirm it works and serve the tutorial pur
  </tr>
 </table>
 
+### Qt示例 （Linux平台）
+
+<table>
+ <tr>
+  <td> <a href="qt-samples/Linux/QtListDemo1">Qt List控件演示</a> </td>
+ </tr>
+ <tr>
+  <td> <a href="qt-samples/Linux/QtTreeDemo1">Qt Tree控件演示</a> </td>
+ </tr>
+ <tr>
+  <td> <a href="qt-samples/Linux/QtTableDemo1">Qt Table控件演示</a> </td>
+ </tr>
+</table>
+
 ### Web示例
 
 <table>

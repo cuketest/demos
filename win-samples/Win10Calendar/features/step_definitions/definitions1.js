@@ -90,7 +90,7 @@ When(/^结束日期输入"([^"]*)"$/, async function (arg1) {
 
     await model.getButton("日期选取器1").click(0, 0, 1);
     await Util.delay(1000);
-    await model.getButton("2018年6月10日").click(0, 0, 1);
+    await model.getButton("2019年7月10日").click(0, 0, 1);
 });
 
 When(/^事件详情中输入"([^"]*)"$/, async function (keys) {
