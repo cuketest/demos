@@ -1,67 +1,73 @@
-
 var { Given, When, Then } = require('cucumber');
-var got = require('got');
+var got = require('leanpro.got');
 var assert = require('assert');
 
-var jsonFormat = {
-    headers: { 'Content-Type': 'application/json' },
-    json: true
-};
-
-Given('Get the service api {string} and i should get the {string}', function (url, expectval) {
-    return got.get(url, jsonFormat).then(function (result) {
-        var data = result.body;
-        var assertdata = JSON.parse(expectval);
-        return assert.deepEqual(data, assertdata);
-    });
-});
-
-Given("Post to service api {string} with {string} and I should get the {string}", function (url, data, expectval) {
-    var option = {
-        headers: { 'Content-Type': 'application/json' },
-        json: true,
-        body: JSON.parse(data)
+Given("Get the service api {string} and i should get the {string}", async function (url, expectval) {
+    let option = {
+        "headers": {
+            "content-type": "application/json"
+        },
+        "json": true
     };
-    return got.post(url, option).then(function (res) {
-        var data = res.body;
-        var assertdata = JSON.parse(expectval);
-        return assert.deepEqual(data, assertdata);
-    });
+    let res = await got.get(url, option);
+    let actual = res.body;
+    let expected = JSON.parse(expectval);
+    assert.deepEqual(actual, expected);
+    this.attach(JSON.stringify(res.body, null, '\t'));
 });
 
-Given("Put to service api {string} with {string} and I should get the {string}", function (url, data, expectval) {
-    var option = {
-        headers: { 'Content-Type': 'application/json' },
-        json: true,
-        body: JSON.parse(data)
+Given("Post to service api {string} with {string} and I should get the {string}", async function (url, data, expectval) {
+    let option = {
+        "headers": {
+            "content-type": "application/json"
+        },
+        "json": true,
+        "body": JSON.parse(data)
     };
-    return got.put(url, option).then(function (res) {
-        var data = res.body;
-        var assertdata = JSON.parse(expectval);
-        return assert.deepEqual(data, assertdata);
-    });
+    let res = await got.post(url, option);
+    let actual = res.body;
+    let expected = JSON.parse(expectval);
+    assert.deepEqual(actual, expected);
+    this.attach("使用JSON响应结果为: "+res);
 });
 
-Given("Patch to service api {string} with {string} and I should get the {string}", function (url, data, expectval) {
-    var option = {
-        headers: { 'Content-Type': 'application/json' },
-        json: true,
-        body: JSON.parse(data)
+Given("Put to service api {string} with {string} and I should get the {string}", async function (url, data, expectval) {
+    let option = {
+        "headers": {
+            "content-type": "application/json"
+        },
+        "json": true,
+        "body": JSON.parse(data)
     };
-    return got.patch(url, option).then(function (res) {
-        var data = res.body;
-        var assertdata = JSON.parse(expectval);
-        return assert.deepEqual(data, assertdata);
-    });
+    let res = await got.put(url, option);
+    let actual = res.body;
+    let expected = JSON.parse(expectval);
+    assert.deepEqual(actual, expected);
 });
 
-Then("Delete to service api {string} and I should get the {string}", function (url, expectval) {
-    return got.delete(url, jsonFormat).then(function (result) {
-        var data = result.body;
-        var assertdata = JSON.parse(expectval);
-        return assert.deepEqual(data, assertdata);
-    });
+Given("Patch to service api {string} with {string} and I should get the {string}", async function (url, data, expectval) {
+    let option = {
+        "headers": {
+            "content-type": "application/json"
+        },
+        "json": true,
+        "body": JSON.parse(data)
+    };
+    let res = await got.patch(url, option);
+    let actual = res.body;
+    let expected = JSON.parse(expectval);
+    assert.deepEqual(actual, expected);
 });
 
-
-
+Given("Delete to service api {string} and I should get the {string}", async function (url, expectval) {
+    let option = {
+        "headers": {
+            "content-type": "application/json"
+        },
+        "json": true
+    };
+    let res = await got.delete(url, option);
+    let actual = res.body;
+    let expected = JSON.parse(expectval);
+    assert.deepEqual(actual, expected);
+});

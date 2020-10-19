@@ -5,7 +5,8 @@
   场景: 订阅多个github仓库
     假如认证用户登录
     当订阅不同用户下的github仓库:
-      | owner        | project |
-      | imtesteruser | abc     |
-      | cuketest     | demos   |
+      | owner           | project |
+      | imtesteruser    | abc     |
+      | cuketest        | demos   |
+      | taketodreamland | monkey  |
     那么订阅列表中应该包含这些项目

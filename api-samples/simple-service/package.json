@@ -5,12 +5,13 @@
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "json-mock": "json-mock data.json"
+    "json-server": "json-server data.json"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "got": "^8.0.3",
-    "json-mock": "^0.1.0"
+    "@types/got": "^8.3.4",
+    "got": "^9.2.2",
+    "json-server": "^0.16.1"
   }
 }

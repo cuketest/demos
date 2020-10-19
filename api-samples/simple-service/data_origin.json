@@ -19,11 +19,6 @@
       "id": 4,
       "name": "zack",
       "location": "china"
-    },
-    {
-      "id": 5,
-      "name": "cuketest",
-      "location": "CHINA"
     }
   ],
   "posts": [
@@ -41,6 +36,12 @@
       "body": "some comment from author",
       "votes": 20,
       "postId": 1,
+      "userId": 1
+    },{
+      "id": 2,
+      "body": "another comment from author",
+      "votes": 10,
+      "postId": 2,
       "userId": 1
     }
   ]
