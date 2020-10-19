@@ -74,6 +74,13 @@ Development (BDD) framework for test automation.[CukeTest](http://cuketest.com) 
  </tr>
 </table>
 
+### Java Samples
+<table>
+ <tr>
+  <td><a href="java-samples/car-rental">Car Rental</a></td>
+ </tr>
+</table>
+
 ### API Samples
 <table>
  <tr>
@@ -148,6 +155,20 @@ We will add them to the repo once we confirm it works and serve the tutorial pur
  </tr>
 </table>
 
+### Qt示例 （Linux平台）
+
+<table>
+ <tr>
+  <td> <a href="qt-samples/Linux/QtListDemo1">Qt List控件演示</a> </td>
+ </tr>
+ <tr>
+  <td> <a href="qt-samples/Linux/QtTreeDemo1">Qt Tree控件演示</a> </td>
+ </tr>
+ <tr>
+  <td> <a href="qt-samples/Linux/QtTableDemo1">Qt Table控件演示</a> </td>
+ </tr>
+</table>
+
 ### Web示例
 
 <table>
@@ -167,6 +188,13 @@ We will add them to the repo once we confirm it works and serve the tutorial pur
  <tr>
   <td> <a href="bdd-samples/math">数学</a> </td>
   <td> <a href="bdd-samples/calc-zh">计算器</a> </td>
+ </tr>
+</table>
+
+### Java样例
+<table>
+ <tr>
+  <td><a href="java-samples/car-rental">汽车租赁</a></td>
  </tr>
 </table>
 

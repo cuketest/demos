@@ -1,7 +1,6 @@
+const { Util } = require('leanpro.common');
 ///// Your step definitions /////
 // use this.Given(), this.When() and this.Then() to declare step definitions
-
-
 var { Given, When, Then } = require('cucumber')
 let { until } = require('selenium-webdriver')
 let { driver } = require('../support/web_driver')
@@ -26,10 +25,11 @@ Then(/^I should get the "([^"]*)" page$/, function (arg1) {
     })
 });
 
-Then(/^I click the Número do Ticket$/, function () {
+Then(/^I click the Número do Ticket$/, async function () {
     //Ticket number
 
     let codigo = driver.wait(until.elementLocated({ id: "codigo" }), defaultuntiltime)
+    await Util.delay(1000);
     return codigo.click();
 });
 
