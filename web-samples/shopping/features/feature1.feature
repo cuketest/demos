@@ -2,7 +2,7 @@ Feature: shopping page
 url:https://cuketest.github.io/apps/shopping/index.html
 
   Background: Open the Index Page
-    Given open the url "http://localhost:8081/shopping/index.html"
+    Given open the url "https://cuketest.github.io/apps/shopping/index.html"
 
   Scenario: Pay Parking Fee
     When I click "Pagar estacionamento"

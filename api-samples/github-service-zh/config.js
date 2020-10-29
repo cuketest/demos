@@ -2,7 +2,7 @@
 
 exports.userinfo = {
     json:true,
-    auth:'imtesteruser:testeruser2018'
+    auth:'dreameameam@163.com:yideng00..'
 }
 
-exports.username = 'imtesteruser'
+exports.username = 'takeToDreamLand'

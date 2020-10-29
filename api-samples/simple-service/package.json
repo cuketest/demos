@@ -12,6 +12,7 @@
   "dependencies": {
     "@types/got": "^8.3.4",
     "got": "^9.2.2",
-    "json-server": "^0.16.1"
+    "json-server": "^0.16.1",
+    "kill-port": "^1.6.1"
   }
 }

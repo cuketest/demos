@@ -1,15 +1,16 @@
 {
-    "name": "cuketest_web_example",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "chromedriver": "^2.30.1",
-        "selenium-webdriver": "^3.4.0"
-    }
+	"name": "calculator",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"chromedriver": "*",
+		"geckodriver": "*",
+		"selenium-webdriver": "^4.0.0-alpha.7"
+	}
 }
