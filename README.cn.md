@@ -57,12 +57,20 @@
 * [Github API](api-samples/github-service-zh)  
 
 ### Qt样例
-#### Windows
+#### Windows平台
 * [Qt列表组件](qt-samples/Windows/qt-list)
 * [Qt树组件](qt-samples/Windows/qt-tree)
 * [Qt表格组件](qt-samples/Windows/qt-table-win10)  
+
 > 所有的Windows Qt样例在Qt 4.8及以上、Windows 7及以上的环境中都可以顺利运行，除了**Qt表格组件**：由于Windows 7的系统不支持单元格这一组件，因此表现与Windows 7以上的系统有所不同，如果你需要在Windows 7上运行。如果你需要Windows 7上的表格自动化样例，点击[Qt表格组件_Windows 7版本](qt-samples/Windows/qt-table-win7)。  
 
+#### Linux平台
+* [Qt列表组件](qt-samples/Linux/qt-list)
+* [Qt树组件](qt-samples/Linux/qt-tree)
+* [Qt表格组件](qt-samples/Linux/qt-table)  
+
+### Java样例
+* [租车样例](java-samples/car-rental)
 
 ## 其它信息
 * 要下载CukeTest，请访问[cuketest.com](http://cuketest.com)，CukeTest支持Windows、Mac、Linux，请下载对应的版本。
