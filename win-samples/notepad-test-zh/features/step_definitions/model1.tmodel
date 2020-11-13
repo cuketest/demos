@@ -5,7 +5,7 @@
     {
       "ntype": "uia",
       "nname": "任务栏",
-      "description": "",
+      "description": null,
       "identifyProperties": {
         "type": "Pane",
         "className": "Shell_TrayWnd",
@@ -21,7 +21,7 @@
         {
           "ntype": "uia",
           "nname": "在这里输入你要搜索的内容",
-          "description": "",
+          "description": null,
           "identifyProperties": {
             "type": "Button",
             "automationId": "4103",
@@ -32,7 +32,9 @@
             "type": "Button",
             "className": "TrayButton",
             "name": "在这里输入你要搜索的内容",
-            "boundingRectangle": "48,728,48,40",
+            "boundingRectangle": "48,728,48,40"
+          },
+          "image": {
             "imgPath": "在这里输入你要搜索的内容.png"
           }
         }
@@ -41,7 +43,7 @@
     {
       "ntype": "uia",
       "nname": "Window",
-      "description": "",
+      "description": null,
       "identifyProperties": {
         "type": "Window",
         "className": "Windows.UI.Core.CoreWindow",
@@ -57,7 +59,7 @@
         {
           "ntype": "uia",
           "nname": "搜索框",
-          "description": "",
+          "description": null,
           "identifyProperties": {
             "type": "Edit",
             "automationId": "SearchTextBox",
@@ -68,7 +70,9 @@
             "type": "Edit",
             "className": "RichEditBox",
             "name": "搜索框",
-            "boundingRectangle": "48,688,304,40",
+            "boundingRectangle": "48,688,304,40"
+          },
+          "image": {
             "imgPath": "搜索框.png"
           }
         }
@@ -77,11 +81,10 @@
     {
       "ntype": "uia",
       "nname": "Window1",
-      "description": "",
+      "description": null,
       "identifyProperties": {
         "type": "Window",
-        "className": "Notepad",
-        "title": "无标题 - 记事本"
+        "className": "Notepad"
       },
       "cachedProperties": {
         "type": "Window",
@@ -93,7 +96,7 @@
         {
           "ntype": "uia",
           "nname": "格式(O)",
-          "description": "",
+          "description": null,
           "identifyProperties": {
             "type": "Menu",
             "className": "#32768",
@@ -109,7 +112,7 @@
             {
               "ntype": "uia",
               "nname": "字体(F)...",
-              "description": "",
+              "description": null,
               "identifyProperties": {
                 "type": "MenuItem",
                 "automationId": "33",
@@ -120,7 +123,9 @@
                 "type": "MenuItem",
                 "name": "字体(F)...",
                 "accessKey": "f",
-                "boundingRectangle": "623,132,152,22",
+                "boundingRectangle": "623,132,152,22"
+              },
+              "image": {
                 "imgPath": "字体(F)....png"
               }
             }
@@ -129,7 +134,7 @@
         {
           "ntype": "uia",
           "nname": "Window2",
-          "description": "",
+          "description": null,
           "identifyProperties": {
             "type": "Window",
             "className": "#32770",
@@ -145,7 +150,7 @@
             {
               "ntype": "uia",
               "nname": "字体(F):",
-              "description": "",
+              "description": null,
               "identifyProperties": {
                 "type": "ComboBox",
                 "automationId": "1136",
@@ -163,7 +168,7 @@
                 {
                   "ntype": "uia",
                   "nname": "字体(F):1",
-                  "description": "",
+                  "description": null,
                   "identifyProperties": {
                     "type": "List",
                     "automationId": "1000",
@@ -180,7 +185,7 @@
                     {
                       "ntype": "uia",
                       "nname": "微软雅黑",
-                      "description": "",
+                      "description": null,
                       "identifyProperties": {
                         "type": "ListItem",
                         "name": "微软雅黑"
@@ -188,7 +193,9 @@
                       "cachedProperties": {
                         "type": "ListItem",
                         "name": "微软雅黑",
-                        "boundingRectangle": "381,314,151,19",
+                        "boundingRectangle": "381,314,151,19"
+                      },
+                      "image": {
                         "imgPath": "微软雅黑.png"
                       }
                     }
@@ -199,7 +206,7 @@
             {
               "ntype": "uia",
               "nname": "确定",
-              "description": "",
+              "description": null,
               "identifyProperties": {
                 "type": "Button",
                 "automationId": "1",
@@ -210,14 +217,16 @@
                 "type": "Button",
                 "className": "Button",
                 "name": "确定",
-                "boundingRectangle": "793,676,79,30",
+                "boundingRectangle": "793,676,79,30"
+              },
+              "image": {
                 "imgPath": "确定1.png"
               }
             },
             {
               "ntype": "uia",
               "nname": "大小(S):",
-              "description": "",
+              "description": null,
               "identifyProperties": {
                 "type": "ComboBox",
                 "automationId": "1138",
@@ -235,7 +244,7 @@
                 {
                   "ntype": "uia",
                   "nname": "大小(S):1",
-                  "description": "",
+                  "description": null,
                   "identifyProperties": {
                     "type": "List",
                     "automationId": "1000",
@@ -252,7 +261,7 @@
                     {
                       "ntype": "uia",
                       "nname": "五号",
-                      "description": "",
+                      "description": null,
                       "identifyProperties": {
                         "type": "ListItem",
                         "name": "五号"
@@ -260,7 +269,9 @@
                       "cachedProperties": {
                         "type": "ListItem",
                         "name": "五号",
-                        "boundingRectangle": "895,296,42,17",
+                        "boundingRectangle": "895,296,42,17"
+                      },
+                      "image": {
                         "imgPath": "五号.png"
                       }
                     }
@@ -314,7 +325,9 @@
                       "cachedProperties": {
                         "type": "ListItem",
                         "name": "粗体",
-                        "boundingRectangle": "748,317,109,19",
+                        "boundingRectangle": "748,317,109,19"
+                      },
+                      "image": {
                         "imgPath": "粗体2.png"
                       }
                     }
@@ -338,7 +351,9 @@
             "type": "Document",
             "className": "Edit",
             "name": "文本编辑器",
-            "boundingRectangle": "515,108,490,352",
+            "boundingRectangle": "515,108,490,352"
+          },
+          "image": {
             "imgPath": "文本编辑器.png"
           }
         },
@@ -371,7 +386,9 @@
                 "type": "MenuItem",
                 "name": "文件(F)",
                 "accessKey": "Alt+f",
-                "boundingRectangle": "515,88,52,19",
+                "boundingRectangle": "515,88,52,19"
+              },
+              "image": {
                 "imgPath": "文件(F).png"
               }
             },
@@ -387,7 +404,9 @@
                 "type": "MenuItem",
                 "name": "格式(O)",
                 "accessKey": "Alt+o",
-                "boundingRectangle": "98,207,56,19",
+                "boundingRectangle": "98,207,56,19"
+              },
+              "image": {
                 "imgPath": "格式(O)3.png"
               }
             }
@@ -423,7 +442,9 @@
                 "type": "MenuItem",
                 "name": "另存为(A)...",
                 "accessKey": "a",
-                "boundingRectangle": "518,176,197,22",
+                "boundingRectangle": "518,176,197,22"
+              },
+              "image": {
                 "imgPath": "另存为(A)....png"
               }
             }
@@ -478,7 +499,9 @@
                     "className": "Edit",
                     "name": "文件名:",
                     "accessKey": "Alt+N",
-                    "boundingRectangle": "243,517,514,19",
+                    "boundingRectangle": "243,517,514,19"
+                  },
+                  "image": {
                     "imgPath": "a6481a2a-ff0a-4696-ae91-043d446e6346.png"
                   }
                 }
@@ -499,7 +522,9 @@
                 "className": "Button",
                 "name": "保存(S)",
                 "accessKey": "Alt+s",
-                "boundingRectangle": "577,584,88,26",
+                "boundingRectangle": "577,584,88,26"
+              },
+              "image": {
                 "imgPath": "保存(S).png"
               }
             }
