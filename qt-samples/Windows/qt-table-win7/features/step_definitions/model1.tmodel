@@ -1,0 +1,542 @@
+﻿{
+  "ntype": "app",
+  "process": null,
+  "controls": [
+    {
+      "ntype": "uia",
+      "nname": "Window",
+      "description": null,
+      "identifyProperties": {
+        "type": "Window",
+        "className": "QWidget",
+        "title": "Spreadsheet"
+      },
+      "cachedProperties": {
+        "type": "Window",
+        "className": "QWidget",
+        "title": "Spreadsheet",
+        "boundingRectangle": "5,3,669,456"
+      },
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "Custom",
+          "description": null,
+          "identifyProperties": {
+            "type": "Custom"
+          },
+          "cachedProperties": {
+            "type": "Custom",
+            "boundingRectangle": "13,80,653,349"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "Table",
+              "description": null,
+              "identifyProperties": {
+                "type": "Table"
+              },
+              "cachedProperties": {
+                "type": "Table",
+                "boundingRectangle": "13,80,653,349"
+              },
+              "children": [
+                {
+                  "ntype": "uia",
+                  "nname": "Custom1",
+                  "description": null,
+                  "identifyProperties": {
+                    "type": "Custom"
+                  },
+                  "cachedProperties": {
+                    "type": "Custom",
+                    "boundingRectangle": "13,80,629,25"
+                  },
+                  "children": [
+                    {
+                      "ntype": "uia",
+                      "nname": "Header",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Header"
+                      },
+                      "cachedProperties": {
+                        "type": "Header",
+                        "boundingRectangle": "13,80,22,25"
+                      },
+                      "image": {
+                        "imgPath": "Header.png"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "A",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Header",
+                        "name": "A"
+                      },
+                      "cachedProperties": {
+                        "type": "Header",
+                        "name": "A",
+                        "boundingRectangle": "36,81,100,25"
+                      },
+                      "image": {
+                        "imgPath": "A.png"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "B",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Header",
+                        "name": "B"
+                      },
+                      "cachedProperties": {
+                        "type": "Header",
+                        "name": "B",
+                        "boundingRectangle": "136,81,100,25"
+                      },
+                      "image": {
+                        "imgPath": "B.png"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "C",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Header",
+                        "name": "C"
+                      },
+                      "cachedProperties": {
+                        "type": "Header",
+                        "name": "C",
+                        "boundingRectangle": "236,81,100,25"
+                      },
+                      "image": {
+                        "imgPath": "C.png"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "D",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Header",
+                        "name": "D"
+                      },
+                      "cachedProperties": {
+                        "type": "Header",
+                        "name": "D",
+                        "boundingRectangle": "336,81,100,25"
+                      },
+                      "image": {
+                        "imgPath": "D.png"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "E",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Header",
+                        "name": "E"
+                      },
+                      "cachedProperties": {
+                        "type": "Header",
+                        "name": "E",
+                        "boundingRectangle": "436,81,100,25"
+                      },
+                      "image": {
+                        "imgPath": "E.png"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "F",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Header",
+                        "name": "F"
+                      },
+                      "cachedProperties": {
+                        "type": "Header",
+                        "name": "F",
+                        "boundingRectangle": "536,81,100,25"
+                      },
+                      "image": {
+                        "imgPath": "F.png"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "ntype": "uia",
+                  "nname": "1",
+                  "description": null,
+                  "identifyProperties": {
+                    "type": "Custom",
+                    "name": "1"
+                  },
+                  "cachedProperties": {
+                    "type": "Custom",
+                    "name": "1",
+                    "boundingRectangle": "14,106,621,30"
+                  },
+                  "image": {
+                    "imgPath": "1.png"
+                  },
+                  "children": [
+                    {
+                      "ntype": "uia",
+                      "nname": "11",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Header",
+                        "name": "1"
+                      },
+                      "cachedProperties": {
+                        "type": "Header",
+                        "name": "1",
+                        "boundingRectangle": "14,106,22,30"
+                      },
+                      "image": {
+                        "imgPath": "11.png"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "Item",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Custom",
+                        "name": "Item"
+                      },
+                      "cachedProperties": {
+                        "type": "Custom",
+                        "name": "Item",
+                        "boundingRectangle": "36,106,99,29"
+                      },
+                      "image": {
+                        "imgPath": "Item.png"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "Date",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Custom",
+                        "name": "Date"
+                      },
+                      "cachedProperties": {
+                        "type": "Custom",
+                        "name": "Date",
+                        "boundingRectangle": "136,106,99,29"
+                      },
+                      "image": {
+                        "imgPath": "Date.png"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "Price",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Custom",
+                        "name": "Price"
+                      },
+                      "cachedProperties": {
+                        "type": "Custom",
+                        "name": "Price",
+                        "boundingRectangle": "236,106,99,29"
+                      },
+                      "image": {
+                        "imgPath": "Price.png"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "Currency",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Custom",
+                        "name": "Currency"
+                      },
+                      "cachedProperties": {
+                        "type": "Custom",
+                        "name": "Currency",
+                        "boundingRectangle": "336,106,99,29"
+                      },
+                      "image": {
+                        "imgPath": "Currency.png"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "Ex. Rate",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Custom",
+                        "name": "Ex. Rate"
+                      },
+                      "cachedProperties": {
+                        "type": "Custom",
+                        "name": "Ex. Rate",
+                        "boundingRectangle": "436,106,99,29"
+                      },
+                      "image": {
+                        "imgPath": "Ex. Rate.png"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "NOK",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Custom",
+                        "name": "NOK"
+                      },
+                      "cachedProperties": {
+                        "type": "Custom",
+                        "name": "NOK",
+                        "boundingRectangle": "536,106,99,29"
+                      },
+                      "image": {
+                        "imgPath": "NOK.png"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "ntype": "uia",
+                  "nname": "2",
+                  "description": null,
+                  "identifyProperties": {
+                    "type": "Custom",
+                    "name": "2"
+                  },
+                  "cachedProperties": {
+                    "type": "Custom",
+                    "name": "2",
+                    "boundingRectangle": "14,136,621,30"
+                  },
+                  "image": {
+                    "imgPath": "2.png"
+                  }
+                },
+                {
+                  "ntype": "uia",
+                  "nname": "3",
+                  "description": null,
+                  "identifyProperties": {
+                    "type": "Custom",
+                    "name": "3"
+                  },
+                  "cachedProperties": {
+                    "type": "Custom",
+                    "name": "3",
+                    "boundingRectangle": "14,166,621,30"
+                  },
+                  "image": {
+                    "imgPath": "3.png"
+                  }
+                },
+                {
+                  "ntype": "uia",
+                  "nname": "4",
+                  "description": null,
+                  "identifyProperties": {
+                    "type": "Custom",
+                    "name": "4"
+                  },
+                  "cachedProperties": {
+                    "type": "Custom",
+                    "name": "4",
+                    "boundingRectangle": "14,196,621,30"
+                  },
+                  "image": {
+                    "imgPath": "4.png"
+                  }
+                },
+                {
+                  "ntype": "uia",
+                  "nname": "5",
+                  "description": null,
+                  "identifyProperties": {
+                    "type": "Custom",
+                    "name": "5"
+                  },
+                  "cachedProperties": {
+                    "type": "Custom",
+                    "name": "5",
+                    "boundingRectangle": "14,226,621,30"
+                  },
+                  "image": {
+                    "imgPath": "5.png"
+                  }
+                },
+                {
+                  "ntype": "uia",
+                  "nname": "6",
+                  "description": null,
+                  "identifyProperties": {
+                    "type": "Custom",
+                    "name": "6"
+                  },
+                  "cachedProperties": {
+                    "type": "Custom",
+                    "name": "6",
+                    "boundingRectangle": "14,256,621,30"
+                  },
+                  "image": {
+                    "imgPath": "6.png"
+                  }
+                },
+                {
+                  "ntype": "uia",
+                  "nname": "7",
+                  "description": null,
+                  "identifyProperties": {
+                    "type": "Custom",
+                    "name": "7"
+                  },
+                  "cachedProperties": {
+                    "type": "Custom",
+                    "name": "7",
+                    "boundingRectangle": "14,286,621,30"
+                  },
+                  "image": {
+                    "imgPath": "7.png"
+                  }
+                },
+                {
+                  "ntype": "uia",
+                  "nname": "8",
+                  "description": null,
+                  "identifyProperties": {
+                    "type": "Custom",
+                    "name": "8"
+                  },
+                  "cachedProperties": {
+                    "type": "Custom",
+                    "name": "8",
+                    "boundingRectangle": "14,316,621,30"
+                  },
+                  "image": {
+                    "imgPath": "8.png"
+                  }
+                },
+                {
+                  "ntype": "uia",
+                  "nname": "9",
+                  "description": null,
+                  "identifyProperties": {
+                    "type": "Custom",
+                    "name": "9"
+                  },
+                  "cachedProperties": {
+                    "type": "Custom",
+                    "name": "9",
+                    "boundingRectangle": "14,346,621,30"
+                  },
+                  "image": {
+                    "imgPath": "9.png"
+                  }
+                },
+                {
+                  "ntype": "uia",
+                  "nname": "10",
+                  "description": null,
+                  "identifyProperties": {
+                    "type": "Custom",
+                    "name": "10"
+                  },
+                  "cachedProperties": {
+                    "type": "Custom",
+                    "name": "10",
+                    "boundingRectangle": "14,376,621,30"
+                  },
+                  "image": {
+                    "imgPath": "10.png"
+                  },
+                  "children": [
+                    {
+                      "ntype": "uia",
+                      "nname": "101",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Header",
+                        "name": "10"
+                      },
+                      "cachedProperties": {
+                        "type": "Header",
+                        "name": "10",
+                        "boundingRectangle": "14,376,22,30"
+                      },
+                      "image": {
+                        "imgPath": "101.png"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "Total:",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Custom",
+                        "name": "Total:"
+                      },
+                      "cachedProperties": {
+                        "type": "Custom",
+                        "name": "Total:",
+                        "boundingRectangle": "36,376,99,29"
+                      },
+                      "image": {
+                        "imgPath": "a891e1c9-efcd-4554-9629-4204e58ff44b.png"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "Custom2",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Custom"
+                      },
+                      "cachedProperties": {
+                        "type": "Custom",
+                        "boundingRectangle": "136,376,99,29"
+                      },
+                      "image": {
+                        "imgPath": "Custom1.png"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "21883",
+                      "description": null,
+                      "identifyProperties": {
+                        "type": "Custom",
+                        "name": "21883"
+                      },
+                      "cachedProperties": {
+                        "type": "Custom",
+                        "name": "21883",
+                        "boundingRectangle": "536,376,99,29"
+                      },
+                      "image": {
+                        "imgPath": "21883.png"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

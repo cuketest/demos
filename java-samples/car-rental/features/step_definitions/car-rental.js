@@ -34,6 +34,15 @@ module.exports = class CarRental {
     }
     // "选择地区{string}"
     async selectLocation(location, pickOrReturn) {
+        const model = this.model;
+        if(location == "New York"){
+            await model.getGeneric("scroll bar").click(0, 150, 1);
+            await model.getGeneric("scroll bar").click(0, 150, 1);
+            await model.getGeneric("scroll bar").click(0, 150, 1);
+            await model.getJLabel("New York").click(0, 0, 1);
+            await model.getJCheckBox("Return car at the same locatio").toggleCheck();
+            return ;
+        }
         if(pickOrReturn) 
             this.pickOrReturn = pickOrReturn;
         let locationList = await this.getLocationList();
@@ -95,14 +104,11 @@ module.exports = class CarRental {
         console.log("当前选中的汽车库存为:", remain)
         let charge = await this.model.getJEdit("Car charge per day").value();
         console.log("当前选中的汽车每天租金为:", charge);
-        // let imageCompareResult = await Image.imageEqual(actualCarImage, expectedCarImage);
-        // assert.ok(imageCompareResult, "选中了错误的车辆");
         return actualCarImage;
     }
     // "启动CarRental应用"
     static async launcher(path) {
         this.pid = child_process.spawn("java", ["-jar", path, "&"], { detached: true, shell: false });
-    
     }
     // "关闭CarRental应用"
     async closeByDefault() {

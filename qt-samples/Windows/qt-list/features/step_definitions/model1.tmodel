@@ -1,0 +1,198 @@
+﻿{
+  "ntype": "app",
+  "process": null,
+  "controls": [
+    {
+      "ntype": "uia",
+      "nname": "Window",
+      "description": "",
+      "identifyProperties": {
+        "type": "Window",
+        "className": "QWidget",
+        "title": "Fetch More Example"
+      },
+      "cachedProperties": {
+        "type": "Window",
+        "className": "QWidget",
+        "title": "Fetch More Example",
+        "boundingRectangle": "305,165,346,515"
+      },
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "Custom",
+          "description": "",
+          "identifyProperties": {
+            "type": "Custom"
+          },
+          "cachedProperties": {
+            "type": "Custom",
+            "boundingRectangle": "332,260,292,192"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "List",
+              "description": "",
+              "identifyProperties": {
+                "type": "List"
+              },
+              "cachedProperties": {
+                "type": "List",
+                "boundingRectangle": "332,260,266,192"
+              },
+              "children": [
+                {
+                  "ntype": "uia",
+                  "nname": "..",
+                  "description": "",
+                  "identifyProperties": {
+                    "type": "ListItem",
+                    "name": ".."
+                  },
+                  "cachedProperties": {
+                    "type": "ListItem",
+                    "name": "..",
+                    "boundingRectangle": "153,273,262,26"
+                  }
+                },
+                {
+                  "ntype": "uia",
+                  "nname": ".",
+                  "description": "",
+                  "identifyProperties": {
+                    "type": "ListItem",
+                    "name": "."
+                  },
+                  "cachedProperties": {
+                    "type": "ListItem",
+                    "name": ".",
+                    "boundingRectangle": "244,402,262,26"
+                  }
+                }
+              ]
+            },
+            {
+              "ntype": "uia",
+              "nname": "Custom1",
+              "description": "",
+              "identifyProperties": {
+                "type": "Custom"
+              },
+              "cachedProperties": {
+                "type": "Custom",
+                "boundingRectangle": "771,421,26,188",
+                "index": "0"
+              },
+              "children": [
+                {
+                  "ntype": "uia",
+                  "nname": "ScrollBar",
+                  "description": "",
+                  "identifyProperties": {
+                    "type": "ScrollBar"
+                  },
+                  "cachedProperties": {
+                    "type": "ScrollBar",
+                    "boundingRectangle": "771,421,26,188"
+                  },
+                  "children": [
+                    {
+                      "ntype": "uia",
+                      "nname": "Line up",
+                      "description": "",
+                      "identifyProperties": {
+                        "type": "Button",
+                        "name": "Line up"
+                      },
+                      "cachedProperties": {
+                        "type": "Button",
+                        "name": "Line up",
+                        "boundingRectangle": "771,421,26,26"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "Page up",
+                      "description": "",
+                      "identifyProperties": {
+                        "type": "Button",
+                        "name": "Page up"
+                      },
+                      "cachedProperties": {
+                        "type": "Button",
+                        "name": "Page up",
+                        "boundingRectangle": "0,0,0,0"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "Position",
+                      "description": "",
+                      "identifyProperties": {
+                        "type": "Thumb",
+                        "name": "Position"
+                      },
+                      "cachedProperties": {
+                        "type": "Thumb",
+                        "name": "Position",
+                        "boundingRectangle": "771,447,26,27"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "Page down",
+                      "description": "",
+                      "identifyProperties": {
+                        "type": "Button",
+                        "name": "Page down"
+                      },
+                      "cachedProperties": {
+                        "type": "Button",
+                        "name": "Page down",
+                        "boundingRectangle": "771,474,26,109"
+                      }
+                    },
+                    {
+                      "ntype": "uia",
+                      "nname": "Line down",
+                      "description": "",
+                      "identifyProperties": {
+                        "type": "Button",
+                        "name": "Line down"
+                      },
+                      "cachedProperties": {
+                        "type": "Button",
+                        "name": "Line down",
+                        "boundingRectangle": "771,583,26,26"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "Directory:",
+          "description": "",
+          "identifyProperties": {
+            "type": "Edit",
+            "name": "Directory:"
+          },
+          "cachedProperties": {
+            "type": "Edit",
+            "name": "Directory:",
+            "accessKey": "Alt+D",
+            "boundingRectangle": "327,304,193,25"
+          },
+          "image": {
+            "imgPath": "8e73a0e5-e783-434d-a579-d94adc9d9452.png",
+            "rect": "10,10,203,35"
+          }
+        }
+      ]
+    }
+  ]
+}

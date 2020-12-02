@@ -1,0 +1,131 @@
+﻿{
+  "ntype": "app",
+  "process": null,
+  "controls": [
+    {
+      "ntype": "uia",
+      "nname": "Window",
+      "description": "",
+      "identifyProperties": {
+        "type": "Window",
+        "className": "QWidget",
+        "title": "Dir View"
+      },
+      "cachedProperties": {
+        "type": "Window",
+        "className": "QWidget",
+        "title": "Dir View",
+        "boundingRectangle": "157,293,662,536"
+      },
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "ScrollBar",
+          "description": "",
+          "identifyProperties": {
+            "type": "ScrollBar"
+          },
+          "cachedProperties": {
+            "type": "ScrollBar",
+            "boundingRectangle": "781,339,26,478"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "Page down",
+              "description": "",
+              "identifyProperties": {
+                "type": "Button",
+                "name": "Page down"
+              },
+              "cachedProperties": {
+                "type": "Button",
+                "name": "Page down",
+                "boundingRectangle": "683,587,26,183"
+              },
+              "image": {
+                "imgPath": "Page down.png",
+                "rect": "10,10,36,193"
+              }
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "Tree",
+          "description": "",
+          "identifyProperties": {
+            "type": "Tree",
+            "childLocator": ""
+          },
+          "cachedProperties": {
+            "type": "Tree",
+            "boundingRectangle": "70,317,640,480"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "Custom",
+              "description": "",
+              "identifyProperties": {
+                "type": "Custom"
+              },
+              "cachedProperties": {
+                "type": "Custom",
+                "boundingRectangle": "70,317,638,37"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "D:",
+              "description": "",
+              "identifyProperties": {
+                "type": "TreeItem",
+                "name": "D:"
+              },
+              "cachedProperties": {
+                "type": "TreeItem",
+                "name": "D:",
+                "boundingRectangle": "91,355,618,26"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "Windows  (C:)",
+              "description": "",
+              "identifyProperties": {
+                "type": "TreeItem",
+                "name": "Windows  (C:)",
+                "levelToParent": "1"
+              },
+              "cachedProperties": {
+                "type": "TreeItem",
+                "name": "Windows  (C:)",
+                "boundingRectangle": "91,381,618,26"
+              },
+              "image": {
+                "imgPath": "c840d42a-375e-4b1d-a7f7-018d3ce99984.png",
+                "rect": "10,10,628,36"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "Documents",
+              "description": "",
+              "identifyProperties": {
+                "type": "TreeItem",
+                "name": "Documents",
+                "levelToParent": "2"
+              },
+              "cachedProperties": {
+                "type": "TreeItem",
+                "name": "Documents",
+                "boundingRectangle": "161,549,532,26"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
