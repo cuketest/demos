@@ -16,7 +16,7 @@ async function query(queryString, queryData=[], conn){
         conn = _connect();
     try{
         let res = null;
-        if (!queryData){
+        if (queryData.length === 0){
             res = await mysql.query(conn,queryString);
         }
         else{
@@ -42,7 +42,6 @@ async function createTable(autoRemove=false){
         }
         catch(err){
             console.warn("The table was removed.");
-            // console.log(err)
         }
     }
 

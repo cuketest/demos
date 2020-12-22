@@ -39,192 +39,23 @@
               },
               "cachedProperties": {
                 "type": "Table",
-                "boundingRectangle": "60,395,614,306"
+                "boundingRectangle": "640,396,640,344"
               },
               "children": [
                 {
                   "ntype": "uia",
-                  "nname": "1",
+                  "nname": "4",
                   "description": null,
                   "identifyProperties": {
                     "type": "Custom",
-                    "name": "1"
+                    "name": "4"
                   },
                   "cachedProperties": {
                     "type": "Custom",
-                    "name": "1",
-                    "boundingRectangle": "61,433,633,30"
+                    "name": "4",
+                    "boundingRectangle": "8,338,627,30"
                   },
                   "children": [
-                    {
-                      "ntype": "uia",
-                      "nname": "11",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "Header",
-                        "name": "1"
-                      },
-                      "cachedProperties": {
-                        "type": "Header",
-                        "name": "1",
-                        "boundingRectangle": "61,433,34,30"
-                      },
-                      "image": {
-                        "imgPath": "1.png"
-                      }
-                    },
-                    {
-                      "ntype": "uia",
-                      "nname": "Item",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "DataItem",
-                        "name": "Item"
-                      },
-                      "cachedProperties": {
-                        "type": "DataItem",
-                        "name": "Item",
-                        "boundingRectangle": "95,433,99,29"
-                      },
-                      "image": {
-                        "imgPath": "Item.png"
-                      }
-                    },
-                    {
-                      "ntype": "uia",
-                      "nname": "Date",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "DataItem",
-                        "name": "Date"
-                      },
-                      "cachedProperties": {
-                        "type": "DataItem",
-                        "name": "Date",
-                        "boundingRectangle": "195,433,99,29"
-                      },
-                      "image": {
-                        "imgPath": "Date.png"
-                      }
-                    },
-                    {
-                      "ntype": "uia",
-                      "nname": "Price",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "DataItem",
-                        "name": "Price"
-                      },
-                      "cachedProperties": {
-                        "type": "DataItem",
-                        "name": "Price",
-                        "boundingRectangle": "295,433,99,29"
-                      },
-                      "image": {
-                        "imgPath": "Price.png"
-                      }
-                    },
-                    {
-                      "ntype": "uia",
-                      "nname": "Currency",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "DataItem",
-                        "name": "Currency"
-                      },
-                      "cachedProperties": {
-                        "type": "DataItem",
-                        "name": "Currency",
-                        "boundingRectangle": "395,433,99,29"
-                      },
-                      "image": {
-                        "imgPath": "Currency.png"
-                      }
-                    },
-                    {
-                      "ntype": "uia",
-                      "nname": "Ex. Rate",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "DataItem",
-                        "name": "Ex. Rate"
-                      },
-                      "cachedProperties": {
-                        "type": "DataItem",
-                        "name": "Ex. Rate",
-                        "boundingRectangle": "495,433,99,29"
-                      },
-                      "image": {
-                        "imgPath": "Ex. Rate.png"
-                      }
-                    },
-                    {
-                      "ntype": "uia",
-                      "nname": "NOK",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "DataItem",
-                        "name": "NOK"
-                      },
-                      "cachedProperties": {
-                        "type": "DataItem",
-                        "name": "NOK",
-                        "boundingRectangle": "595,433,99,29"
-                      },
-                      "image": {
-                        "imgPath": "NOK.png"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "ntype": "uia",
-                  "nname": "2",
-                  "description": null,
-                  "identifyProperties": {
-                    "type": "Custom",
-                    "name": "2"
-                  },
-                  "cachedProperties": {
-                    "type": "Custom",
-                    "name": "2",
-                    "boundingRectangle": "61,463,633,30"
-                  },
-                  "children": [
-                    {
-                      "ntype": "uia",
-                      "nname": "21",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "Header",
-                        "name": "2"
-                      },
-                      "cachedProperties": {
-                        "type": "Header",
-                        "name": "2",
-                        "boundingRectangle": "61,463,34,30"
-                      },
-                      "image": {
-                        "imgPath": "2.png"
-                      }
-                    },
-                    {
-                      "ntype": "uia",
-                      "nname": "AirportBus",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "DataItem",
-                        "name": "AirportBus"
-                      },
-                      "cachedProperties": {
-                        "type": "DataItem",
-                        "name": "AirportBus",
-                        "boundingRectangle": "95,463,99,29"
-                      },
-                      "image": {
-                        "imgPath": "AirportBus.png"
-                      }
-                    },
                     {
                       "ntype": "uia",
                       "nname": "15/6/2006",
@@ -236,197 +67,46 @@
                       "cachedProperties": {
                         "type": "DataItem",
                         "name": "15/6/2006",
-                        "boundingRectangle": "195,463,99,29"
+                        "boundingRectangle": "136,338,99,29"
                       },
                       "image": {
-                        "imgPath": "8fa5d7a0-5e95-40c0-8766-b66c0233b4b3.png"
-                      }
-                    },
-                    {
-                      "ntype": "uia",
-                      "nname": "150",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "DataItem",
-                        "name": "150"
-                      },
-                      "cachedProperties": {
-                        "type": "DataItem",
-                        "name": "150",
-                        "boundingRectangle": "295,463,99,29"
-                      },
-                      "image": {
-                        "imgPath": "150.png"
-                      }
-                    },
-                    {
-                      "ntype": "uia",
-                      "nname": "NOK1",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "DataItem",
-                        "name": "NOK"
-                      },
-                      "cachedProperties": {
-                        "type": "DataItem",
-                        "name": "NOK",
-                        "boundingRectangle": "395,463,99,29"
-                      },
-                      "image": {
-                        "imgPath": "NOK1.png"
-                      }
-                    },
-                    {
-                      "ntype": "uia",
-                      "nname": "12",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "DataItem",
-                        "name": "1"
-                      },
-                      "cachedProperties": {
-                        "type": "DataItem",
-                        "name": "1",
-                        "boundingRectangle": "495,463,99,29"
-                      },
-                      "image": {
-                        "imgPath": "11.png"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "ntype": "uia",
-                  "nname": "Custom1",
-                  "description": null,
-                  "identifyProperties": {
-                    "type": "Custom"
-                  },
-                  "cachedProperties": {
-                    "type": "Custom",
-                    "boundingRectangle": "60,395,578,37"
-                  },
-                  "children": [
-                    {
-                      "ntype": "uia",
-                      "nname": "Header",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "Header"
-                      },
-                      "cachedProperties": {
-                        "type": "Header",
-                        "boundingRectangle": "60,395,34,37"
-                      },
-                      "image": {
-                        "imgPath": "Header.png"
-                      }
-                    },
-                    {
-                      "ntype": "uia",
-                      "nname": "A",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "Header",
-                        "name": "A"
-                      },
-                      "cachedProperties": {
-                        "type": "Header",
-                        "name": "A",
-                        "boundingRectangle": "95,396,100,37"
-                      },
-                      "image": {
-                        "imgPath": "A.png"
-                      }
-                    },
-                    {
-                      "ntype": "uia",
-                      "nname": "B",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "Header",
-                        "name": "B"
-                      },
-                      "cachedProperties": {
-                        "type": "Header",
-                        "name": "B",
-                        "boundingRectangle": "195,396,100,37"
-                      },
-                      "image": {
-                        "imgPath": "B.png"
-                      }
-                    },
-                    {
-                      "ntype": "uia",
-                      "nname": "C",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "Header",
-                        "name": "C"
-                      },
-                      "cachedProperties": {
-                        "type": "Header",
-                        "name": "C",
-                        "boundingRectangle": "295,396,100,37"
-                      },
-                      "image": {
-                        "imgPath": "C.png"
-                      }
-                    },
-                    {
-                      "ntype": "uia",
-                      "nname": "D",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "Header",
-                        "name": "D"
-                      },
-                      "cachedProperties": {
-                        "type": "Header",
-                        "name": "D",
-                        "boundingRectangle": "395,396,100,37"
-                      },
-                      "image": {
-                        "imgPath": "D.png"
-                      }
-                    },
-                    {
-                      "ntype": "uia",
-                      "nname": "E",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "Header",
-                        "name": "E"
-                      },
-                      "cachedProperties": {
-                        "type": "Header",
-                        "name": "E",
-                        "boundingRectangle": "495,396,100,37"
-                      },
-                      "image": {
-                        "imgPath": "E.png"
-                      }
-                    },
-                    {
-                      "ntype": "uia",
-                      "nname": "F",
-                      "description": null,
-                      "identifyProperties": {
-                        "type": "Header",
-                        "name": "F"
-                      },
-                      "cachedProperties": {
-                        "type": "Header",
-                        "name": "F",
-                        "boundingRectangle": "595,396,100,37"
-                      },
-                      "image": {
-                        "imgPath": "F.png"
+                        "imgPath": "06f3235a-c086-4f11-aeb2-27bf73f78263.png",
+                        "rect": "10,10,99,29"
                       }
                     }
                   ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "ToolBar",
+          "description": null,
+          "identifyProperties": {
+            "type": "ToolBar"
+          },
+          "cachedProperties": {
+            "type": "ToolBar",
+            "boundingRectangle": "7,193,640,25"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "Edit",
+              "description": null,
+              "identifyProperties": {
+                "type": "Edit"
+              },
+              "cachedProperties": {
+                "type": "Edit",
+                "boundingRectangle": "99,195,546,21"
+              },
+              "image": {
+                "imgPath": "Edit.png",
+                "rect": "10,10,546,21"
+              }
             }
           ]
         }

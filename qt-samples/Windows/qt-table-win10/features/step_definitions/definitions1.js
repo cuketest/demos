@@ -1,29 +1,25 @@
-const assert = require('assert');
 const xlsx = require('leanpro.xlsx');
 const { Given, When, Then } = require('cucumber');
 const { AppModel, Auto } = require('leanpro.win');
 const { Util } = require('leanpro.common');
 const path = require('path');
-const table = require('../support/table');
 const db = require('../support/db');
 let model = AppModel.loadModel(__dirname + "/model1.tmodel");
 
 //// 你的步骤定义 /////
 Given("输出所有单元格数据", async function () {
     let tableModel = model.getTable("Table");
-    let cells = await table.getAllCells(tableModel);
-    let cellsValue = await Promise.all(cells.map(async (cell, index) => {
-        let cellValue = await cell.name();
-        return cellValue;
-    }));
-    this.attach(JSON.stringify(cellsValue));
+    let rowCount = await tableModel.rowCount();
+    for(let i = 0; i < rowCount; i++){
+        let rowData = await tableModel.rowData(i);
+        this.attach(JSON.stringify(rowData));  // 输出的数据显示在报告中，请使用“运行项目”来生成报告
+    }
 });
 
-Given("输出{int}行{int}列的数据", async function (row, column) {
+Given("输出{int}行{int}列的单元格数据", async function (row, column) {
     let tableModel = model.getTable("Table");
-    let cell = table.getTargetCell(tableModel,row, column);
-    let cellValue = await cell.name();
-    this.attach(cellValue);
+    let cell = await tableModel.cellValue(row, column);
+    this.attach(cell);
 });
 
 When("读取{string}文件中的数据", async function (fileName) {
@@ -39,33 +35,30 @@ When("读取{string}文件中的数据", async function (fileName) {
 Then("写入到spreadsheet中", async function () {
     let data = this.xlsxData;
     let tableModel = model.getTable("Table");
-    for(let row in data){
-        let rowData = Object.values(data[row]); // 将行数据的对象转换为数组
-        for (let col in rowData) {
-            let cellData = rowData[col];
-            let cell = table.getTargetCell(tableModel, row, col)
-            let cellValue = await cell.name();
-            if (typeof (cellData) !== "String") {
-                cellData = String(cellData);
-            }
-            cellData = cellData.replace(new RegExp(/\//g), ''); // 由于表格限制需要对含斜杠字符串进行处理
-            await table.sendToCell(cell, cellData);
+    let headers = await tableModel.columnHeaders();
+    for (let row = 1; row < data.length; row++){ // 第0行不是数据，因此跳过
+        let rowData = data[row];
+        for(let header in rowData){
+            let cellData = rowData[header];
+            let cell = await tableModel.select(row, header);
+            await cell.click();
+            await cell.set(cellData);
+            await cell.pressKeys('~');
+            let actual = await cell.value();
+            assert.strictEqual(actual, cellData);
+            console.log(`成功在第${row}行${header}列写入${cellData}`);
         }
     }
-
 });
-
 When("读取spreadsheet中的第{int}行数据", async function (targetRow) {
     let tableModel = model.getTable("Table");
-    let cells = table.getTargetRow(tableModel, targetRow);
-    let cellsValue = await Promise.all(cells.map(async (cell) => {
-        return await cell.name();
-    }))
-    this.cells = cellsValue;
+    let rowdata = await tableModel.rowData(targetRow);
+    this.cells = rowdata;
 });
 
 Then("将数据写入到MySQL数据库中", async function () {
     let cellData = this.cells;
+    console.log(cellData);
     await db.createTable(true);
     let res = await db.query(`INSERT INTO qt.spreadsheet
             (Item,
