@@ -44,69 +44,41 @@
               "children": [
                 {
                   "ntype": "uia",
-                  "nname": "4",
+                  "nname": "6",
                   "description": null,
                   "identifyProperties": {
                     "type": "Custom",
-                    "name": "4"
+                    "name": "6",
+                    "objectKey": "TableRow"
                   },
                   "cachedProperties": {
                     "type": "Custom",
-                    "name": "4",
-                    "boundingRectangle": "8,338,627,30"
+                    "name": "6",
+                    "boundingRectangle": "641,576,627,30",
+                    "objectKey": "TableRow"
                   },
                   "children": [
                     {
                       "ntype": "uia",
-                      "nname": "15/6/2006",
+                      "nname": "Taxi",
                       "description": null,
                       "identifyProperties": {
                         "type": "DataItem",
-                        "name": "15/6/2006"
+                        "name": "Taxi"
                       },
                       "cachedProperties": {
                         "type": "DataItem",
-                        "name": "15/6/2006",
-                        "boundingRectangle": "136,338,99,29"
+                        "name": "Taxi",
+                        "boundingRectangle": "669,576,99,29"
                       },
                       "image": {
-                        "imgPath": "06f3235a-c086-4f11-aeb2-27bf73f78263.png",
+                        "imgPath": "Taxi.png",
                         "rect": "10,10,99,29"
                       }
                     }
                   ]
                 }
               ]
-            }
-          ]
-        },
-        {
-          "ntype": "uia",
-          "nname": "ToolBar",
-          "description": null,
-          "identifyProperties": {
-            "type": "ToolBar"
-          },
-          "cachedProperties": {
-            "type": "ToolBar",
-            "boundingRectangle": "7,193,640,25"
-          },
-          "children": [
-            {
-              "ntype": "uia",
-              "nname": "Edit",
-              "description": null,
-              "identifyProperties": {
-                "type": "Edit"
-              },
-              "cachedProperties": {
-                "type": "Edit",
-                "boundingRectangle": "99,195,546,21"
-              },
-              "image": {
-                "imgPath": "Edit.png",
-                "rect": "10,10,546,21"
-              }
             }
           ]
         }

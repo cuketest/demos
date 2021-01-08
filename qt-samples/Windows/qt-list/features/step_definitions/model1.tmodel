@@ -5,7 +5,7 @@
     {
       "ntype": "uia",
       "nname": "Window",
-      "description": "",
+      "description": null,
       "identifyProperties": {
         "type": "Window",
         "className": "QWidget",
@@ -21,7 +21,7 @@
         {
           "ntype": "uia",
           "nname": "Custom",
-          "description": "",
+          "description": null,
           "identifyProperties": {
             "type": "Custom"
           },
@@ -33,7 +33,7 @@
             {
               "ntype": "uia",
               "nname": "List",
-              "description": "",
+              "description": null,
               "identifyProperties": {
                 "type": "List"
               },
@@ -45,7 +45,7 @@
                 {
                   "ntype": "uia",
                   "nname": "..",
-                  "description": "",
+                  "description": null,
                   "identifyProperties": {
                     "type": "ListItem",
                     "name": ".."
@@ -59,7 +59,7 @@
                 {
                   "ntype": "uia",
                   "nname": ".",
-                  "description": "",
+                  "description": null,
                   "identifyProperties": {
                     "type": "ListItem",
                     "name": "."
@@ -75,7 +75,7 @@
             {
               "ntype": "uia",
               "nname": "Custom1",
-              "description": "",
+              "description": null,
               "identifyProperties": {
                 "type": "Custom"
               },
@@ -88,7 +88,7 @@
                 {
                   "ntype": "uia",
                   "nname": "ScrollBar",
-                  "description": "",
+                  "description": null,
                   "identifyProperties": {
                     "type": "ScrollBar"
                   },
@@ -100,7 +100,7 @@
                     {
                       "ntype": "uia",
                       "nname": "Line up",
-                      "description": "",
+                      "description": null,
                       "identifyProperties": {
                         "type": "Button",
                         "name": "Line up"
@@ -114,7 +114,7 @@
                     {
                       "ntype": "uia",
                       "nname": "Page up",
-                      "description": "",
+                      "description": null,
                       "identifyProperties": {
                         "type": "Button",
                         "name": "Page up"
@@ -128,7 +128,7 @@
                     {
                       "ntype": "uia",
                       "nname": "Position",
-                      "description": "",
+                      "description": null,
                       "identifyProperties": {
                         "type": "Thumb",
                         "name": "Position"
@@ -142,7 +142,7 @@
                     {
                       "ntype": "uia",
                       "nname": "Page down",
-                      "description": "",
+                      "description": null,
                       "identifyProperties": {
                         "type": "Button",
                         "name": "Page down"
@@ -156,7 +156,7 @@
                     {
                       "ntype": "uia",
                       "nname": "Line down",
-                      "description": "",
+                      "description": null,
                       "identifyProperties": {
                         "type": "Button",
                         "name": "Line down"
@@ -176,7 +176,7 @@
         {
           "ntype": "uia",
           "nname": "Directory:",
-          "description": "",
+          "description": null,
           "identifyProperties": {
             "type": "Edit",
             "name": "Directory:"

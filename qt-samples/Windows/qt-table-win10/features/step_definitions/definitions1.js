@@ -1,10 +1,22 @@
 const xlsx = require('leanpro.xlsx');
 const { Given, When, Then } = require('cucumber');
+const { AfterAll, BeforeAll} = require('cucumber');
 const { AppModel, Auto } = require('leanpro.win');
 const { Util } = require('leanpro.common');
+const cuketest = require('cuketest');
 const path = require('path');
 const db = require('../support/db');
+const assert = require('assert');
 let model = AppModel.loadModel(__dirname + "/model1.tmodel");
+
+BeforeAll(async function () {
+    Util.launchProcess(__dirname + "\\" + "..\\samples\\spreadsheet.exe");
+    await Util.delay(1000);
+    cuketest.minimize();
+})
+AfterAll(async function () {
+    cuketest.restore();
+})
 
 //// 你的步骤定义 /////
 Given("输出所有单元格数据", async function () {
