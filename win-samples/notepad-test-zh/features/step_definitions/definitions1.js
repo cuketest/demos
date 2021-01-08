@@ -92,7 +92,8 @@ Then("字体应该设置成功", async function () {
     let expectedImage = await Image.fromData(await model.getDocument("文本编辑器").modelImage());
     let actualImage = await Image.fromData(screenshot);
     let result = await Image.imageCompare(expectedImage, actualImage, {
-        pixelPercentTolerance: 0.1
+        pixelPercentTolerance: 0.1,
+        ignoreExtraPart: true
     });
     this.attach(await result.diffImage.getData(), 'image/png');
     assert.strictEqual(result.equal, true);
