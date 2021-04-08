@@ -58,44 +58,6 @@
                   "children": [
                     {
                       "ntype": "qt",
-                      "nname": "77",
-                      "identifyProperties": {
-                        "type": "TableItem",
-                        "itemPath": "[[0,3]]",
-                        "text": "77"
-                      },
-                      "cachedProperties": {
-                        "itemPath": "[[0,3]]",
-                        "text": "77",
-                        "type": "TableItem",
-                        "boundingRectangle": "[545,275,99,29]"
-                      },
-                      "image": {
-                        "imgPath": "image",
-                        "rect": "545,275,99,29"
-                      }
-                    },
-                    {
-                      "ntype": "qt",
-                      "nname": "56",
-                      "identifyProperties": {
-                        "type": "TableItem",
-                        "itemPath": "[[7,3]]",
-                        "text": "56"
-                      },
-                      "cachedProperties": {
-                        "itemPath": "[[7,3]]",
-                        "text": "56",
-                        "type": "TableItem",
-                        "boundingRectangle": "[545,485,99,29]"
-                      },
-                      "image": {
-                        "imgPath": "image1.png",
-                        "rect": "545,485,99,29"
-                      }
-                    },
-                    {
-                      "ntype": "qt",
                       "nname": "HughesBill",
                       "identifyProperties": {
                         "type": "TableItem",
@@ -130,25 +92,6 @@
                       "image": {
                         "imgPath": "image3.png",
                         "rect": "587,485,99,29"
-                      }
-                    },
-                    {
-                      "ntype": "qt",
-                      "nname": "75",
-                      "identifyProperties": {
-                        "type": "TableItem",
-                        "itemPath": "[[25,3]]",
-                        "text": "75"
-                      },
-                      "cachedProperties": {
-                        "itemPath": "[[25,3]]",
-                        "text": "75",
-                        "type": "TableItem",
-                        "boundingRectangle": "[387,395,99,29]"
-                      },
-                      "image": {
-                        "imgPath": "image4.png",
-                        "rect": "387,395,99,29"
                       }
                     }
                   ]

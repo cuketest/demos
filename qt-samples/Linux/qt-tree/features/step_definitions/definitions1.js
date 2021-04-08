@@ -1,10 +1,26 @@
 const { Given, When, Then } = require('cucumber');
-const { QtModel } = require('leanpro.qt');
+const { Before, After, AfterAll, BeforeAll } = require('cucumber');
+const { QtModel,QtAuto } = require('leanpro.qt');
 const { Util } = require('leanpro.common');
+const cuketest = require('cuketest');
 const path = require("path");
 const assert = require('assert');
 let model = QtModel.loadModel(__dirname + "/model.tmodel");
 
+Before(async function (testCase) {
+    // await Util.delay(2000);
+})
+BeforeAll(async function () {
+    cuketest.minimize();
+    QtAuto.launchQtProcess("/usr/lib/cuketest/bin/dirview");
+})
+After(async function () {
+    await Util.delay(2000);
+})
+AfterAll(async function () {
+    cuketest.restore();
+    cuketest.maximize();
+})
 
 //// 你的步骤定义 /////
 // 将路径拆分成路径节点数组

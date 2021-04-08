@@ -6,6 +6,11 @@
     当读取"origin.xlsx"文件中的数据
     那么将数据写入到应用表格中
 
+  场景大纲: 从示例表中导入数据
+    假如将数据插入到第<row>行，数据为学号<id>，"<name>"学生，性别"<gender>"，成绩为<score>，父母为"<father>"与"<mother>"
+    例子: 
+      #data_source: support/testcase.csv
+
   场景: 从应用中导出数据到其它应用中
     当读取表格中全部数据
     那么将数据写入到xlsx文件"data.xlsx"中

@@ -90,6 +90,57 @@
           ]
         }
       ]
+    },
+    {
+      "ntype": "qt",
+      "nname": "dirview1",
+      "identifyProperties": {
+        "type": "Application",
+        "appName": "dirview"
+      },
+      "cachedProperties": {
+        "appName": "dirview",
+        "appPath": "/usr/lib/cuketest/bin/dirview",
+        "type": "Application"
+      },
+      "children": [
+        {
+          "ntype": "qt",
+          "nname": "Dir_View1",
+          "identifyProperties": {
+            "type": "Tree",
+            "className": "QTreeView",
+            "text": "Dir View"
+          },
+          "cachedProperties": {
+            "className": "QTreeView",
+            "text": "Dir View",
+            "type": "Tree",
+            "boundingRectangle": "[317,36,640,480]"
+          },
+          "children": [
+            {
+              "ntype": "qt",
+              "nname": "definitions1.js",
+              "identifyProperties": {
+                "type": "TreeItem",
+                "itemPath": "[0,13,0,8,5,1,1,2,2,1]",
+                "text": "definitions1.js"
+              },
+              "cachedProperties": {
+                "itemPath": "[0,13,0,8,5,1,1,2,2,1]",
+                "text": "definitions1.js",
+                "type": "TreeItem",
+                "boundingRectangle": "[519,316,182,18]"
+              },
+              "image": {
+                "imgPath": "image.png",
+                "rect": "519,316,182,18"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
