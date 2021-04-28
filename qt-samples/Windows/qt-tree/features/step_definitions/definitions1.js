@@ -1,10 +1,10 @@
 const { Given, When, Then } = require('cucumber');
 const { AppModel, Auto } = require('leanpro.win');
-let model = AppModel.loadModel(__dirname + "/model1.tmodel");
 const { Util } = require('leanpro.common');
 const assert = require('assert');
 const path = require("path");
 const { BeforeAll } = require('cucumber');
+let model = AppModel.loadModel(__dirname + "/qt5.tmodel");;
 BeforeAll(async function () {
     Util.launchProcess("dirview.exe");
     await Util.delay(1000);
@@ -30,13 +30,8 @@ Given("点击树中的{string}", async function (pathString) {
 Given("折叠与展开树中的{string}", async function (pathString) {
     let treepath = JSON.parse(pathString);
     console.log(treepath);
-    console.log(await model.getTree("Tree").showHeader(3))
+    await model.getTree("Tree").showHeader(3)
     await model.getTree("Tree").childCount(treepath);
-    await model.getTree("Tree").collapseAll(treepath);
-    
-    // await Util.delay(2000);
-    // console.log(await model.getTree("Tree").childCount([]));
-    // await model.getTree("Tree").expandTo(treepath);
 });
 
 Given("访问并选中{string}文件", async function (relativePath) {

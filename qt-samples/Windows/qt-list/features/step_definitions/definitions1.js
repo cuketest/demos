@@ -8,11 +8,7 @@ const path = require('path');
 let model = AppModel.loadModel(__dirname + "/model1.tmodel");
 let pid = 0;
 BeforeAll(async function () {
-    pid = await Util.launchProcess(path.join(
-        __dirname,
-        '..',
-        'fetchmore.exe'
-    ));
+    pid = await Util.launchProcess('./features/fetchmore.exe'); 
     await Util.delay(1000);
     cuketest.minimize();  // CukeTest最小化
 })
@@ -81,10 +77,15 @@ When("在搜索框中输入路径{string}", async function (path) {
     let searchBox = model.getEdit("Directory:");
     await searchBox.set(path);
     assert.equal(await searchBox.value(), path);
+    await Util.delay(1000);
+    
 });
 
 Then("判断搜索结果中是否存在目标项{string}",async function (itemName) {
     let targetItem = await model.getList('List').findItem(itemName);
     await targetItem.select();
+    let actual = await targetItem.value();
+
+    assert.strictEqual(actual, itemName);
     await Util.delay(3000);
 });

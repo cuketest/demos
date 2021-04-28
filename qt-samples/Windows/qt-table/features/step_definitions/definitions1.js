@@ -7,10 +7,15 @@ const cuketest = require('cuketest');
 const path = require('path');
 const db = require('../support/db');
 const assert = require('assert');
-let model = AppModel.loadModel(__dirname + "/model1.tmodel");
 
+const QT_VERSION = 5 // 如果需要测试Qt 4，可以改为4
+
+const MODELPATH = path.join(__dirname, `qt${QT_VERSION}.tmodel`);
+const APPPATH = path.join(__dirname, "..\\samples", `qt${QT_VERSION}`, "spreadsheet.exe");
+
+let model = AppModel.loadModel(MODELPATH);
 BeforeAll(async function () {
-    Util.launchProcess(__dirname + "\\" + "..\\samples\\spreadsheet.exe");
+    Util.launchProcess(APPPATH);
     await Util.delay(1000);
     cuketest.minimize();
 })
@@ -56,8 +61,10 @@ Then("写入到spreadsheet中", async function () {
             await cell.click();
             await cell.set(cellData);
             await cell.pressKeys('~');
+            await Util.delay(300);
             let actual = await cell.value();
-            assert.strictEqual(actual, cellData);
+            // let actual = await tableModel.cellValue(row,header);
+            assert.equal(actual, cellData);
             console.log(`成功在第${row}行${header}列写入${cellData}`);
         }
     }
@@ -69,23 +76,26 @@ When("读取spreadsheet中的第{int}行数据", async function (targetRow) {
 });
 
 Then("将数据写入到MySQL数据库中", async function () {
-    let cellData = this.cells;
-    console.log(cellData);
-    await db.createTable(true);
-    let res = await db.query(`INSERT INTO qt.spreadsheet
-            (Item,
-            Date,
-            Price,
-            Currency,
-            ExRate,
-            NOK)
-            VALUES
-            (?,?,?,?,?,?);`,
-        cellData);
+    this.attach("如果需要测试导出数据到MySQL数据库的功能，请去除本步骤脚本注释");
+
+    // let cellData = this.cells;
+    // console.log(cellData);
+    // await db.createTable(true);
+    // let res = await db.query(`INSERT INTO qt.spreadsheet
+    //         (Item,
+    //         Date,
+    //         Price,
+    //         Currency,
+    //         ExRate,
+    //         NOK)
+    //         VALUES
+    //         (?,?,?,?,?,?);`,
+    //     cellData);
 });
 
 Then("数据被成功写入数据库", async function () {
-    let res = await db.query(`SELECT * FROM qt . spreadsheet;`);
-    let arr = Object.values(res[0]);
-    assert.deepEqual(arr,this.cells,'首条数据不匹配');
+    this.attach("如果需要测试导出数据到MySQL数据库的功能，请去除本步骤脚本注释");
+    // let res = await db.query(`SELECT * FROM qt . spreadsheet;`);
+    // let arr = Object.values(res[0]);
+    // assert.deepEqual(arr,this.cells,'首条数据不匹配');
 });
