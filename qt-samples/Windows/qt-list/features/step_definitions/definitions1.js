@@ -9,13 +9,18 @@ let model = AppModel.loadModel(__dirname + "/model1.tmodel");
 let pid = 0;
 BeforeAll(async function () {
     pid = await Util.launchProcess('./features/fetchmore.exe'); 
-    await Util.delay(1000);
+    if (await model.getWindow("Window").exists(5)){
+        await model.getWindow("Window").restore();
+    }  
+    else{
+        throw new Error("Testing application was not launched.")
+    }
     cuketest.minimize();  // CukeTest最小化
 })
 
 AfterAll(async function () {
     // await Util.stopProcess(pid);  // 在调试时可以注释这一行观察结束后的现象
-    cuketest.restore();
+    // cuketest.restore();
 })
 
 //// 你的步骤定义 /////

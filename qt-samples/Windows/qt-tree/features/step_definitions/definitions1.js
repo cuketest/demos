@@ -3,11 +3,23 @@ const { AppModel, Auto } = require('leanpro.win');
 const { Util } = require('leanpro.common');
 const assert = require('assert');
 const path = require("path");
-const { BeforeAll } = require('cucumber');
-let model = AppModel.loadModel(__dirname + "/qt5.tmodel");;
+const { BeforeAll,AfterAll } = require('cucumber');
+const cuketest = require('cuketest');
+let model = AppModel.loadModel(__dirname + "/qt5.tmodel");
+let pid;
 BeforeAll(async function () {
-    Util.launchProcess("dirview.exe");
-    await Util.delay(1000);
+    pid = Util.launchProcess("dirview.exe");
+    if (await model.getWindow("Tree").exists(5)) {
+        await model.getWindow("Tree").restore();
+    }
+    else {
+        throw new Error("Testing application was not launched.")
+    }
+
+})
+AfterAll(async function () {
+    await Util.stopProcess(pid); 
+    // cuketest.restore();
 })
 
 //// 你的步骤定义 /////

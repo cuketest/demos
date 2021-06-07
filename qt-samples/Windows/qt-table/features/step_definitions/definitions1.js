@@ -14,13 +14,20 @@ const MODELPATH = path.join(__dirname, `qt${QT_VERSION}.tmodel`);
 const APPPATH = path.join(__dirname, "..\\samples", `qt${QT_VERSION}`, "spreadsheet.exe");
 
 let model = AppModel.loadModel(MODELPATH);
+let pid;
 BeforeAll(async function () {
-    Util.launchProcess(APPPATH);
-    await Util.delay(1000);
+    pid = Util.launchProcess(APPPATH);
+    if (await model.getWindow("Spreadsheet").exists(5)) {
+        await model.getWindow("Spreadsheet").restore();
+    }
+    else {
+        throw new Error("Testing application was not launched.")
+    }
     cuketest.minimize();
 })
 AfterAll(async function () {
-    cuketest.restore();
+    await Util.stopProcess(pid); 
+    // cuketest.restore();
 })
 
 //// 你的步骤定义 /////
