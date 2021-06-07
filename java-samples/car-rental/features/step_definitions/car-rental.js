@@ -112,7 +112,10 @@ module.exports = class CarRental {
     }
     // "关闭CarRental应用"
     async closeByDefault() {
-        await this.model.getJWindow("AnyWindow").close();
+        // 由于登录窗口不会被销毁而是隐藏
+        // 为了避免误操作到登录窗口，采取了这种写法
+        let windowChild = this.model.getJMenu("About");
+        await windowChild.getJWindow("AnyWindow", {search:'up'}).close();
         try{
             // 如果是中途退出需要再次点击“确认”按钮
             await this.model.getJButton("Yes").click(0, 0, 1);
