@@ -1069,6 +1069,21 @@
                       "children": [
                         {
                           "ntype": "java",
+                          "nname": "Next2",
+                          "description": null,
+                          "identifyProperties": {
+                            "type": "JButton",
+                            "name": "Next",
+                            "className": "push button"
+                          },
+                          "cachedProperties": {
+                            "name": "Next",
+                            "type": "push button",
+                            "boundingRectangle": "549,690,120,22"
+                          }
+                        },
+                        {
+                          "ntype": "java",
                           "nname": "panel24",
                           "description": null,
                           "identifyProperties": {
@@ -1298,8 +1313,7 @@
                                                           "identifyProperties": {
                                                             "boundingRectangle": "26,0,302,229",
                                                             "align": "TopLeft"
-                                                          },
-                                                          "cachedProperties": {}
+                                                          }
                                                         }
                                                       ]
                                                     }
@@ -1406,21 +1420,6 @@
                               ]
                             }
                           ]
-                        },
-                        {
-                          "ntype": "java",
-                          "nname": "Next2",
-                          "description": null,
-                          "identifyProperties": {
-                            "type": "JButton",
-                            "name": "Next",
-                            "className": "push button"
-                          },
-                          "cachedProperties": {
-                            "name": "Next",
-                            "type": "push button",
-                            "boundingRectangle": "549,690,120,22"
-                          }
                         }
                       ]
                     }
@@ -1501,130 +1500,6 @@
                         "boundingRectangle": "1226,281,694,448"
                       },
                       "children": [
-                        {
-                          "ntype": "java",
-                          "nname": "panel31",
-                          "description": null,
-                          "identifyProperties": {
-                            "type": "JPane",
-                            "className": "panel"
-                          },
-                          "cachedProperties": {
-                            "type": "panel",
-                            "boundingRectangle": "1291,286,569,438"
-                          },
-                          "children": [
-                            {
-                              "ntype": "java",
-                              "nname": "panel32",
-                              "description": null,
-                              "identifyProperties": {
-                                "type": "JPane",
-                                "className": "panel"
-                              },
-                              "cachedProperties": {
-                                "type": "panel",
-                                "boundingRectangle": "1291,312,569,412"
-                              },
-                              "children": [
-                                {
-                                  "ntype": "java",
-                                  "nname": "panel33",
-                                  "description": null,
-                                  "identifyProperties": {
-                                    "type": "JPane",
-                                    "className": "panel"
-                                  },
-                                  "cachedProperties": {
-                                    "type": "panel",
-                                    "boundingRectangle": "1291,312,569,412"
-                                  },
-                                  "children": [
-                                    {
-                                      "ntype": "java",
-                                      "nname": "panel34",
-                                      "description": null,
-                                      "identifyProperties": {
-                                        "type": "JPane",
-                                        "className": "panel"
-                                      },
-                                      "cachedProperties": {
-                                        "type": "panel",
-                                        "boundingRectangle": "1291,312,569,201"
-                                      },
-                                      "children": [
-                                        {
-                                          "ntype": "java",
-                                          "nname": "PAYMENT INFORMATION",
-                                          "description": null,
-                                          "identifyProperties": {
-                                            "type": "JPane",
-                                            "name": "PAYMENT INFORMATION",
-                                            "className": "panel"
-                                          },
-                                          "cachedProperties": {
-                                            "name": "PAYMENT INFORMATION",
-                                            "type": "panel",
-                                            "boundingRectangle": "1559,312,301,201"
-                                          },
-                                          "children": [
-                                            {
-                                              "ntype": "java",
-                                              "nname": "37.90",
-                                              "description": null,
-                                              "identifyProperties": {
-                                                "type": "JLabel",
-                                                "name": "37.90",
-                                                "className": "label"
-                                              },
-                                              "cachedProperties": {
-                                                "name": "37.90",
-                                                "description": "Total Options Charge",
-                                                "type": "label",
-                                                "boundingRectangle": "1705,399,150,20"
-                                              }
-                                            },
-                                            {
-                                              "ntype": "java",
-                                              "nname": "90.00",
-                                              "description": null,
-                                              "identifyProperties": {
-                                                "type": "JLabel",
-                                                "name": "90.00",
-                                                "className": "label"
-                                              },
-                                              "cachedProperties": {
-                                                "name": "90.00",
-                                                "description": "Car Charge Per Day",
-                                                "type": "label",
-                                                "boundingRectangle": "1705,421,150,20"
-                                              }
-                                            },
-                                            {
-                                              "ntype": "java",
-                                              "nname": "Options Charge Per Day:",
-                                              "description": null,
-                                              "identifyProperties": {
-                                                "type": "JLabel",
-                                                "name": "Options Charge Per Day: ",
-                                                "className": "label"
-                                              },
-                                              "cachedProperties": {
-                                                "name": "Options Charge Per Day: ",
-                                                "type": "label",
-                                                "boundingRectangle": "1564,378,141,18"
-                                              }
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
                         {
                           "ntype": "java",
                           "nname": "Finish",
@@ -1888,53 +1763,6 @@
                                   "children": [
                                     {
                                       "ntype": "java",
-                                      "nname": "scroll pane1",
-                                      "description": null,
-                                      "identifyProperties": {
-                                        "type": "JPane",
-                                        "className": "scroll pane"
-                                      },
-                                      "cachedProperties": {
-                                        "type": "scroll pane",
-                                        "boundingRectangle": "1398,289,560,300"
-                                      },
-                                      "children": [
-                                        {
-                                          "ntype": "java",
-                                          "nname": "viewport1",
-                                          "description": null,
-                                          "identifyProperties": {
-                                            "type": "JPane",
-                                            "className": "viewport"
-                                          },
-                                          "cachedProperties": {
-                                            "type": "viewport",
-                                            "boundingRectangle": "1399,312,557,260"
-                                          },
-                                          "children": [
-                                            {
-                                              "ntype": "java",
-                                              "nname": "table",
-                                              "description": null,
-                                              "identifyProperties": {
-                                                "type": "JTable",
-                                                "className": "table"
-                                              },
-                                              "cachedProperties": {
-                                                "className": "table",
-                                                "boundingRectangle": "102,228,1500,160"
-                                              },
-                                              "image": {
-                                                "imgPath": "table1.png",
-                                                "rect": "10,10,1284,250"
-                                              }
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "ntype": "java",
                                       "nname": "panel42",
                                       "description": null,
                                       "identifyProperties": {
@@ -1976,6 +1804,53 @@
                                             "type": "push button",
                                             "boundingRectangle": "1213,202,100,22"
                                           }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "ntype": "java",
+                                      "nname": "scroll pane1",
+                                      "description": null,
+                                      "identifyProperties": {
+                                        "type": "JPane",
+                                        "className": "scroll pane"
+                                      },
+                                      "cachedProperties": {
+                                        "className": "scroll pane",
+                                        "boundingRectangle": "164,296,560,300"
+                                      },
+                                      "children": [
+                                        {
+                                          "ntype": "java",
+                                          "nname": "viewport1",
+                                          "description": null,
+                                          "identifyProperties": {
+                                            "type": "JPane",
+                                            "className": "viewport"
+                                          },
+                                          "cachedProperties": {
+                                            "className": "viewport",
+                                            "boundingRectangle": "165,319,557,260"
+                                          },
+                                          "children": [
+                                            {
+                                              "ntype": "java",
+                                              "nname": "table",
+                                              "description": null,
+                                              "identifyProperties": {
+                                                "type": "JTable",
+                                                "className": "table"
+                                              },
+                                              "cachedProperties": {
+                                                "className": "table",
+                                                "boundingRectangle": "165,319,1500,176"
+                                              },
+                                              "image": {
+                                                "imgPath": "table.png",
+                                                "rect": "0,0,1500,176"
+                                              }
+                                            }
+                                          ]
                                         }
                                       ]
                                     }
@@ -2065,192 +1940,6 @@
                       "children": [
                         {
                           "ntype": "java",
-                          "nname": "Home",
-                          "description": null,
-                          "identifyProperties": {
-                            "type": "JButton",
-                            "className": "push button",
-                            "name": "Home"
-                          },
-                          "cachedProperties": {
-                            "name": "Home",
-                            "className": "push button",
-                            "boundingRectangle": "580,595,120,22"
-                          },
-                          "image": {
-                            "imgPath": "Home.png",
-                            "rect": "10,10,190,43"
-                          }
-                        },
-                        {
-                          "ntype": "java",
-                          "nname": "JPane4",
-                          "description": null,
-                          "identifyProperties": {
-                            "type": "JPane",
-                            "className": "panel"
-                          },
-                          "cachedProperties": {
-                            "className": "panel",
-                            "boundingRectangle": "356,111,572,443"
-                          },
-                          "children": [
-                            {
-                              "ntype": "java",
-                              "nname": "JPane5",
-                              "description": null,
-                              "identifyProperties": {
-                                "type": "JPane",
-                                "className": "panel"
-                              },
-                              "cachedProperties": {
-                                "className": "panel",
-                                "boundingRectangle": "356,137,572,417"
-                              },
-                              "children": [
-                                {
-                                  "ntype": "java",
-                                  "nname": "JPane6",
-                                  "description": null,
-                                  "identifyProperties": {
-                                    "type": "JPane",
-                                    "className": "panel"
-                                  },
-                                  "cachedProperties": {
-                                    "className": "panel",
-                                    "boundingRectangle": "356,137,572,417"
-                                  },
-                                  "children": [
-                                    {
-                                      "ntype": "java",
-                                      "nname": "Tree Car Types",
-                                      "description": null,
-                                      "identifyProperties": {
-                                        "type": "JTree",
-                                        "className": "tree",
-                                        "name": "Tree Car Types"
-                                      },
-                                      "cachedProperties": {
-                                        "name": "Tree Car Types",
-                                        "description": "Tree Car Types",
-                                        "className": "tree",
-                                        "boundingRectangle": "356,137,250,417"
-                                      },
-                                      "children": [
-                                        {
-                                          "ntype": "java",
-                                          "nname": "Car Types",
-                                          "description": null,
-                                          "identifyProperties": {
-                                            "type": "JLabel",
-                                            "className": "label",
-                                            "name": "Car Types"
-                                          },
-                                          "cachedProperties": {
-                                            "name": "Car Types",
-                                            "className": "label",
-                                            "boundingRectangle": "358,139,79,18"
-                                          },
-                                          "children": [
-                                            {
-                                              "ntype": "java",
-                                              "nname": "Compact",
-                                              "description": null,
-                                              "identifyProperties": {
-                                                "type": "JLabel",
-                                                "className": "label",
-                                                "name": "Compact"
-                                              },
-                                              "cachedProperties": {
-                                                "name": "Compact",
-                                                "className": "label",
-                                                "boundingRectangle": "378,235,73,18"
-                                              },
-                                              "image": {
-                                                "imgPath": "Compact.png",
-                                                "rect": "10,10,119,37"
-                                              },
-                                              "children": [
-                                                {
-                                                  "ntype": "java",
-                                                  "nname": "Toyota Prius",
-                                                  "description": null,
-                                                  "identifyProperties": {
-                                                    "type": "JLabel",
-                                                    "className": "label",
-                                                    "name": "Toyota Prius"
-                                                  },
-                                                  "cachedProperties": {
-                                                    "name": "Toyota Prius",
-                                                    "className": "label",
-                                                    "boundingRectangle": "398,253,91,20"
-                                                  },
-                                                  "image": {
-                                                    "imgPath": "Toyota Prius.png",
-                                                    "rect": "10,10,146,40"
-                                                  }
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "ntype": "java",
-                                      "nname": "JPane7",
-                                      "description": null,
-                                      "identifyProperties": {
-                                        "type": "JPane",
-                                        "className": "scroll pane"
-                                      },
-                                      "cachedProperties": {
-                                        "className": "scroll pane",
-                                        "boundingRectangle": "183,143,560,300"
-                                      },
-                                      "children": [
-                                        {
-                                          "ntype": "java",
-                                          "nname": "JPane8",
-                                          "description": null,
-                                          "identifyProperties": {
-                                            "type": "JPane",
-                                            "className": "viewport"
-                                          },
-                                          "cachedProperties": {
-                                            "className": "viewport",
-                                            "boundingRectangle": "184,166,557,260"
-                                          },
-                                          "children": [
-                                            {
-                                              "ntype": "java",
-                                              "nname": "JTable",
-                                              "description": null,
-                                              "identifyProperties": {
-                                                "type": "JTable",
-                                                "className": "table"
-                                              },
-                                              "cachedProperties": {
-                                                "className": "table",
-                                                "boundingRectangle": "184,166,1500,160"
-                                              },
-                                              "image": {
-                                                "imgPath": "table5.png",
-                                                "rect": "10,10,1038,250"
-                                              }
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "ntype": "java",
                           "nname": "Next",
                           "description": null,
                           "identifyProperties": {
@@ -2266,6 +1955,145 @@
                           "image": {
                             "imgPath": "Next.png",
                             "rect": "10,10,190,43"
+                          }
+                        },
+                        {
+                          "ntype": "java",
+                          "nname": "panel17",
+                          "description": null,
+                          "identifyProperties": {
+                            "type": "JPane",
+                            "className": "panel"
+                          },
+                          "cachedProperties": {
+                            "className": "panel",
+                            "boundingRectangle": "84,264,572,426"
+                          },
+                          "children": [
+                            {
+                              "ntype": "java",
+                              "nname": "panel18",
+                              "description": null,
+                              "identifyProperties": {
+                                "type": "JPane",
+                                "className": "panel"
+                              },
+                              "cachedProperties": {
+                                "className": "panel",
+                                "boundingRectangle": "84,290,572,400"
+                              },
+                              "children": [
+                                {
+                                  "ntype": "java",
+                                  "nname": "panel19",
+                                  "description": null,
+                                  "identifyProperties": {
+                                    "type": "JPane",
+                                    "className": "panel"
+                                  },
+                                  "cachedProperties": {
+                                    "className": "panel",
+                                    "boundingRectangle": "84,290,572,400"
+                                  },
+                                  "children": [
+                                    {
+                                      "ntype": "java",
+                                      "nname": "Tree Car Types",
+                                      "description": null,
+                                      "identifyProperties": {
+                                        "type": "JTree",
+                                        "className": "tree",
+                                        "name": "Tree Car Types"
+                                      },
+                                      "cachedProperties": {
+                                        "name": "Tree Car Types",
+                                        "description": "Tree Car Types",
+                                        "className": "tree",
+                                        "boundingRectangle": "84,290,250,400"
+                                      },
+                                      "children": [
+                                        {
+                                          "ntype": "java",
+                                          "nname": "Car Types",
+                                          "description": null,
+                                          "identifyProperties": {
+                                            "type": "JTreeItem",
+                                            "className": "label",
+                                            "name": "Car Types"
+                                          },
+                                          "cachedProperties": {
+                                            "name": "Car Types",
+                                            "className": "label",
+                                            "boundingRectangle": "86,292,79,18"
+                                          },
+                                          "children": [
+                                            {
+                                              "ntype": "java",
+                                              "nname": "Standard",
+                                              "description": null,
+                                              "identifyProperties": {
+                                                "type": "JTreeItem",
+                                                "className": "label",
+                                                "name": "Standard"
+                                              },
+                                              "cachedProperties": {
+                                                "name": "Standard",
+                                                "className": "label",
+                                                "boundingRectangle": "106,310,73,18"
+                                              },
+                                              "image": {
+                                                "imgPath": "Standard.png",
+                                                "rect": "0,0,73,18"
+                                              },
+                                              "children": [
+                                                {
+                                                  "ntype": "java",
+                                                  "nname": "Chevrolet Monte Carlo",
+                                                  "description": null,
+                                                  "identifyProperties": {
+                                                    "type": "JTreeItem",
+                                                    "className": "label",
+                                                    "name": "Chevrolet Monte Carlo"
+                                                  },
+                                                  "cachedProperties": {
+                                                    "name": "Chevrolet Monte Carlo",
+                                                    "className": "label",
+                                                    "boundingRectangle": "126,328,144,20"
+                                                  },
+                                                  "image": {
+                                                    "imgPath": "Chevrolet Monte Carlo.png",
+                                                    "rect": "0,0,144,20"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "ntype": "java",
+                          "nname": "Home",
+                          "description": null,
+                          "identifyProperties": {
+                            "type": "JButton",
+                            "className": "push button",
+                            "name": "Home"
+                          },
+                          "cachedProperties": {
+                            "name": "Home",
+                            "className": "push button",
+                            "boundingRectangle": "584,721,120,22"
+                          },
+                          "image": {
+                            "imgPath": "Home.png",
+                            "rect": "0,0,120,22"
                           }
                         }
                       ]

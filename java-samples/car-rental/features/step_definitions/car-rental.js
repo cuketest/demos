@@ -40,7 +40,7 @@ module.exports = class CarRental {
             await model.getGeneric("scroll bar").click(0, 150, 1);
             await model.getGeneric("scroll bar").click(0, 150, 1);
             await model.getJLabel("New York").click(0, 0, 1);
-            await model.getJCheckBox("Return car at the same locatio").toggleCheck();
+            await model.getJCheckBox("Return car at the same locatio").moveMouse();
             return ;
         }
         if(pickOrReturn) 
@@ -126,7 +126,6 @@ module.exports = class CarRental {
     }
     // "使用账户名{string}登录"
     async login(username) {
-        // console.log(this.model);
         await this.model.getJEdit("User name").set(username);
         await this.model.getJButton("Login").click(0, 0, 1); 
     }

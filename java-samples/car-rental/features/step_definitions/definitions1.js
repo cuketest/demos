@@ -4,7 +4,6 @@ const { Util } = require('leanpro.common');
 const CarRental = require('./car-rental.js');
 let model = JavaModel.loadModel(__dirname + "/model1.tmodel");
 
-
 //// 你的步骤定义 /////
 
 const cr = new CarRental(model);
@@ -39,8 +38,7 @@ Then("选择地区{string}", async function (location) {
 });
 
 Then("选择汽车{string}", async function (car) {
-    await cr.selectCar("Compact");
-    await cr.selectCar("Toyota Prius");
+    await cr.selectCar(car);
     await cr.nextStep();
 });
 
@@ -58,7 +56,7 @@ Then("进入看车界面", async function () {
 });
 
 Then("选中汽车{string}", async function (car) {
-    await cr.checkCar(car);    
+    await cr.selectCar(car);    
 });
 
 Then("进入下一步", async function () {
