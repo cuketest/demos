@@ -112,8 +112,7 @@ module.exports = class CarRental {
     }
     // "关闭CarRental应用"
     async closeByDefault() {
-        let windowChild = this.model.getJMenu("About");
-        await windowChild.getJWindow("AnyWindow", {search:'up'}).close();
+        await this.model.getJWindow("AnyWindow").close();
         try{
             // 如果是中途退出需要再次点击“确认”按钮
             await this.model.getJButton("Yes").click(0, 0, 1);
