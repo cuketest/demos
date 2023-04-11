@@ -6,8 +6,6 @@ CukeTest is a powerful automation testing tool that helps you write and run Beha
 
 In this repository, we have collected some sample projects to demonstrate the functionality and usage of CukeTest, which contains several automated test scripts for different platforms and types of applications. By viewing and running these scripts, you can learn how CukeTest automates testing for desktop, web, mobile, API, and other applications, as well as how to write test cases using Javascript or Python languages.
 
-Translated with www.DeepL.com/Translator (free version)
-
 ## Contents
 
 In the project directory, you can select the project script language, JavaScript or Python. the secondary directory also lists the different application types. You can select a project to run based on the type of application you are interested in.
