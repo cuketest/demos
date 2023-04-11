@@ -1,0 +1,123 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "uia",
+      "nname": "Window",
+      "identifyProperties": {
+        "type": "Window",
+        "className": "QWidget"
+      },
+      "cachedProperties": {},
+      "image": {
+        "imgPath": "image14.png",
+        "rect": "706,157,508,767"
+      },
+      "children": [
+        {
+          "ntype": "ptn",
+          "nname": "new_game",
+          "identifyProperties": {
+            "imagePath": "image15.png"
+          },
+          "cachedProperties": {
+            "boundingRectangle": "[9,707,115,45]"
+          },
+          "image": {
+            "imgPath": "pattern1.png",
+            "rect": "211,828,97,31"
+          }
+        },
+        {
+          "ntype": "ptn",
+          "nname": "enter_name",
+          "identifyProperties": {
+            "imagePath": "image16.png"
+          },
+          "cachedProperties": {
+            "boundingRectangle": "[48,379,288,34]"
+          },
+          "image": {
+            "imgPath": "pattern7.png",
+            "rect": "230,460,191,18"
+          }
+        }
+      ]
+    },
+    {
+      "ntype": "ptn",
+      "nname": "green_col",
+      "identifyProperties": {
+        "imagePath": "image2.png",
+        "similarity": "0.92"
+      },
+      "cachedProperties": {},
+      "image": {
+        "imgPath": "pattern.png",
+        "rect": "608,325,30,75"
+      }
+    },
+    {
+      "ntype": "ptn",
+      "nname": "green_row",
+      "identifyProperties": {
+        "imagePath": "image3.png",
+        "similarity": "0.92"
+      },
+      "image": {
+        "imgPath": "pattern2.png",
+        "rect": "326,248,73,28"
+      }
+    },
+    {
+      "ntype": "ptn",
+      "nname": "red_col",
+      "identifyProperties": {
+        "imagePath": "image4.png",
+        "similarity": "0.92"
+      },
+      "image": {
+        "imgPath": "pattern3.png",
+        "rect": "366,447,35,72"
+      }
+    },
+    {
+      "ntype": "ptn",
+      "nname": "red_row",
+      "identifyProperties": {
+        "imagePath": "image5.png",
+        "similarity": "0.92"
+      },
+      "image": {
+        "imgPath": "pattern4.png",
+        "rect": "528,286,70,34"
+      }
+    },
+    {
+      "ntype": "ptn",
+      "nname": "blue_row",
+      "identifyProperties": {
+        "imagePath": "image6.png",
+        "similarity": "0.92"
+      },
+      "image": {
+        "imgPath": "pattern5.png",
+        "rect": "603,448,78,32"
+      }
+    },
+    {
+      "ntype": "ptn",
+      "nname": "blue_col",
+      "identifyProperties": {
+        "imagePath": "image7.png",
+        "similarity": "0.92"
+      },
+      "cachedProperties": {},
+      "image": {
+        "imgPath": "pattern6.png",
+        "rect": "526,527,33,70"
+      }
+    }
+  ]
+}

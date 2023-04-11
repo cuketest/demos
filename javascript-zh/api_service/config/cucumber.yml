@@ -1,0 +1,6 @@
+get请求: '--format html --tags @get'
+post请求: '--format html --tags @post'
+put请求: '--format html --tags @put'
+patch请求: '--format html --tags @patch'
+delete请求: '--format html --tags @delete'
+非get请求: '--format html --tags "not @get"'

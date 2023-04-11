@@ -1,217 +1,87 @@
-# Node.js Cucumber Test Automation Samples
+English | [简体中文](./README.zh-CN.md)
 
-This repo contains samples that demonstrate how to use do test automations using Node.js. 
-The samples uses Cucumber.js to do various kinds of test automations, including Windows app, Web UI, API, mobile etc.
+# CukeTest Sample Projects
 
-These samples use Cucumber.js 5.x. It is recommended to open and run them with [CukeTest](http://cuketest.com) application, 
-which can boost the productivity of your work. It has built-in Cucumber.js, which means you only need to install the packages 
-that do the actual automation.
+CukeTest is a powerful automation testing tool that helps you write and run Behavior Driven Development (BDD) style test cases and supports multiple programming languages and testing frameworks, allowing you to choose the right technology stack according to your preferences and project needs.
 
-## Using the samples
+In this repository, we have collected some sample projects to demonstrate the functionality and usage of CukeTest, which contains several automated test scripts for different platforms and types of applications. By viewing and running these scripts, you can learn how CukeTest automates testing for desktop, web, mobile, API, and other applications, as well as how to write test cases using Javascript or Python languages.
 
-To get the sample code, clone the repo, or download it as a zip file and extract them locally.
+Translated with www.DeepL.com/Translator (free version)
 
-To run any of the sample, for example "shopping": 
+## Contents
 
-1. first install the npm packages, by going to the command prompt of the "shopping" folder and running the following from command line:
+In the project directory, you can select the project script language, JavaScript or Python. the secondary directory also lists the different application types. You can select a project to run based on the type of application you are interested in.
 
-   ```
-   npm install
-   ```
+For example, if you want to test web applications, you can choose the "[Orders](javascript-zh/web/orders)" project; if you want to test Qt applications, you can choose the "[Qt5 Dialogs](javascript-zh/qt/qt-dialog)" project; if you want to test remote automation features, you can If you want to test remote automation functionality, you can select the "[Windows Control Remote Automation](javascript-zh/remote/remote_windows_controls)" project, etc.
 
-2. open "shopping" folder in CukeTest and click run.
+Each sample project has one or more `.feature` files, which are test scripts written in a natural language. The `.js` files and `.py` files are the implementation code in the project that defines the step functions used in the `.feature` files and other helper functions.
 
-> **Note:** The folder end with "-zh" are samples with Chinese feature files.
+The following table lists the samples collected in this project.
 
-## Samples by category
-The following categories are available:
-* **win-samples**: samples that demos how to run the automate Windows Application using 
-* **web-samples**: Web UI testing samples
-* **bdd-samples**: samples that demos the feature of Cucumber, which is a Behavior Driven 
-* **api-samples**: contains the API testing samples
-Development (BDD) framework for test automation.[CukeTest](http://cuketest.com) and [LeanRunner](http://www.leanpro.cn/leanrunner)
+|     Category     | Sample Name                                                                                 | Description                                                                                            |
+|:----------------:| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+|    **basic**     | [Math](javascript-zh/basic/math)                                                            | Simple math sample for Cucumber                                                                        |
+|   **Windows**    | [Windows Controls](javascript-zh/windows_controls)                                          | Sample automated Windows controls (.NET WPF)                                                           |
+|                  | [File browser traversal](javascript-zh/windows/explorer-tree)                               | Traversing Windows tree controls                                                                       |
+|                  | [Notepad](javascript-zh/windows/notepad-test-zh)                                            | Automation of Notepad on Win10                                                                         |
+|                  | [Win Qt List](javascript-zh/windows/win-qt-list)                                            | Sample automation Qt list control for Windows technology                                               |
+|                  | [Win Qt Table](javascript-zh/windows/win-qt-table)                                          | Sample automation Qt table control for Windows technology                                              |
+|                  | [Win Qt Tree](javascript-zh/windows/win-qt-tree)                                            | Sample Windows Technical Automation Qt Tree Control                                                    |
+|      **Qt**      | [Qt List](javascript-zh/qt/qt-list)                                                         | Sample cross-platform Qt automation list control                                                       |
+|                  | [Qt Table](javascript-zh/qt/qt-table)                                                       | Sample cross-platform Qt automation table control                                                      |
+|                  | [Qt Tree](javascript-zh/qt/qt-tree)                                                         | Sample cross-platform Qt automation tree control                                                       |
+|                  | [Qt5 Dialogs](javascript-zh/qt/qt-dialog)                                                   | Sample cross-platform Qt automation of various dialogs, compiled for Qt5                               |
+|    **Image**     | [Pattern Chooser](javascript-zh/windows/pattern-chooser)                                    | Pattern automation Qt sample appchooser                                                                |
+|                  | [Same Game](javascript-zh/windows/pattern-game)                                             | Automated Qt same game                                                                                 |
+|     **Web**      | [Calculator](javascript-en/web/calculator)                                                  | Web sample. Web Calculator                                                                             |
+|                  | [Orders](javascript-zh/web/orders)                                                          | Web automation test for the application under test with the simple ERP system that comes with CukeTest |
+|                  | [Shopping](javascript-zh/web/shopping)                                                      | Web Automation, a simple example of a web shopping site                                                |
+|                  | [Shopping-Cart](javascript-zh/web/shopping-cart)                                            | A simple example of a Web shopping site, demonstrating how to use the built-in Web automation library. |
+| **Selenium Web** | [Shopping-Cart (Selenium)](javascript-en/web/shopping-cart-selenium)                        | Selenium sample. Web Shopping Cart demo                                                                |
+|   **Electron**   | [CukeTest_Electron](javascript-zh/windows/cuketest_electron)                                | Electron automation demo: CukeTest automation CukeTest itself                                          |
+|     **Java**     | [Car Rental](javascript-zh/java-samples/car-rental)                                         | Java car rental application automation                                                                 |
+|     **API**      | [API Server](javascript-zh/api_service)                                                     | Sample RESTFul API                                                                                     |
+|                  | [Tcp Echo](javascript-zh/tcp-protocol)                                                      | Demonstration of TCP/IP protocol sending and receiving                                                 |
+|    **Mobile**    | [Android Automation](javascript-zh/mobile/appium-android)                                   | Combining appium to automate testing of Android applications                                           |
+|    **Remote**    | [Remote automation of Qt application Validators](javascript-zh/remote/remote_qt_validators) | Remote automation of Qt application Validators                                                         |
+|                  | [Remote Automation of Windows Controls](javascript-zh/remote/remote_windows_controls)       | Remote Automation of Windows Controls Sample                                                           |
 
+## Clone or download
 
-### Windows Samples
+We can use the git command to clone the project locally, or we can download the zip archive of the project directly from the GitHub web page.
 
-<table>
- <tr>
-  <td><a href="win-samples/notepad-test-zh">Automate Notepad(Chinese)</a></td>
- </tr>
- <tr>
-  <td><a href="win-samples/auto-desktop-wechat-zh">Automate WeChat(Chinese)</a></td>
- </tr>
- <tr>
-  <td><a href="win-samples/win-web-mail-zh">Windows Mail automation(Chinese)</a></td>
- </tr>
-  <tr>
-  <td><a href="win-samples/auto-backup-zh">Automate do backup to Baidu cloud disk(Chinese)</a></td>
- </tr>
- <tr>
-  <td><a href="win-samples/Win10Calendar">Windows 10 Calendar(Chinese)</a></td>
- </tr>
-</table>
+Type the following command in the terminal:
+```bash
+git clone https://github.com/cuketest/demos
+```
 
-### Web Samples
+## Run the sample project
 
-<table>
- <tr>
-  <td><a href="web-samples/calculator">Web Calculator</a></td>
-  <td><a href="web-samples/shopping">Shopping</a></td>
-  <td><a href="web-samples/shopping-cart">Shopping Cart</a></td>
- </tr>
-  <tr>
-  <td><a href="web-samples/baidu-search-zh">Baidu Search(Chinese)</a></td>
- </tr>
-</table>
+To demonstrate how to run the sample project, let's take [Orders](javascript-zh/web/orders) as an example.
 
-### BDD Samples
+### Installing CukeTest
 
-<table>
- <tr>
-  <td><a href="bdd-samples/math">Math</a></td>
-  <td><a href="bdd-samples/calc-zh">Calc (Chinese)</a></td>
- </tr>
-</table>
+First, you need to install the CukeTest desktop application, you can download the latest version from the official website (https://www.cuketest.com/).
 
-### Java Samples
-<table>
- <tr>
-  <td><a href="java-samples/car-rental">Car Rental</a></td>
- </tr>
-</table>
+### Open Project
 
-### API Samples
-<table>
- <tr>
-  <td><a href="api-samples/Package">Simple Service</a></td>
-  <td><a href="api-samples/github-service-zh">Github API(Chinese)</a></td>
- </tr>
-</table>
+Once installed, you can launch CukeTest, click **File** - **Open Project** in the top menu bar, and select the project folder you want to open in the pop-up dialog: `demos/javascript-zh/web/orders`, and once selected, CukeTest will automatically open the project.
 
-## See also
-* To download CukeTest, go to [cuketest.com](http://cuketest.com). CukeTest supports Windows, Mac, Linux platforms, please download the corresponding version.
-* You can read [CukeTest documentation](http://cuketest.com/en) online without installing CukeTest.
-* Go to [cucumber.js](https://github.com/cucumber/cucumber-js) to get cucumber.js documentation.
+### Running Project
 
-## Contributions
+Find and click on the `feature1.feature` file in the "features" folder in the left navigation bar. This is a BDD test script file written in Gherkin syntax, describing some scenarios and steps to perform order management operations on the ERP system.
 
-You are welcome to contribute more samples by sending them to us. Either with a pull request or opening an issue to describe your sample. 
-We will add them to the repo once we confirm it works and serve the tutorial purpose. 
+Then, click the "Run Project" button at the top of CukeTest (or press Ctrl+R) to start running the project. During the run, you will see a browser window open and follow the steps defined in the script. At the same time, the run log and results are displayed in the output panel.
 
+![image](https://www.cuketest.com/zh-cn/quick_start/assets/samples_run.png)
 
-************
+### View Test Report
 
-# Node.js Cucumber 测试自动化示例
+When all scenes are run, the "CukeTest Report" window will open automatically, and you can view a detailed execution report, including the results of each scene and step, time spent, error messages, etc.
 
-此代码库包含演示如何使用Node.js进行测试自动化的示例。 
-这些示例使用Cucumber.js进行各种测试自动化，包括Windows应用程序，Web UI，API，移动设备等。
+You can click the button on the right side above the result report area to switch between different report formats and save them locally or share them with others.
 
-这些样例使用Cucumber.js 5.x. 建议使用[CukeTest](http://cuketest.com)应用程序打开并运行它们，
-这可以提高你的工作效率。它有内置的Cucumber.js，这意味着你只需要安装实际的自动化的npm包。
+## Support
+By using the sample projects provided by CukeTest, you can quickly master the basic concepts and methods of BDD, and also modify and extend the sample projects to suit your needs.
 
-## 使用样例
-
-要获取示例代码，请克隆存储库，或将其作为zip文件下载并在本地提取。
-
-要运行任何示例，例如“shopping”： 
-
-1.首先安装npm软件包，转到“shopping”文件夹的命令提示符并从命令行运行以下命令：
-
-   ```
-   npm install 
-   ```
-
-2.在CukeTest中打开“shopping”文件夹，然后单击“运行”。
-
-> **注意：** 带有“-zh”的文件夹末尾是带有中文特征文件的样例。
-
-## 按类别分类
-可以使用以下类别：
-* **win-samples**：演示如何使用自动化Windows应用程序运行的示例 
-* **web-samples**：Web UI测试样例
-* **bdd-samples**：演示Cucumber BDD行为驱动自动化的样例
-* **api-samples**：包含API测试样例
-开发(BDD)测试自动化框架。[CukeTest](http://cuketest.com)和[LeanRunner](http://www.leanpro.cn/leanrunner)
-
-
-### Windows示例
-
-<table>
- <tr>
-  <td> <a href="win-samples/notepad-test-zh">自动记事本</a> </td>
- </tr>
- <tr>
-  <td> <a href="win-samples/auto-desktop-wechat-zh">自动化微信应用</a> </td>
- </tr>
- <tr>
-  <td> <a href="win-samples/win-web-mail-zh"> Windows Mail自动化</a> </td>
- </tr>
-  <tr>
-  <td> <a href="win-samples/auto-backup-zh">自动备份到百度云盘</a> </td>
- </tr>
- <tr>
-  <td> <a href="win-samples/Win10Calendar"> Windows 10日历</a> </td>
- </tr>
-</table>
-
-### Qt示例 （Linux平台）
-
-<table>
- <tr>
-  <td> <a href="qt-samples/Linux/QtListDemo1">Qt List控件演示</a> </td>
- </tr>
- <tr>
-  <td> <a href="qt-samples/Linux/QtTreeDemo1">Qt Tree控件演示</a> </td>
- </tr>
- <tr>
-  <td> <a href="qt-samples/Linux/QtTableDemo1">Qt Table控件演示</a> </td>
- </tr>
-</table>
-
-### Web示例
-
-<table>
- <tr>
-  <td> <a href="web-samples/calculator">Web计算器</a> </td>
-  <td> <a href="web-samples/shopping">购物页面</a> </td>
-  <td> <a href="web-samples/shopping-cart">操作购物车</a> </td>
- </tr>
-  <tr>
-  <td> <a href="web-samples/baidu-search-zh">百度搜索</a> </td>
- </tr>
-</table>
-
-### BDD样例
-
-<table>
- <tr>
-  <td> <a href="bdd-samples/math">数学</a> </td>
-  <td> <a href="bdd-samples/calc-zh">计算器</a> </td>
- </tr>
-</table>
-
-### Java样例
-<table>
- <tr>
-  <td><a href="java-samples/car-rental">汽车租赁</a></td>
- </tr>
-</table>
-
-### API样例
-<table>
- <tr>
-  <td> <a href="api-samples/Package">简单服务</a> </td>
-  <td> <a href="api-samples/github-service-zh">Github API</a> </td>
- </tr>
-</table>
-
-## 其它信息
-* 要下载CukeTest，请访问[cuketest.com](http://cuketest.com)，CukeTest支持Windows、Mac、Linux，请下载对应的版本。
-* 您可以在线阅读[CukeTest文档](http://cuketest.com/zh-cn)。
-* 转到[cucumber.js](https://github.com/cucumber/cucumber-js)获取cucumber.js文档。
-
-## 贡献
-
-欢迎您通过发送给我们提供更多样例。发送pull request或新建问题来描述您的样例。
-一旦我们确认它有效并将其用于教程目的，我们就会将它们添加到样例代码库中。 
+If you want to learn more about the features and usage of CukeTest, please visit the official website (https://www.cuketest.com/) or check the help documentation (https://docs.cuketest.com/).

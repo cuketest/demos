@@ -1,0 +1,451 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "uia",
+      "nname": "Notepad",
+      "identifyProperties": {
+        "type": "Window",
+        "className": "Notepad"
+      },
+      "cachedProperties": {},
+      "image": {
+        "imgPath": "image.png",
+        "rect": "0,0,845,432"
+      },
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "Text Editor",
+          "identifyProperties": {
+            "type": "Document",
+            "automationId": "15"
+          },
+          "cachedProperties": {
+            "automationId": "15",
+            "type": "Document",
+            "className": "Edit",
+            "name": "文本编辑器",
+            "boundingRectangle": "195,197,1191,543"
+          },
+          "image": {
+            "imgPath": "文本编辑器.png",
+            "rect": "0,0,751,444"
+          }
+        },
+        {
+          "ntype": "uia",
+          "nname": "Application",
+          "identifyProperties": {
+            "type": "MenuBar",
+            "automationId": "MenuBar"
+          },
+          "cachedProperties": {
+            "automationId": "MenuBar",
+            "type": "MenuBar",
+            "name": "Application",
+            "accessKey": "Alt",
+            "boundingRectangle": "515,88,490,19"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "File",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "name": "File"
+              },
+              "cachedProperties": {
+                "type": "MenuItem",
+                "name": "文件(F)",
+                "accessKey": "Alt+f",
+                "boundingRectangle": "515,88,52,19"
+              },
+              "image": {
+                "imgPath": "文件(F).png",
+                "rect": "0,0,0,0"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "Format",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "name": "Format"
+              },
+              "cachedProperties": {
+                "type": "MenuItem",
+                "name": "格式(O)",
+                "accessKey": "Alt+o",
+                "boundingRectangle": "98,207,56,19"
+              },
+              "image": {
+                "imgPath": "格式(O)3.png",
+                "rect": "0,0,0,0"
+              }
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "File1",
+          "identifyProperties": {
+            "type": "Menu",
+            "className": "#32768",
+            "name": "File"
+          },
+          "cachedProperties": {
+            "type": "Menu",
+            "className": "#32768",
+            "name": "File",
+            "boundingRectangle": "[9,206,229,196]",
+            "value": false
+          },
+          "image": {
+            "imgPath": "uia.png",
+            "rect": "0,0,229,196"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "Save As...",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "automationId": "4"
+              },
+              "cachedProperties": {
+                "automationId": "4",
+                "type": "MenuItem",
+                "name": "Save As...",
+                "accessKey": "Ctrl+Shift+S",
+                "boundingRectangle": "[12,297,223,22]",
+                "value": false
+              },
+              "image": {
+                "imgPath": "另存为(A)....png",
+                "rect": "0,0,223,22"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "Save",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "automationId": "3"
+              },
+              "cachedProperties": {
+                "automationId": "3",
+                "type": "MenuItem",
+                "name": "Save",
+                "accessKey": "Ctrl+S",
+                "boundingRectangle": "[12,275,223,22]",
+                "value": false
+              },
+              "image": {
+                "imgPath": "保存(S)1.png",
+                "rect": "0,0,223,22"
+              }
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "Save As",
+          "identifyProperties": {
+            "type": "Window",
+            "className": "#32770",
+            "title": "Save As"
+          },
+          "cachedProperties": {
+            "type": "Window",
+            "className": "#32770",
+            "title": "另存为",
+            "boundingRectangle": "107,150,683,480"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "File name:",
+              "identifyProperties": {
+                "type": "ComboBox",
+                "automationId": "FileNameControlHost"
+              },
+              "cachedProperties": {
+                "automationId": "FileNameControlHost",
+                "type": "ComboBox",
+                "className": "AppControlHost",
+                "name": "File name:",
+                "accessKey": "Alt+N",
+                "boundingRectangle": "240,514,537,25"
+              },
+              "children": [
+                {
+                  "ntype": "uia",
+                  "nname": "File name:1",
+                  "identifyProperties": {
+                    "type": "Edit",
+                    "automationId": "1001"
+                  },
+                  "cachedProperties": {
+                    "automationId": "1001",
+                    "type": "Edit",
+                    "className": "Edit",
+                    "name": "File name:",
+                    "accessKey": "Alt+N",
+                    "boundingRectangle": "[136,569,456,17]",
+                    "value": "*.txt"
+                  },
+                  "image": {
+                    "imgPath": "a6481a2a-ff0a-4696-ae91-043d446e6346.png",
+                    "rect": "0,0,456,17"
+                  }
+                }
+              ]
+            },
+            {
+              "ntype": "uia",
+              "nname": "Save1",
+              "identifyProperties": {
+                "type": "Button",
+                "automationId": "1"
+              },
+              "cachedProperties": {
+                "automationId": "1",
+                "type": "Button",
+                "className": "Button",
+                "name": "Save",
+                "accessKey": "Alt+s",
+                "boundingRectangle": "[412,634,88,26]",
+                "value": false
+              },
+              "image": {
+                "imgPath": "保存(S).png",
+                "rect": "0,0,88,26"
+              }
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "Format1",
+          "identifyProperties": {
+            "type": "Menu",
+            "className": "#32768",
+            "name": "Format"
+          },
+          "cachedProperties": {
+            "type": "Menu",
+            "className": "#32768",
+            "name": "Format",
+            "boundingRectangle": "[75,206,150,50]",
+            "value": false
+          },
+          "image": {
+            "imgPath": "uia1.png",
+            "rect": "0,0,150,50"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "Font...",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "automationId": "33"
+              },
+              "cachedProperties": {
+                "automationId": "33",
+                "type": "MenuItem",
+                "name": "Font...",
+                "accessKey": "f",
+                "boundingRectangle": "[78,231,144,22]",
+                "value": false
+              },
+              "image": {
+                "imgPath": "字体(F)....png",
+                "rect": "0,0,144,22"
+              }
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "Font:",
+          "identifyProperties": {
+            "type": "ComboBox",
+            "automationId": "1136"
+          },
+          "cachedProperties": {
+            "automationId": "1136",
+            "type": "ComboBox",
+            "className": "ComboBox",
+            "name": "Font:",
+            "accessKey": "Alt+f",
+            "boundingRectangle": "379,212,172,161"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "Font:1",
+              "identifyProperties": {
+                "type": "List",
+                "automationId": "1000"
+              },
+              "cachedProperties": {
+                "automationId": "1000",
+                "type": "List",
+                "className": "ComboLBox",
+                "name": "Font:",
+                "boundingRectangle": "379,236,172,137"
+              },
+              "children": [
+                {
+                  "ntype": "uia",
+                  "nname": "Arial",
+                  "identifyProperties": {
+                    "type": "ListItem",
+                    "name": "Arial"
+                  },
+                  "cachedProperties": {
+                    "type": "ListItem",
+                    "name": "Arial",
+                    "boundingRectangle": "[54,331,151,19]",
+                    "value": false
+                  },
+                  "image": {
+                    "imgPath": "微软雅黑.png",
+                    "rect": "0,0,151,19"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "OK",
+          "identifyProperties": {
+            "type": "Button",
+            "automationId": "1"
+          },
+          "cachedProperties": {
+            "automationId": "1",
+            "type": "Button",
+            "className": "Button",
+            "name": "OK",
+            "boundingRectangle": "[287,680,79,26]",
+            "value": false
+          },
+          "image": {
+            "imgPath": "确定1.png",
+            "rect": "0,0,79,26"
+          }
+        },
+        {
+          "ntype": "uia",
+          "nname": "Size:",
+          "identifyProperties": {
+            "type": "ComboBox",
+            "automationId": "1138"
+          },
+          "cachedProperties": {
+            "automationId": "1138",
+            "type": "ComboBox",
+            "className": "ComboBox",
+            "name": "Size:",
+            "accessKey": "Alt+s",
+            "boundingRectangle": "893,253,63,147"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "Size:1",
+              "identifyProperties": {
+                "type": "List",
+                "automationId": "1000"
+              },
+              "cachedProperties": {
+                "automationId": "1000",
+                "type": "List",
+                "className": "ComboLBox",
+                "name": "Size:",
+                "boundingRectangle": "893,277,63,123"
+              },
+              "children": [
+                {
+                  "ntype": "uia",
+                  "nname": "20",
+                  "identifyProperties": {
+                    "type": "ListItem",
+                    "name": "20"
+                  },
+                  "cachedProperties": {
+                    "type": "ListItem",
+                    "name": "五号",
+                    "boundingRectangle": "895,296,42,17"
+                  },
+                  "image": {
+                    "imgPath": "五号.png",
+                    "rect": "0,0,0,0"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "Font style:",
+          "identifyProperties": {
+            "type": "ComboBox",
+            "automationId": "1137"
+          },
+          "cachedProperties": {
+            "automationId": "1137",
+            "type": "ComboBox",
+            "className": "ComboBox",
+            "name": "Font style:",
+            "accessKey": "Alt+y",
+            "boundingRectangle": "746,253,130,162"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "Font style:1",
+              "identifyProperties": {
+                "type": "List",
+                "automationId": "1000"
+              },
+              "cachedProperties": {
+                "automationId": "1000",
+                "type": "List",
+                "className": "ComboLBox",
+                "name": "Font style:",
+                "boundingRectangle": "746,277,130,137"
+              },
+              "children": [
+                {
+                  "ntype": "uia",
+                  "nname": "Bold",
+                  "identifyProperties": {
+                    "type": "ListItem",
+                    "name": "Bold"
+                  },
+                  "cachedProperties": {
+                    "type": "ListItem",
+                    "name": "粗体",
+                    "boundingRectangle": "748,317,109,19"
+                  },
+                  "image": {
+                    "imgPath": "粗体2.png",
+                    "rect": "0,0,0,0"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

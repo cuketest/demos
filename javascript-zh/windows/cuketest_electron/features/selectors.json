@@ -1,0 +1,20 @@
+{
+    "新建剧本": "#toolbar-new-file-btn",
+    "新建剧本下拉": "#toolbar-new-file-dd-btn",
+    "新建剧本下拉列表-feature": "#toolbar-new-file-dd-feature",
+    "新建剧本下拉列表-javascript": "#toolbar-new-file-dd-js",
+    "新建项目": "#toolbar-new-project-btn",
+    "打开": "#toolbar-open-btn",
+    "打开项目": "#toolbar-open-project-btn",
+    "保存": "#toolbar-save-btn",
+    "保存全部": "#toolbar-save-all-btn",
+    "停止运行": "#toolbar-stop-run",
+    "运行项目": "#toolbar-run-project-btn",
+    "运行剧本": "#toolbar-run-feature-btn",
+    "运行脚本": "#toolbar-run-js-btn",
+    "新建项目对话框": "#dialog-new-project",
+    "新建项目对话框-浏览按钮": "#dialog-new-project-browse-btn",    
+    "输出栏": "#outputmessage",
+    "模型管理器": ".glyphicon.glyphicon-modal.gi-2x",
+    "未打开模型提示": ".no-model-file"
+}

@@ -1,0 +1,116 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "qt",
+      "nname": "fetchmore",
+      "identifyProperties": {
+        "type": "Application",
+        "appName": "fetchmore"
+      },
+      "cachedProperties": {
+        "appName": "fetchmore",
+        "appPath": "/usr/lib/cuketest/bin/fetchmore",
+        "type": "Application"
+      },
+      "children": [
+        {
+          "ntype": "qt",
+          "nname": "Fetch_More_Example",
+          "identifyProperties": {
+            "type": "Window",
+            "className": "Window",
+            "text": "Fetch More Example"
+          },
+          "cachedProperties": {
+            "className": "Window",
+            "text": "Fetch More Example",
+            "type": "Window",
+            "boundingRectangle": "[701,167,278,445]"
+          },
+          "image": {
+            "imgPath": "image55.png",
+            "rect": "245,101,278,445"
+          },
+          "children": [
+            {
+              "ntype": "qt",
+              "nname": "Edit",
+              "identifyProperties": {
+                "type": "Edit",
+                "className": "QLineEdit"
+              },
+              "cachedProperties": {
+                "className": "QLineEdit",
+                "type": "Edit",
+                "boundingRectangle": "[784,178,184,27]"
+              },
+              "image": {
+                "imgPath": "image39.png",
+                "rect": "330,112,182,27"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "List",
+              "identifyProperties": {
+                "type": "List",
+                "className": "QListView"
+              },
+              "cachedProperties": {
+                "className": "QListView",
+                "type": "List",
+                "boundingRectangle": "[712,211,256,192]"
+              },
+              "image": {
+                "imgPath": "image54.png",
+                "rect": "256,145,256,192"
+              },
+              "children": [
+                {
+                  "ntype": "qt",
+                  "nname": "libexec",
+                  "identifyProperties": {
+                    "type": "ListItem",
+                    "itemPath": "[6]",
+                    "text": "libexec"
+                  },
+                  "cachedProperties": {
+                    "itemPath": "[6]",
+                    "text": "libexec",
+                    "type": "ListItem",
+                    "boundingRectangle": "[713,326,241,19]"
+                  },
+                  "image": {
+                    "imgPath": "image40.png",
+                    "rect": "713,326,241,19"
+                  }
+                },
+                {
+                  "ntype": "qt",
+                  "nname": "sh",
+                  "identifyProperties": {
+                    "type": "ListItem",
+                    "itemPath": "[120]",
+                    "text": "sh"
+                  },
+                  "cachedProperties": {
+                    "itemPath": "[120]",
+                    "text": "sh",
+                    "type": "ListItem",
+                    "boundingRectangle": "[703,218,241,19]"
+                  },
+                  "image": {
+                    "imgPath": "image41.png",
+                    "rect": "703,218,241,19"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "New Feature": "#toolbar-new-file-btn",
+    "New Feature drop-down": "#toolbar-new-file-dd-btn",
+    "New Feature select-feature": "#toolbar-new-file-dd-feature",
+    "New Feature select-javascript": "#toolbar-new-file-dd-js",
+    "New Project": "#toolbar-new-project-btn",
+    "Open": "#toolbar-open-btn",
+    "Open Project": "#toolbar-open-project-btn",
+    "Save": "#toolbar-save-btn",
+    "Save All": "#toolbar-save-all-btn",
+    "Run Project": "#toolbar-run-project-btn",
+    "Run Feature": "#toolbar-run-feature-btn",
+    "Run Script": "#toolbar-run-js-btn",
+    "New Project dialog": "#dialog-new-project",
+    "New Project dialog-Browse button": "#dialog-new-project-browse-btn",    
+    "Output Bar": "#outputmessage",
+    "Model Manager": ".glyphicon.glyphicon-modal.gi-2x",
+    "Model prompt is not opened": ".no-model-file"
+}

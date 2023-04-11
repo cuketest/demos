@@ -1,0 +1,78 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "uia",
+      "nname": "Window",
+      "identifyProperties": {
+        "type": "Window",
+        "className": "QWidget",
+        "title": "Spreadsheet"
+      },
+      "cachedProperties": {},
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "Custom",
+          "identifyProperties": {
+            "type": "Custom"
+          },
+          "cachedProperties": {
+            "type": "Custom",
+            "boundingRectangle": "60,395,640,332"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "Table",
+              "identifyProperties": {
+                "type": "Table"
+              },
+              "cachedProperties": {
+                "type": "Table",
+                "boundingRectangle": "640,396,640,344"
+              },
+              "children": [
+                {
+                  "ntype": "uia",
+                  "nname": "6",
+                  "identifyProperties": {
+                    "type": "Custom",
+                    "name": "6",
+                    "objectKey": "TableRow"
+                  },
+                  "cachedProperties": {
+                    "type": "Custom",
+                    "name": "6",
+                    "boundingRectangle": "641,576,627,30",
+                    "objectKey": "TableRow"
+                  },
+                  "children": [
+                    {
+                      "ntype": "uia",
+                      "nname": "Taxi",
+                      "identifyProperties": {
+                        "type": "DataItem",
+                        "name": "Taxi"
+                      },
+                      "cachedProperties": {
+                        "type": "DataItem",
+                        "name": "Taxi",
+                        "boundingRectangle": "669,576,99,29"
+                      },
+                      "image": {
+                        "imgPath": "Taxi.png",
+                        "rect": "10,10,99,29"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

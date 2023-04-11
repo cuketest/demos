@@ -1,0 +1,205 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "uia",
+      "nname": "CukeTest窗口",
+      "identifyProperties": {
+        "type": "Pane",
+        "className": "Chrome_WidgetWin_1",
+        "appName": "Cuke",
+        "name": {
+          "type": "regex",
+          "text": "欢迎|模型管理器|Model\\sManager|\\.feature|\\.js"
+        }
+      },
+      "cachedProperties": {
+        "type": "Pane",
+        "className": "Chrome_WidgetWin_1",
+        "name": "C:\\Users\\dream\\Documents\\LeanPro\\Testing\\samples\\cuketest_samples\\zh-CN\\windows\\cuketest_electron -- 工具栏功能.feature",
+        "boundingRectangle": "[-9,-9,1938,1048]",
+        "appName": "Cuke",
+        "appPath": "C:\\Program Files\\LeanPro\\CukeTest\\Cuke.exe"
+      },
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "文件选择器",
+          "identifyProperties": {
+            "type": "Window",
+            "className": "#32770"
+          },
+          "cachedProperties": {
+            "type": "Window",
+            "className": "#32770",
+            "title": "选择项目文件夹",
+            "boundingRectangle": "[1126,230,681,540]"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "打开文件夹",
+              "identifyProperties": {
+                "type": "Edit",
+                "automationId": "1152",
+                "name": "文件夹:"
+              },
+              "cachedProperties": {
+                "type": "Edit",
+                "automationId": "1152",
+                "className": "Edit",
+                "name": "文件夹:",
+                "boundingRectangle": "[1308,693,474,26]"
+              },
+              "image": {
+                "imgPath": "uia7.png",
+                "rect": "0,0,474,26"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "选择文件夹",
+              "identifyProperties": {
+                "type": "Button",
+                "automationId": "1",
+                "name": "选择文件夹"
+              },
+              "cachedProperties": {
+                "type": "Button",
+                "automationId": "1",
+                "className": "Button",
+                "name": "选择文件夹",
+                "boundingRectangle": "[1578,724,104,26]"
+              },
+              "image": {
+                "imgPath": "uia8.png",
+                "rect": "0,0,104,26"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "保存",
+              "identifyProperties": {
+                "type": "Button",
+                "automationId": "1",
+                "name": "保存(S)"
+              },
+              "cachedProperties": {
+                "type": "Button",
+                "automationId": "1",
+                "className": "Button",
+                "name": "保存(S)",
+                "boundingRectangle": "[1594,724,88,26]"
+              },
+              "image": {
+                "imgPath": "uia10.png",
+                "rect": "0,0,88,26"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "保存文件名",
+              "identifyProperties": {
+                "type": "Edit",
+                "automationId": "1001",
+                "name": "文件名:"
+              },
+              "cachedProperties": {
+                "type": "Edit",
+                "automationId": "1001",
+                "className": "Edit",
+                "name": "文件名:",
+                "boundingRectangle": "[1262,657,512,19]"
+              },
+              "image": {
+                "imgPath": "uia9.png",
+                "rect": "0,0,512,19"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "打开文件名1",
+              "identifyProperties": {
+                "type": "ComboBox",
+                "automationId": "1148",
+                "name": "文件名(N):"
+              },
+              "cachedProperties": {
+                "type": "ComboBox",
+                "automationId": "1148",
+                "className": "ComboBox",
+                "name": "文件名(N):",
+                "boundingRectangle": "[1326,693,256,26]"
+              },
+              "image": {
+                "imgPath": "uia5.png",
+                "rect": "0,0,256,26"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "打开",
+              "identifyProperties": {
+                "type": "Button",
+                "automationId": "1",
+                "name": "打开(O)"
+              },
+              "cachedProperties": {
+                "type": "Button",
+                "automationId": "1",
+                "className": "Button",
+                "name": "打开(O)",
+                "boundingRectangle": "[1594,724,88,26]"
+              },
+              "image": {
+                "imgPath": "uia6.png",
+                "rect": "0,0,88,26"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "打开文件名",
+              "identifyProperties": {
+                "type": "Edit",
+                "automationId": "1148",
+                "name": "文件名(N):"
+              },
+              "cachedProperties": {
+                "type": "Edit",
+                "automationId": "1148",
+                "className": "Edit",
+                "name": "文件名(N):",
+                "boundingRectangle": "[1056,689,232,17]"
+              },
+              "image": {
+                "imgPath": "uia11.png",
+                "rect": "0,0,232,17"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "带下拉框的打开",
+              "identifyProperties": {
+                "type": "SplitButton",
+                "automationId": "1",
+                "name": "打开(O)"
+              },
+              "cachedProperties": {
+                "type": "SplitButton",
+                "automationId": "1",
+                "className": "Button",
+                "name": "打开(O)",
+                "boundingRectangle": "[1047,586,88,26]"
+              },
+              "image": {
+                "imgPath": "uia13.png",
+                "rect": "0,0,88,26"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

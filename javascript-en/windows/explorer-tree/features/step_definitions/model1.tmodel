@@ -1,0 +1,32 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "uia",
+      "nname": "Window",
+      "identifyProperties": {
+        "type": "Window",
+        "className": "CabinetWClass"
+      },
+      "cachedProperties": {},
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "tree view",
+          "identifyProperties": {
+            "type": "Tree",
+            "automationId": "100"
+          },
+          "cachedProperties": {
+            "type": "Tree",
+            "automationId": "100",
+            "className": "SysTreeView32",
+            "name": "tree view",
+            "boundingRectangle": "[0,201,314,816]"
+          }
+        }
+      ]
+    }
+  ]
+}

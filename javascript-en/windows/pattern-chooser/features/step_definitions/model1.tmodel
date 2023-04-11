@@ -1,0 +1,208 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "qt",
+      "nname": "appchooser",
+      "identifyProperties": {
+        "type": "Application",
+        "appName": "appchooser"
+      },
+      "cachedProperties": {
+        "appName": "appchooser",
+        "appPath": "C:/Program Files/LeanPro/CukeTest/bin/appchooser.exe",
+        "type": "Application"
+      },
+      "children": [
+        {
+          "ntype": "qt",
+          "nname": "GraphicsView",
+          "identifyProperties": {
+            "type": "GraphicsView",
+            "className": "QGraphicsView"
+          },
+          "cachedProperties": {
+            "className": "QGraphicsView",
+            "type": "GraphicsView",
+            "boundingRectangle": "[182,211,300,300]"
+          },
+          "image": {
+            "imgPath": "qt.png",
+            "rect": "0,0,300,300"
+          },
+          "children": [
+            {
+              "ntype": "virtual",
+              "nname": "Camera Virtual Control (Qt)",
+              "identifyProperties": {
+                "boundingRectangle": "0,5,71,64",
+                "align": 0
+              }
+            },
+            {
+              "ntype": "virtual",
+              "nname": "Glasses Virtual Control (Qt)",
+              "identifyProperties": {
+                "boundingRectangle": "5,3,65,61",
+                "align": 1
+              }
+            },
+            {
+              "ntype": "virtual",
+              "nname": "Icon virtual control (Qt)",
+              "identifyProperties": {
+                "boundingRectangle": "1,2,62,63",
+                "align": 2
+              }
+            },
+            {
+              "ntype": "virtual",
+              "nname": "Dictionary Virtual Control (Qt)",
+              "identifyProperties": {
+                "boundingRectangle": "232,233,63,65",
+                "align": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ntype": "uia",
+      "nname": "Window",
+      "identifyProperties": {
+        "type": "Window",
+        "className": "QWidget"
+      },
+      "cachedProperties": {
+        "type": "Window",
+        "className": "QWidget",
+        "value": false,
+        "boundingRectangle": "[173,173,318,347]"
+      },
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "Custom",
+          "identifyProperties": {
+            "type": "Custom"
+          },
+          "cachedProperties": {
+            "type": "Custom",
+            "value": false,
+            "boundingRectangle": "[182,211,300,300]"
+          },
+          "image": {
+            "imgPath": "uia.png",
+            "rect": "0,0,300,300"
+          },
+          "children": [
+            {
+              "ntype": "virtual",
+              "nname": "Camera Virtual Controls (Win)",
+              "identifyProperties": {
+                "boundingRectangle": "0,0,65,77",
+                "align": 0
+              }
+            },
+            {
+              "ntype": "virtual",
+              "nname": "Glasses Virtual Control (Win)",
+              "identifyProperties": {
+                "boundingRectangle": "4,0,71,65",
+                "align": 1
+              }
+            },
+            {
+              "ntype": "virtual",
+              "nname": "Icon Virtual Control (Win)",
+              "identifyProperties": {
+                "boundingRectangle": "8,7,51,52",
+                "align": 2
+              }
+            },
+            {
+              "ntype": "virtual",
+              "nname": "Dictionary Virtual Control (Win)",
+              "identifyProperties": {
+                "boundingRectangle": "8,3,62,64",
+                "align": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ntype": "ptn",
+      "nname": "camera",
+      "identifyProperties": {
+        "imagePath": "pattern.png"
+      },
+      "cachedProperties": {
+        "boundingRectangle": "[0,0,71,57]"
+      },
+      "image": {
+        "imgPath": "pattern.png",
+        "rect": "0,0,71,57"
+      }
+    },
+    {
+      "ntype": "ptn",
+      "nname": "glasses",
+      "identifyProperties": {
+        "imagePath": "pattern1.png"
+      },
+      "cachedProperties": {
+        "boundingRectangle": "[0,0,61,59]"
+      },
+      "image": {
+        "imgPath": "pattern1.png",
+        "rect": "0,0,61,59"
+      }
+    },
+    {
+      "ntype": "ptn",
+      "nname": "icon",
+      "identifyProperties": {
+        "imagePath": "pattern2.png"
+      },
+      "cachedProperties": {
+        "boundingRectangle": "[0,0,65,64]"
+      },
+      "image": {
+        "imgPath": "pattern2.png",
+        "rect": "0,0,65,64"
+      }
+    },
+    {
+      "ntype": "ptn",
+      "nname": "dictionary",
+      "identifyProperties": {
+        "imagePath": "pattern3.png"
+      },
+      "cachedProperties": {
+        "boundingRectangle": "[0,0,65,60]"
+      },
+      "image": {
+        "imgPath": "pattern3.png",
+        "rect": "0,0,65,60"
+      }
+    },
+    {
+      "ntype": "ptn",
+      "nname": "Center the camera",
+      "identifyProperties": {
+        "imagePath": "pattern4.png"
+      },
+      "cachedProperties": {
+        "boundingRectangle": "[0,0,138,102]"
+      },
+      "image": {
+        "imgPath": "pattern4.png",
+        "rect": "0,0,138,102"
+      }
+    }
+  ]
+}

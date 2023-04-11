@@ -1,0 +1,69 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "uia",
+      "nname": "Window",
+      "identifyProperties": {
+        "type": "Window",
+        "className": "QWidget",
+        "title": "Dir View"
+      },
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "Tree",
+          "identifyProperties": {
+            "type": "Tree"
+          },
+          "cachedProperties": {
+            "type": "Tree",
+            "boundingRectangle": "[154,256,623,480]"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "Windows  (C:)",
+              "identifyProperties": {
+                "type": "TreeItem",
+                "name": "Windows  (C:)"
+              },
+              "cachedProperties": {
+                "type": "TreeItem",
+                "name": "Windows  (C:)",
+                "boundingRectangle": "[175,301,601,19]"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "Windows",
+              "identifyProperties": {
+                "type": "TreeItem",
+                "name": "Windows"
+              },
+              "cachedProperties": {
+                "type": "TreeItem",
+                "name": "Windows",
+                "boundingRectangle": "[195,358,581,19]"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "System32",
+              "identifyProperties": {
+                "type": "TreeItem",
+                "name": "System32"
+              },
+              "cachedProperties": {
+                "type": "TreeItem",
+                "name": "System32",
+                "boundingRectangle": "[215,453,561,19]"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "uia",
+      "nname": "Window",
+      "identifyProperties": {
+        "type": "Window",
+        "title": "Fetch More Example"
+      },
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "List",
+          "identifyProperties": {
+            "type": "List"
+          },
+          "cachedProperties": {
+            "type": "List",
+            "boundingRectangle": "332,260,266,192"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "..",
+              "identifyProperties": {
+                "type": "ListItem",
+                "name": ".."
+              },
+              "cachedProperties": {
+                "type": "ListItem",
+                "name": "..",
+                "boundingRectangle": "153,273,262,26"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": ".",
+              "identifyProperties": {
+                "type": "ListItem",
+                "name": "."
+              },
+              "cachedProperties": {
+                "type": "ListItem",
+                "name": ".",
+                "boundingRectangle": "244,402,262,26"
+              }
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "Directory:",
+          "identifyProperties": {
+            "type": "Edit"
+          },
+          "cachedProperties": {
+            "type": "Edit",
+            "name": "Directory:",
+            "accessKey": "Alt+D",
+            "boundingRectangle": "327,304,193,25"
+          },
+          "image": {
+            "imgPath": "8e73a0e5-e783-434d-a579-d94adc9d9452.png",
+            "rect": "10,10,203,35"
+          }
+        }
+      ]
+    }
+  ]
+}

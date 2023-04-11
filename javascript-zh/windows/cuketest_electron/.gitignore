@@ -1,0 +1,5 @@
+node_modules
+recording*.js
+testing-cache
+reports
+testing-cache/**

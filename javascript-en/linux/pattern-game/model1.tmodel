@@ -1,0 +1,137 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "ptn",
+      "nname": "green_col",
+      "identifyProperties": {
+        "imagePath": "image2.png",
+        "similarity": "0.92"
+      },
+      "cachedProperties": {},
+      "image": {
+        "imgPath": "image2.png",
+        "rect": "1001,357,34,80"
+      }
+    },
+    {
+      "ntype": "ptn",
+      "nname": "green_row",
+      "identifyProperties": {
+        "imagePath": "image3.png",
+        "similarity": "0.92"
+      },
+      "image": {
+        "imgPath": "image3.png",
+        "rect": "1000,276,81,43"
+      }
+    },
+    {
+      "ntype": "ptn",
+      "nname": "red_col",
+      "identifyProperties": {
+        "imagePath": "image4.png",
+        "similarity": "0.92"
+      },
+      "image": {
+        "imgPath": "image4.png",
+        "rect": "1082,279,37,79"
+      }
+    },
+    {
+      "ntype": "ptn",
+      "nname": "red_row",
+      "identifyProperties": {
+        "imagePath": "image5.png",
+        "similarity": "0.92"
+      },
+      "image": {
+        "imgPath": "image5.png",
+        "rect": "759,317,84,38"
+      }
+    },
+    {
+      "ntype": "ptn",
+      "nname": "blue_row",
+      "identifyProperties": {
+        "imagePath": "image6.png",
+        "similarity": "0.92"
+      },
+      "image": {
+        "imgPath": "image6.png",
+        "rect": "1079,515,82,44"
+      }
+    },
+    {
+      "ntype": "ptn",
+      "nname": "blue_col",
+      "identifyProperties": {
+        "imagePath": "image7.png",
+        "similarity": "0.92"
+      },
+      "image": {
+        "imgPath": "image7.png",
+        "rect": "877,554,45,86"
+      }
+    },
+    {
+      "ntype": "qt",
+      "nname": "samegame",
+      "identifyProperties": {
+        "type": "Application",
+        "appName": "samegame"
+      },
+      "cachedProperties": {},
+      "children": [
+        {
+          "ntype": "qt",
+          "nname": "Window",
+          "identifyProperties": {
+            "type": "GraphicsView",
+            "className": "QGraphicsView"
+          },
+          "cachedProperties": {
+            "className": "QGraphicsView",
+            "type": "GraphicsView",
+            "boundingRectangle": "[79,79,490,720]"
+          },
+          "image": {
+            "imgPath": "image.png",
+            "rect": "79,79,490,720"
+          },
+          "children": [
+            {
+              "ntype": "ptn",
+              "nname": "new_game",
+              "identifyProperties": {
+                "imagePath": "image1.png",
+                "similarity": "0.97"
+              },
+              "cachedProperties": {
+                "boundingRectangle": "[2,665,141,52]"
+              },
+              "image": {
+                "imgPath": "pattern4.png",
+                "rect": "0,0,122,29"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ntype": "ptn",
+      "nname": "enter_name",
+      "identifyProperties": {
+        "imagePath": "pattern.png",
+        "similarity": "0.95"
+      },
+      "cachedProperties": {},
+      "image": {
+        "imgPath": "pattern.png",
+        "rect": "118,360,268,64"
+      }
+    }
+  ]
+}

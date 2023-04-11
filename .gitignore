@@ -1,0 +1,24 @@
+node_modules
+**/reports/**
+**/*_files/*.png
+!**/*_files/pattern*.png
+**/.*/**
+**/obj/**
+**/samples/qt/**
+**/images/**
+**/build-*/**
+**/issue/**
+**/*.pro.user
+package-lock.json
+mail.json
+recording*.js
+**/testing-cache/**
+**/TEST/**
+issue
+
+# Python 自动化项目
+.env
+.pytest_cache
+__*__
+report.html
+*_reports
