@@ -1,0 +1,505 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "qt",
+      "nname": "diagramscene",
+      "identifyProperties": {
+        "type": "Application",
+        "appName": "diagramscene"
+      },
+      "cachedProperties": {
+        "appName": "diagramscene",
+        "appPath": "C:/Users/Will/Downloads/diagramscene/diagramscene/diagramscene.exe",
+        "type": "Application"
+      },
+      "children": [
+        {
+          "ntype": "qt",
+          "nname": "Diagramscene1",
+          "identifyProperties": {
+            "type": "Window",
+            "className": "MainWindow",
+            "windowTitle": "Diagramscene"
+          },
+          "cachedProperties": {
+            "className": "MainWindow",
+            "type": "Window",
+            "windowTitle": "Diagramscene",
+            "boundingRectangle": "[153,259,800,500,0,1920,1080]"
+          },
+          "children": [
+            {
+              "ntype": "qt",
+              "nname": "QToolBox",
+              "identifyProperties": {
+                "type": "ToolBox",
+                "className": "QToolBox"
+              },
+              "cachedProperties": {
+                "className": "QToolBox",
+                "type": "ToolBox",
+                "boundingRectangle": "[162,325,193,425,0,1920,1080]"
+              },
+              "children": [
+                {
+                  "ntype": "qt",
+                  "nname": "QScrollArea",
+                  "identifyProperties": {
+                    "type": "ScrollArea",
+                    "className": "QScrollArea"
+                  },
+                  "cachedProperties": {
+                    "className": "QScrollArea",
+                    "type": "ScrollArea",
+                    "boundingRectangle": "[162,351,193,373,0,1920,1080]"
+                  },
+                  "children": [
+                    {
+                      "ntype": "qt",
+                      "nname": "Conditional",
+                      "identifyProperties": {
+                        "type": "Button",
+                        "className": "QToolButton",
+                        "text": ""
+                      },
+                      "cachedProperties": {
+                        "className": "QToolButton",
+                        "type": "Button",
+                        "boundingRectangle": "[187,369,57,56,0,1920,1080]"
+                      }
+                    },
+                    {
+                      "ntype": "qt",
+                      "nname": "Process",
+                      "identifyProperties": {
+                        "type": "Button",
+                        "className": "QToolButton",
+                        "index": 1,
+                        "text": ""
+                      },
+                      "cachedProperties": {
+                        "className": "QToolButton",
+                        "index": 1,
+                        "type": "Button",
+                        "boundingRectangle": "[247,624,57,56,0,1920,1080]"
+                      }
+                    },
+                    {
+                      "ntype": "qt",
+                      "nname": "Text",
+                      "identifyProperties": {
+                        "type": "Button",
+                        "className": "QToolButton",
+                        "index": 3,
+                        "text": ""
+                      },
+                      "cachedProperties": {
+                        "className": "QToolButton",
+                        "index": 3,
+                        "type": "Button",
+                        "boundingRectangle": "[191,398,57,56,0,1920,1080]"
+                      }
+                    },
+                    {
+                      "ntype": "qt",
+                      "nname": "I/O",
+                      "identifyProperties": {
+                        "type": "Button",
+                        "className": "QToolButton",
+                        "index": 2,
+                        "text": ""
+                      },
+                      "cachedProperties": {
+                        "className": "QToolButton",
+                        "index": 2,
+                        "type": "Button",
+                        "boundingRectangle": "[79,473,57,56,0,1920,1080]"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "ntype": "qt",
+              "nname": "Pointer_type",
+              "identifyProperties": {
+                "type": "ToolBar",
+                "className": "QToolBar",
+                "windowTitle": "Pointer type"
+              },
+              "cachedProperties": {
+                "className": "QToolBar",
+                "type": "ToolBar",
+                "windowTitle": "Pointer type",
+                "boundingRectangle": "[792,633,198,34,0,1920,1080]"
+              },
+              "children": [
+                {
+                  "ntype": "qt",
+                  "nname": "arrow",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "className": "QToolButton",
+                    "index": 1,
+                    "text": ""
+                  },
+                  "cachedProperties": {
+                    "className": "QToolButton",
+                    "index": 1,
+                    "type": "Button",
+                    "boundingRectangle": "[833,635,31,30,0,1920,1080]"
+                  }
+                },
+                {
+                  "ntype": "qt",
+                  "nname": "zoom",
+                  "identifyProperties": {
+                    "type": "ComboBox",
+                    "className": "QComboBox"
+                  },
+                  "cachedProperties": {
+                    "className": "QComboBox",
+                    "type": "ComboBox",
+                    "boundingRectangle": "[774,289,51,20,0,1920,1080]"
+                  }
+                }
+              ]
+            },
+            {
+              "ntype": "qt",
+              "nname": "QGraphicsView",
+              "identifyProperties": {
+                "type": "GraphicsView",
+                "className": "QGraphicsView"
+              },
+              "cachedProperties": {
+                "className": "QGraphicsView",
+                "type": "GraphicsView",
+                "boundingRectangle": "[398,676,583,425,0,1920,1080]"
+              },
+              "children": [
+                {
+                  "ntype": "qt",
+                  "nname": "ProcessItem",
+                  "identifyProperties": {
+                    "type": "GraphicsItem",
+                    "itemType": "Custom",
+                    "position": "500,500"
+                  },
+                  "cachedProperties": {
+                    "bound": "[-100,-100,201,201]",
+                    "itemType": "Custom",
+                    "position": "500,500",
+                    "type": "GraphicsItem",
+                    "boundingRectangle": "[296,485,202,202,0,1920,1080]"
+                  },
+                  "image": {
+                    "imgPath": "ProcessItem.png",
+                    "rect": "0,0,202,202"
+                  }
+                },
+                {
+                  "ntype": "qt",
+                  "nname": "ConditionalItem",
+                  "identifyProperties": {
+                    "type": "GraphicsItem",
+                    "itemType": "Custom",
+                    "bound": "[-100,-100,200,200]",
+                    "position": "800,500"
+                  },
+                  "cachedProperties": {
+                    "bound": "[-100,-100,200,200]",
+                    "itemType": "Custom",
+                    "position": "800,500",
+                    "type": "GraphicsItem",
+                    "boundingRectangle": "[596,485,201,201,0,1920,1080]"
+                  }
+                },
+                {
+                  "ntype": "qt",
+                  "nname": "arrowItem",
+                  "identifyProperties": {
+                    "type": "GraphicsItem",
+                    "bound": "[489,489,222,22]",
+                    "itemType": "Custom",
+                    "position": "0,0"
+                  },
+                  "cachedProperties": {
+                    "bound": "[489,489,222,22]",
+                    "itemType": "Custom",
+                    "position": "0,0",
+                    "type": "GraphicsItem",
+                    "boundingRectangle": "[385,574,223,23,0,1920,1080]"
+                  },
+                  "image": {
+                    "imgPath": "arrowItem.png",
+                    "rect": "0,0,223,23"
+                  }
+                },
+                {
+                  "ntype": "qt",
+                  "nname": "TextItem",
+                  "identifyProperties": {
+                    "type": "GraphicsItem",
+                    "bound": "[0,0,56,22]",
+                    "itemType": "Text",
+                    "position": "500,800"
+                  },
+                  "cachedProperties": {
+                    "DefaultProperty": "children",
+                    "bound": "[0,0,56,22]",
+                    "itemType": "Text",
+                    "position": "500,800",
+                    "shape": "AAAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUBMAAAAAAAAAAAAAAAAAAAAAAABQEwAAAAAAABANgAAAAAAAAAAAAEAAAAAAAAAAEA2AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+                    "type": "GraphicsItem",
+                    "boundingRectangle": "[420,637,57,23,0,1920,1080]"
+                  },
+                  "image": {
+                    "imgPath": "TextItem.png",
+                    "rect": "0,0,61,25"
+                  }
+                },
+                {
+                  "ntype": "qt",
+                  "nname": "I/OItem",
+                  "identifyProperties": {
+                    "type": "GraphicsItem",
+                    "bound": "[-120,-80,240,161]",
+                    "itemType": "Custom",
+                    "position": "500,1000"
+                  },
+                  "cachedProperties": {
+                    "bound": "[-120,-80,240,161]",
+                    "itemType": "Custom",
+                    "position": "500,1000",
+                    "type": "GraphicsItem",
+                    "boundingRectangle": "[504,447,181,121,0,1920,1080]"
+                  }
+                },
+                {
+                  "ntype": "qt",
+                  "nname": "ConditonalItem2",
+                  "identifyProperties": {
+                    "type": "GraphicsItem",
+                    "bound": "[-100,-100,200,200]",
+                    "itemType": "Custom",
+                    "position": "800,1000"
+                  },
+                  "cachedProperties": {
+                    "bound": "[-100,-100,200,200]",
+                    "itemType": "Custom",
+                    "position": "800,1000",
+                    "type": "GraphicsItem",
+                    "boundingRectangle": "[447,432,151,151,0,1920,1080]"
+                  }
+                },
+                {
+                  "ntype": "qt",
+                  "nname": "arrowItem2",
+                  "identifyProperties": {
+                    "type": "GraphicsItem",
+                    "bound": "[489,989,222,22]",
+                    "itemType": "Custom",
+                    "position": "0,0"
+                  },
+                  "cachedProperties": {
+                    "bound": "[489,989,222,22]",
+                    "itemType": "Custom",
+                    "position": "0,0",
+                    "type": "GraphicsItem",
+                    "boundingRectangle": "[289,499,167,17,0,1920,1080]"
+                  }
+                },
+                {
+                  "ntype": "qt",
+                  "nname": "TextItem2",
+                  "identifyProperties": {
+                    "type": "GraphicsItem",
+                    "bound": "[0,0,67,24]",
+                    "itemType": "Text",
+                    "position": "500,1200"
+                  },
+                  "cachedProperties": {
+                    "DefaultProperty": "children",
+                    "bound": "[0,0,67,24]",
+                    "itemType": "Text",
+                    "position": "500,1200",
+                    "shape": "AAAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUBQwAAAAAAAAAAAAAAAAAAAAAABQFDAAAAAAABAOAAAAAAAAAAAAAEAAAAAAAAAAEA4AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+                    "type": "GraphicsItem",
+                    "boundingRectangle": "[297,657,51,19,0,1920,1080]"
+                  }
+                }
+              ]
+            },
+            {
+              "ntype": "qt",
+              "nname": "Color",
+              "identifyProperties": {
+                "type": "ToolBar",
+                "className": "QToolBar",
+                "windowTitle": "Color"
+              },
+              "cachedProperties": {
+                "className": "QToolBar",
+                "type": "ToolBar",
+                "windowTitle": "Color",
+                "boundingRectangle": "[603,260,141,34,0,1920,1080]"
+              },
+              "children": [
+                {
+                  "ntype": "qt",
+                  "nname": "QToolButton",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "className": "QToolButton",
+                    "index": 1
+                  },
+                  "cachedProperties": {
+                    "className": "QToolButton",
+                    "index": 1,
+                    "type": "Button",
+                    "boundingRectangle": "[656,262,43,30,0,1920,1080]"
+                  }
+                },
+                {
+                  "ntype": "qt",
+                  "nname": "QToolButton1",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "className": "QToolButton",
+                    "index": 2
+                  },
+                  "cachedProperties": {
+                    "className": "QToolButton",
+                    "index": 2,
+                    "type": "Button",
+                    "boundingRectangle": "[625,215,43,30,0,1920,1080]"
+                  }
+                }
+              ]
+            },
+            {
+              "ntype": "qt",
+              "nname": "Font",
+              "identifyProperties": {
+                "type": "ToolBar",
+                "className": "QToolBar",
+                "windowTitle": "Font"
+              },
+              "cachedProperties": {
+                "className": "QToolBar",
+                "type": "ToolBar",
+                "windowTitle": "Font",
+                "boundingRectangle": "[173,213,356,34,0,1920,1080]"
+              },
+              "children": [
+                {
+                  "ntype": "qt",
+                  "nname": "QComboBox",
+                  "identifyProperties": {
+                    "type": "ComboBox",
+                    "className": "QComboBox"
+                  },
+                  "cachedProperties": {
+                    "className": "QComboBox",
+                    "type": "ComboBox",
+                    "boundingRectangle": "[183,220,213,20,0,1920,1080]"
+                  }
+                },
+                {
+                  "ntype": "qt",
+                  "nname": "加粗",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "className": "QToolButton",
+                    "text": "Bold",
+                    "toolTip": "Bold"
+                  },
+                  "cachedProperties": {
+                    "className": "QToolButton",
+                    "text": "Bold",
+                    "toolTip": "Bold",
+                    "type": "Button",
+                    "boundingRectangle": "[466,284,31,30,0,1920,1080]"
+                  }
+                },
+                {
+                  "ntype": "qt",
+                  "nname": "Underline",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "className": "QToolButton",
+                    "text": "Underline",
+                    "toolTip": "Underline"
+                  },
+                  "cachedProperties": {
+                    "className": "QToolButton",
+                    "text": "Underline",
+                    "toolTip": "Underline",
+                    "type": "Button",
+                    "boundingRectangle": "[528,284,31,30,0,1920,1080]"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ntype": "qt",
+          "nname": "QMenu",
+          "identifyProperties": {
+            "type": "Menu",
+            "className": "QMenu",
+            "text": ""
+          },
+          "cachedProperties": {
+            "className": "QMenu",
+            "type": "Menu",
+            "boundingRectangle": "[656,292,110,121,0,1920,1080]"
+          },
+          "children": [
+            {
+              "ntype": "qt",
+              "nname": "红色",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "text": "red"
+              },
+              "cachedProperties": {
+                "itemIndex": 2,
+                "text": "red",
+                "type": "MenuItem",
+                "boundingRectangle": "[659,341,103,23,0,1920,1080]"
+              },
+              "image": {
+                "imgPath": "qt10.png",
+                "rect": "0,0,103,23"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "蓝色",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "text": "blue"
+              },
+              "cachedProperties": {
+                "itemIndex": 3,
+                "text": "blue",
+                "type": "MenuItem",
+                "boundingRectangle": "[628,317,103,23,0,1920,1080]"
+              },
+              "image": {
+                "imgPath": "qt12.png",
+                "rect": "0,0,103,23"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

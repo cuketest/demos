@@ -1,14 +1,15 @@
 from leanproAuto import WinAuto, Util
+import sys
+import os
 
-install_path = "C:\\Program Files\\LeanPro\\CukeTest"
-app_path = install_path + '\\bin\\dirview.exe'
 context = {}
 model = WinAuto.loadModel('model1.tmodel')
 
 
 # 等效于 BeforeAll Hook，在第一个测试开始前被调用
 def pytest_sessionstart(session):
-    context["pid"] = Util.launchProcess(app_path)
+    install_path = os.path.dirname(os.path.dirname(sys.executable))
+    context["pid"] = Util.launchProcess(f"{install_path}\\bin\\dirview.exe")
     if not model.getWindow("Window").exists(5):
         raise Exception("Testing application was not launched.")
 

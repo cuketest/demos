@@ -1,0 +1,377 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "uia",
+      "nname": "记事本",
+      "identifyProperties": {
+        "type": "Window",
+        "className": "Notepad"
+      },
+      "cachedProperties": {},
+      "image": {
+        "imgPath": "image.png",
+        "rect": "0,0,845,432"
+      },
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "文本编辑器",
+          "identifyProperties": {
+            "type": "Document",
+            "searchHint": "fromPoint",
+            "className": "RichEditD2DPT",
+            "name": "文本编辑器"
+          },
+          "cachedProperties": {
+            "automationId": "15",
+            "type": "Document",
+            "className": "RichEditD2DPT",
+            "name": "文本编辑器",
+            "boundingRectangle": "[188,257,842,404]",
+            "value": "hello world"
+          },
+          "image": {
+            "imgPath": "文本编辑器.png",
+            "rect": "0,0,1920,828"
+          },
+          "children": [
+            {
+              "ntype": "virtual",
+              "nname": "virtual",
+              "identifyProperties": {
+                "boundingRectangle": "2,7,518,136",
+                "align": 0
+              },
+              "cachedProperties": {}
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "应用程序",
+          "identifyProperties": {
+            "type": "MenuBar",
+            "automationId": "MenuBar"
+          },
+          "cachedProperties": {
+            "automationId": "MenuBar",
+            "type": "MenuBar",
+            "name": "应用程序",
+            "accessKey": "Alt",
+            "boundingRectangle": "[97,247,168,32]",
+            "value": false
+          },
+          "image": {
+            "imgPath": "uia.png",
+            "rect": "0,0,168,32"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "文件(F)",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "name": "文件",
+                "className": "Microsoft.UI.Xaml.Controls.MenuBarItem"
+              },
+              "cachedProperties": {
+                "type": "MenuItem",
+                "name": "文件",
+                "accessKey": "Alt+f",
+                "boundingRectangle": "[101,247,48,32]",
+                "className": "Microsoft.UI.Xaml.Controls.MenuBarItem",
+                "value": false
+              },
+              "image": {
+                "imgPath": "文件(F).png",
+                "rect": "0,0,48,32"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "格式(O)",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "name": "编辑",
+                "className": "Microsoft.UI.Xaml.Controls.MenuBarItem"
+              },
+              "cachedProperties": {
+                "type": "MenuItem",
+                "name": "编辑",
+                "accessKey": "Alt+o",
+                "boundingRectangle": "[157,247,48,32]",
+                "className": "Microsoft.UI.Xaml.Controls.MenuBarItem",
+                "value": false
+              },
+              "image": {
+                "imgPath": "格式(O)3.png",
+                "rect": "0,0,48,32"
+              }
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "文件1",
+          "identifyProperties": {
+            "type": "Menu",
+            "className": "MenuFlyout"
+          },
+          "cachedProperties": {
+            "type": "Menu",
+            "className": "#32768",
+            "name": "文件(F)",
+            "boundingRectangle": "515,107,203,174"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "保存(S)",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "name": "保存",
+                "className": "MenuFlyoutItem"
+              },
+              "cachedProperties": {
+                "automationId": "3",
+                "type": "MenuItem",
+                "name": "保存",
+                "accessKey": "Ctrl+S",
+                "boundingRectangle": "[106,383,222,29]",
+                "className": "MenuFlyoutItem",
+                "value": false
+              },
+              "image": {
+                "imgPath": "保存(S)1.png",
+                "rect": "10,10,278,24"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "新建(N)",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "className": "MenuFlyoutItem",
+                "name": "新建标签页"
+              },
+              "cachedProperties": {
+                "type": "MenuItem",
+                "className": "MenuFlyoutItem",
+                "name": "新建标签页",
+                "accessKey": "Ctrl+N",
+                "value": false,
+                "boundingRectangle": "[255,113,222,29]"
+              }
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "格式1",
+          "identifyProperties": {
+            "type": "Menu",
+            "className": "MenuFlyout"
+          },
+          "cachedProperties": {
+            "type": "Menu",
+            "className": "MenuFlyout",
+            "name": "格式(O)",
+            "boundingRectangle": "[157,279,232,447]",
+            "value": false
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "字体(F)...",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "name": "字体",
+                "className": "MenuFlyoutItem"
+              },
+              "cachedProperties": {
+                "automationId": "33",
+                "type": "MenuItem",
+                "name": "字体",
+                "accessKey": "f",
+                "boundingRectangle": "[162,692,222,29]",
+                "className": "MenuFlyoutItem",
+                "value": false
+              },
+              "image": {
+                "imgPath": "字体(F)....png",
+                "rect": "10,10,177,24"
+              }
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "字体(F):",
+          "identifyProperties": {
+            "type": "ComboBox",
+            "automationId": "FontFamilyComboBox",
+            "name": "字体系列"
+          },
+          "cachedProperties": {
+            "automationId": "FontFamilyComboBox",
+            "type": "ComboBox",
+            "className": "ComboBox",
+            "name": "字体系列",
+            "accessKey": "Alt+f",
+            "boundingRectangle": "[590,362,206,40]",
+            "value": "Arial"
+          },
+          "image": {
+            "imgPath": "uia3.png",
+            "rect": "0,0,206,40"
+          }
+        },
+        {
+          "ntype": "uia",
+          "nname": "确定",
+          "identifyProperties": {
+            "type": "Button",
+            "automationId": "Button",
+            "name": "返回"
+          },
+          "cachedProperties": {
+            "automationId": "Button",
+            "type": "Button",
+            "className": "Button",
+            "name": "返回",
+            "boundingRectangle": "[74,188,30,24]",
+            "value": false
+          },
+          "image": {
+            "imgPath": "确定1.png",
+            "rect": "0,0,30,24"
+          }
+        },
+        {
+          "ntype": "uia",
+          "nname": "大小(S):",
+          "identifyProperties": {
+            "type": "ComboBox",
+            "automationId": "FontSizeComboBox",
+            "name": "大小"
+          },
+          "cachedProperties": {
+            "automationId": "FontSizeComboBox",
+            "type": "ComboBox",
+            "className": "ComboBox",
+            "name": "大小",
+            "accessKey": "Alt+s",
+            "boundingRectangle": "[590,476,206,40]",
+            "value": "11"
+          },
+          "image": {
+            "imgPath": "uia5.png",
+            "rect": "0,0,206,40"
+          }
+        },
+        {
+          "ntype": "uia",
+          "nname": "字形(Y):",
+          "identifyProperties": {
+            "type": "ComboBox",
+            "automationId": "FontStyleComboBox",
+            "name": "样式"
+          },
+          "cachedProperties": {
+            "automationId": "FontStyleComboBox",
+            "type": "ComboBox",
+            "className": "ComboBox",
+            "name": "样式",
+            "accessKey": "Alt+y",
+            "boundingRectangle": "[590,419,206,40]",
+            "value": false
+          },
+          "image": {
+            "imgPath": "uia4.png",
+            "rect": "0,0,206,40"
+          }
+        },
+        {
+          "ntype": "uia",
+          "nname": "文件选择器",
+          "identifyProperties": {
+            "type": "Window",
+            "className": "#32770",
+            "title": "另存为"
+          },
+          "cachedProperties": {
+            "type": "Window",
+            "className": "#32770",
+            "title": "另存为",
+            "boundingRectangle": "107,150,683,480"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "文件名:",
+              "identifyProperties": {
+                "type": "ComboBox",
+                "automationId": "FileNameControlHost",
+                "name": "文件名:"
+              },
+              "cachedProperties": {
+                "automationId": "FileNameControlHost",
+                "type": "ComboBox",
+                "className": "AppControlHost",
+                "name": "文件名:",
+                "accessKey": "Alt+N",
+                "boundingRectangle": "240,514,537,25"
+              },
+              "children": [
+                {
+                  "ntype": "uia",
+                  "nname": "文件名:1",
+                  "identifyProperties": {
+                    "type": "Edit",
+                    "automationId": "1001",
+                    "name": "文件名:"
+                  },
+                  "cachedProperties": {
+                    "automationId": "1001",
+                    "type": "Edit",
+                    "className": "Edit",
+                    "name": "文件名:",
+                    "accessKey": "Alt+N",
+                    "boundingRectangle": "243,517,514,19"
+                  },
+                  "image": {
+                    "imgPath": "a6481a2a-ff0a-4696-ae91-043d446e6346.png",
+                    "rect": "0,0,0,0"
+                  }
+                }
+              ]
+            },
+            {
+              "ntype": "uia",
+              "nname": "保存(S)1",
+              "identifyProperties": {
+                "type": "Button",
+                "automationId": "1",
+                "name": "保存(S)"
+              },
+              "cachedProperties": {
+                "automationId": "1",
+                "type": "Button",
+                "className": "Button",
+                "name": "保存(S)",
+                "accessKey": "Alt+s",
+                "boundingRectangle": "577,584,88,26"
+              },
+              "image": {
+                "imgPath": "保存(S).png",
+                "rect": "0,0,0,0"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

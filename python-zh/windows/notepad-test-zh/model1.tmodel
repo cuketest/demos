@@ -140,6 +140,26 @@
                 "imgPath": "保存(S)1.png",
                 "rect": "10,10,278,24"
               }
+            },
+            {
+              "ntype": "uia",
+              "nname": "新建(N)",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "name": "新建(N)"
+              },
+              "cachedProperties": {
+                "type": "MenuItem",
+                "automationId": "1",
+                "name": "新建(N)",
+                "accessKey": "Ctrl+N",
+                "value": false,
+                "boundingRectangle": "[321,305,231,22]"
+              },
+              "image": {
+                "imgPath": "uia.png",
+                "rect": "0,0,231,22"
+              }
             }
           ]
         },

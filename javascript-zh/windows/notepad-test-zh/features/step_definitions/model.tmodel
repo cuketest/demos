@@ -31,8 +31,18 @@
           },
           "image": {
             "imgPath": "文本编辑器.png",
-            "rect": "0,0,699,355"
-          }
+            "rect": "0,0,1920,975"
+          },
+          "children": [
+            {
+              "ntype": "virtual",
+              "nname": "virtual",
+              "identifyProperties": {
+                "boundingRectangle": "1,1,352,110",
+                "align": 0
+              }
+            }
+          ]
         },
         {
           "ntype": "uia",
@@ -139,6 +149,29 @@
               "image": {
                 "imgPath": "保存(S)1.png",
                 "rect": "10,10,278,24"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "新建(N)",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "name": {
+                  "type": "include",
+                  "text": "新建(N)"
+                }
+              },
+              "cachedProperties": {
+                "type": "MenuItem",
+                "automationId": "1",
+                "name": "新建(N)",
+                "accessKey": "Ctrl+N",
+                "value": false,
+                "boundingRectangle": "[321,305,231,22]"
+              },
+              "image": {
+                "imgPath": "uia.png",
+                "rect": "0,0,231,22"
               }
             }
           ]
@@ -437,6 +470,36 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "文本编辑器-win7",
+          "identifyProperties": {
+            "type": "Document",
+            "automationId": "15"
+          },
+          "cachedProperties": {
+            "automationId": "15",
+            "type": "Document",
+            "className": "Edit",
+            "name": "文本编辑器",
+            "boundingRectangle": "195,197,1191,543"
+          },
+          "image": {
+            "imgPath": "文本编辑器_win7.png",
+            "rect": "0,0,690,525"
+          },
+          "children": [
+            {
+              "ntype": "virtual",
+              "nname": "virtual-win7",
+              "identifyProperties": {
+                "boundingRectangle": "1,1,352,110",
+                "align": 0
+              },
+              "cachedProperties": {}
             }
           ]
         }

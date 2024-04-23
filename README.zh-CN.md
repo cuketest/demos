@@ -29,6 +29,12 @@ CukeTest是一款功能强大的自动化测试工具，它可以帮助你编写
 |                  | [Qt Table](javascript-zh/qt/qt-table)                                     | 跨平台Qt技术自动化表格控件的样例                                    |
 |                  | [Qt Tree](javascript-zh/qt/qt-tree)                                       | 跨平台Qt技术自动化树状控件的样例                                    |
 |                  | [Qt5 Dialogs](javascript-zh/qt/qt-dialog)                                 | 跨平台Qt技术自动化各类对话框的样例，被测应用是Qt5编译的             |
+|                  | [Qt5 Notepad](javascript-zh/qt/qt-notepad)                                 | 跨平台Qt技术自动化Qt记事本的样例，被测应用是Qt5编译的             |
+|                  | [Qt5 Diagramscene](javascript-zh/qt/qt-diagramscene)                      | 跨平台Qt技术自动化Diagramscene样例，被测应用是Qt5编译的             |
+|                  | [Qml Calc](javascript-zh/qt/qml-calc)                                 | 跨平台Qt技术自动化Qt5 Qml 计算器样例             |
+|                  | [Qml StocQt](javascript-zh/qt/qml-stocqt)                                 | 跨平台Qt技术自动化StocQt 股票应用样例             |
+|    **Linux**     | [Icon-Browser GTK](javascript-zh/linux/gtk-icon-browser)                  | 自动化Linux界面应用 Icon-Browser（通过ATK技术）                    |
+|                  | [Qt5 Dialogs(ATK)](javascript-zh/linux/atk-qt-dialog)                     | 通过ATK技术，自动化Qt5开发的对话框样例                                |
 |     **图像**     | [Pattern Chooser](javascript-zh/windows/pattern-chooser)                  | 图案自动化Qt样例appchooser                                          |
 |                  | [游戏消消乐](javascript-zh/windows/pattern-game)                          | 自动化Qt消消乐游戏                                                  |
 |     **Web**      | [Calculator](javascript-en/web/calculator)                                | Web sample. Web Calculator                                          |

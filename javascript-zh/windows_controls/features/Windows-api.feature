@@ -58,14 +58,6 @@
     当获取Combox控件特有属性
     那么Combox控件截图
 
-  @advanced
-  场景: Slider控件常规操作
-    当拖拽Slider1
-    当将Slider_Vertical设置为8
-    当获取Slider控件所有属性
-    当获取Slider控件特有属性
-    那么Slider 控件截图
-
   @advanced @todo
   场景: Listbox常规操作
     当滚动ListBox视图
@@ -75,6 +67,14 @@
     当获取ListBox控件特有属性
       # selectedItem()属性当没有被选中的item时会报错
     那么ListBox控件截图
+
+  @advanced
+  场景: Slider控件常规操作
+    当拖拽Slider1
+    当将Slider_Vertical设置为8
+    当获取Slider控件所有属性
+    当获取Slider控件特有属性
+    那么Slider 控件截图
 
   @advanced @tree
   场景: Tree相关API操作

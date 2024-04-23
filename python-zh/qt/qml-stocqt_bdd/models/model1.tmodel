@@ -1,0 +1,494 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "qt",
+      "nname": "stocqt",
+      "identifyProperties": {
+        "type": "Application",
+        "appName": "stocqt"
+      },
+      "cachedProperties": {
+        "type": "Application",
+        "appName": "stocqt",
+        "appPath": "D:\\stocqt\\stocqt.exe"
+      },
+      "children": [
+        {
+          "ntype": "qt",
+          "nname": "QuickWindow",
+          "identifyProperties": {
+            "type": "QuickWindow"
+          },
+          "cachedProperties": {
+            "type": "QuickWindow",
+            "boundingRectangle": "[1530,292,2004,1448]"
+          },
+          "children": [
+            {
+              "ntype": "qt",
+              "nname": "mainRect",
+              "identifyProperties": {
+                "type": "QuickItem",
+                "className": {
+                  "type": "startWith",
+                  "text": "QQuickRectangle_QML_"
+                },
+                "id": "mainRect"
+              },
+              "cachedProperties": {
+                "className": {
+                  "type": "startWith",
+                  "text": "QQuickRectangle_QML_"
+                },
+                "id": "mainRect",
+                "type": "QuickItem",
+                "boundingRectangle": "[1532,338,2000,1400]"
+              },
+              "children": [
+                {
+                  "ntype": "qt",
+                  "nname": "root",
+                  "identifyProperties": {
+                    "type": "QuickList",
+                    "className": "QQuickListView",
+                    "id": "root"
+                  },
+                  "cachedProperties": {
+                    "className": "QQuickListView",
+                    "id": "root",
+                    "type": "QuickList",
+                    "boundingRectangle": "[1532,506,2000,1232]"
+                  },
+                  "children": [
+                    {
+                      "ntype": "qt",
+                      "nname": "listView",
+                      "identifyProperties": {
+                        "type": "QuickItem",
+                        "className": {
+                          "type": "startWith",
+                          "text": "StockListView_QMLTYPE_"
+                        },
+                        "id": "listView"
+                      },
+                      "cachedProperties": {
+                        "className": {
+                          "type": "startWith",
+                          "text": "StockListView_QMLTYPE_"
+                        },
+                        "id": "listView",
+                        "type": "QuickItem",
+                        "boundingRectangle": "[1532,506,2000,1232]"
+                      },
+                      "children": [
+                        {
+                          "ntype": "qt",
+                          "nname": "view",
+                          "identifyProperties": {
+                            "type": "QuickList",
+                            "className": "QQuickListView",
+                            "id": "view"
+                          },
+                          "cachedProperties": {
+                            "className": "QQuickListView",
+                            "id": "view",
+                            "type": "QuickList",
+                            "boundingRectangle": "[1532,506,2000,1232]"
+                          },
+                          "children": [
+                            {
+                              "ntype": "qt",
+                              "nname": "QQuickRectangle",
+                              "identifyProperties": {
+                                "type": "QuickItem",
+                                "className": "QQuickRectangle",
+                                "index": 2
+                              },
+                              "cachedProperties": {
+                                "className": "QQuickRectangle",
+                                "index": 2,
+                                "type": "QuickItem",
+                                "boundingRectangle": "[1532,914,2000,204]"
+                              },
+                              "image": {
+                                "imgPath": "qt5.png",
+                                "rect": "0,0,2000,204"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "ntype": "qt",
+                      "nname": "stockView",
+                      "identifyProperties": {
+                        "type": "QuickItem",
+                        "className": {
+                          "type": "startWith",
+                          "text": "StockView_QMLTYPE_"
+                        },
+                        "id": "stockView"
+                      },
+                      "cachedProperties": {
+                        "className": {
+                          "type": "startWith",
+                          "text": "StockView_QMLTYPE_"
+                        },
+                        "id": "stockView",
+                        "type": "QuickItem",
+                        "boundingRectangle": "[1532,506,2000,1232]"
+                      },
+                      "children": [
+                        {
+                          "ntype": "qt",
+                          "nname": "mainRect1",
+                          "identifyProperties": {
+                            "type": "QuickItem",
+                            "className": "QQuickRectangle",
+                            "id": "mainRect"
+                          },
+                          "cachedProperties": {
+                            "className": "QQuickRectangle",
+                            "id": "mainRect",
+                            "type": "QuickItem",
+                            "boundingRectangle": "[1532,506,2000,1232]"
+                          },
+                          "children": [
+                            {
+                              "ntype": "qt",
+                              "nname": "chart",
+                              "identifyProperties": {
+                                "type": "QuickItem",
+                                "className": {
+                                  "type": "startWith",
+                                  "text": "StockChart_QMLTYPE_"
+                                },
+                                "id": "chart"
+                              },
+                              "cachedProperties": {
+                                "className": {
+                                  "type": "startWith",
+                                  "text": "StockChart_QMLTYPE_"
+                                },
+                                "id": "chart",
+                                "type": "QuickItem",
+                                "boundingRectangle": "[2350,516,1172,1212]"
+                              },
+                              "children": [
+                                {
+                                  "ntype": "qt",
+                                  "nname": "halfYearlyButton",
+                                  "identifyProperties": {
+                                    "type": "QuickButton",
+                                    "className": {
+                                      "type": "startWith",
+                                      "text": "Button_QMLTYPE_"
+                                    },
+                                    "id": "halfYearlyButton"
+                                  },
+                                  "cachedProperties": {
+                                    "className": {
+                                      "type": "startWith",
+                                      "text": "Button_QMLTYPE_"
+                                    },
+                                    "id": "halfYearlyButton",
+                                    "text": "6 Months",
+                                    "type": "QuickButton",
+                                    "boundingRectangle": "[3134,516,189,64]"
+                                  },
+                                  "image": {
+                                    "imgPath": "qt7.png",
+                                    "rect": "0,0,120,32"
+                                  },
+                                  "children": [
+                                    {
+                                      "ntype": "qt",
+                                      "nname": "txt",
+                                      "identifyProperties": {
+                                        "type": "QuickLabel",
+                                        "className": "QQuickText",
+                                        "id": "txt"
+                                      },
+                                      "cachedProperties": {
+                                        "className": "QQuickText",
+                                        "id": "txt",
+                                        "text": "6 Months",
+                                        "type": "QuickLabel",
+                                        "boundingRectangle": "[3150,528,157,38]"
+                                      },
+                                      "image": {
+                                        "imgPath": "qt11.png",
+                                        "rect": "0,0,157,38"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "ntype": "qt",
+                              "nname": "settingsPanel",
+                              "identifyProperties": {
+                                "type": "QuickItem",
+                                "className": {
+                                  "type": "startWith",
+                                  "text": "StockSettingsPanel_QMLTYPE_"
+                                },
+                                "id": "settingsPanel"
+                              },
+                              "cachedProperties": {
+                                "className": {
+                                  "type": "startWith",
+                                  "text": "StockSettingsPanel_QMLTYPE_"
+                                },
+                                "id": "settingsPanel",
+                                "type": "QuickItem",
+                                "boundingRectangle": "[1532,834,800,894]"
+                              },
+                              "children": [
+                                {
+                                  "ntype": "qt",
+                                  "nname": "settingsGrid",
+                                  "identifyProperties": {
+                                    "type": "QuickItem",
+                                    "className": "QQuickGridLayout",
+                                    "id": "settingsGrid"
+                                  },
+                                  "cachedProperties": {
+                                    "className": "QQuickGridLayout",
+                                    "id": "settingsGrid",
+                                    "type": "QuickItem",
+                                    "boundingRectangle": "[1532,834,800,894]"
+                                  },
+                                  "children": [
+                                    {
+                                      "ntype": "qt",
+                                      "nname": "openButton",
+                                      "identifyProperties": {
+                                        "type": "QuickCheckBox",
+                                        "className": {
+                                          "type": "startWith",
+                                          "text": "CheckBox_QMLTYPE_"
+                                        },
+                                        "id": "openButton"
+                                      },
+                                      "cachedProperties": {
+                                        "className": {
+                                          "type": "startWith",
+                                          "text": "CheckBox_QMLTYPE_"
+                                        },
+                                        "id": "openButton",
+                                        "type": "QuickCheckBox",
+                                        "boundingRectangle": "[2184,1464,60,60]"
+                                      },
+                                      "image": {
+                                        "imgPath": "qt21.png",
+                                        "rect": "0,0,60,60"
+                                      }
+                                    },
+                                    {
+                                      "ntype": "qt",
+                                      "nname": "closeButton",
+                                      "identifyProperties": {
+                                        "type": "QuickCheckBox",
+                                        "className": {
+                                          "type": "startWith",
+                                          "text": "CheckBox_QMLTYPE_"
+                                        },
+                                        "id": "closeButton"
+                                      },
+                                      "cachedProperties": {
+                                        "className": {
+                                          "type": "startWith",
+                                          "text": "CheckBox_QMLTYPE_"
+                                        },
+                                        "id": "closeButton",
+                                        "type": "QuickCheckBox",
+                                        "boundingRectangle": "[2184,1532,60,60]"
+                                      },
+                                      "image": {
+                                        "imgPath": "qt31.png",
+                                        "rect": "0,0,60,60"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "ntype": "qt",
+                              "nname": "stockInfo",
+                              "identifyProperties": {
+                                "type": "QuickItem",
+                                "className": {
+                                  "type": "startWith",
+                                  "text": "StockInfo_QMLTYPE_"
+                                },
+                                "id": "stockInfo"
+                              },
+                              "cachedProperties": {
+                                "className": {
+                                  "type": "startWith",
+                                  "text": "StockInfo_QMLTYPE_"
+                                },
+                                "id": "stockInfo",
+                                "type": "QuickItem",
+                                "boundingRectangle": "[320,438,800,320]"
+                              },
+                              "children": [
+                                {
+                                  "ntype": "qt",
+                                  "nname": "stockInfoLayout",
+                                  "identifyProperties": {
+                                    "type": "QuickItem",
+                                    "className": "QQuickGridLayout",
+                                    "id": "stockInfoLayout"
+                                  },
+                                  "cachedProperties": {
+                                    "className": "QQuickGridLayout",
+                                    "id": "stockInfoLayout",
+                                    "type": "QuickItem",
+                                    "boundingRectangle": "[320,438,800,320]"
+                                  },
+                                  "children": [
+                                    {
+                                      "ntype": "qt",
+                                      "nname": "stockIdText",
+                                      "identifyProperties": {
+                                        "type": "QuickLabel",
+                                        "className": "QQuickText",
+                                        "id": "stockIdText"
+                                      },
+                                      "cachedProperties": {
+                                        "className": "QQuickText",
+                                        "id": "stockIdText",
+                                        "text": "AAPL",
+                                        "type": "QuickLabel",
+                                        "boundingRectangle": "[340,520,118,56]"
+                                      },
+                                      "image": {
+                                        "imgPath": "qt6.png",
+                                        "rect": "0,0,118,56"
+                                      }
+                                    },
+                                    {
+                                      "ntype": "qt",
+                                      "nname": "price",
+                                      "identifyProperties": {
+                                        "type": "QuickLabel",
+                                        "className": "QQuickText",
+                                        "id": "price"
+                                      },
+                                      "cachedProperties": {
+                                        "className": "QQuickText",
+                                        "id": "price",
+                                        "text": "169.23",
+                                        "type": "QuickLabel",
+                                        "boundingRectangle": "[476,520,644,56]"
+                                      }
+                                    },
+                                    {
+                                      "ntype": "qt",
+                                      "nname": "stockNameText",
+                                      "identifyProperties": {
+                                        "type": "QuickLabel",
+                                        "className": "QQuickText",
+                                        "id": "stockNameText"
+                                      },
+                                      "cachedProperties": {
+                                        "className": "QQuickText",
+                                        "id": "stockNameText",
+                                        "text": "Apple Inc.",
+                                        "type": "QuickLabel",
+                                        "boundingRectangle": "[340,608,160,32]"
+                                      }
+                                    },
+                                    {
+                                      "ntype": "qt",
+                                      "nname": "priceChange",
+                                      "identifyProperties": {
+                                        "type": "QuickLabel",
+                                        "className": "QQuickText",
+                                        "id": "priceChange"
+                                      },
+                                      "cachedProperties": {
+                                        "className": "QQuickText",
+                                        "id": "priceChange",
+                                        "text": "-1.85",
+                                        "type": "QuickLabel",
+                                        "boundingRectangle": "[340,670,90,36]"
+                                      }
+                                    },
+                                    {
+                                      "ntype": "qt",
+                                      "nname": "priceChangePercentage",
+                                      "identifyProperties": {
+                                        "type": "QuickLabel",
+                                        "className": "QQuickText",
+                                        "id": "priceChangePercentage"
+                                      },
+                                      "cachedProperties": {
+                                        "className": "QQuickText",
+                                        "id": "priceChangePercentage",
+                                        "text": "(-1.08%)",
+                                        "type": "QuickLabel",
+                                        "boundingRectangle": "[466,670,654,36]"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "ntype": "qt",
+                  "nname": "banner",
+                  "identifyProperties": {
+                    "type": "QuickItem",
+                    "className": "QQuickRectangle",
+                    "id": "banner"
+                  },
+                  "cachedProperties": {
+                    "className": "QQuickRectangle",
+                    "id": "banner",
+                    "type": "QuickItem",
+                    "boundingRectangle": "[1532,338,2000,160]"
+                  },
+                  "children": [
+                    {
+                      "ntype": "qt",
+                      "nname": "arrow",
+                      "identifyProperties": {
+                        "type": "QuickItem",
+                        "className": "QQuickImage",
+                        "id": "arrow"
+                      },
+                      "cachedProperties": {
+                        "className": "QQuickImage",
+                        "id": "arrow",
+                        "type": "QuickItem",
+                        "boundingRectangle": "[1552,378,56,88]"
+                      },
+                      "image": {
+                        "imgPath": "qt41.png",
+                        "rect": "0,0,56,88"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

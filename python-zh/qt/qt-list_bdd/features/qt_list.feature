@@ -1,16 +1,16 @@
-Feature: Qt ListView自动化
-  使用跨平台Qt技术对Qt中的ListView控件进行自动化，可在各个平台（如Windows、Linux）上执行。
-  用于自动化的应用是FetchMore应用
+# language: zh-CN
+功能: Qt ListView自动化
+本项目用到了Qt ListView控件的自动化操作能力，包括在不同路径下搜索并选择列表项、定位特定选项并执行点击。测试重点在于验证搜索功能的精确性、列表项选择的准确性以及自动化工具对列表导航和操作的有效控制，确保跨平台（如Windows、Linux、Mac）上的自动化兼容性和准确执行。
 
-  Scenario: 选择目标位置的列表选项
-    When 搜索CukeTest安装路径下的bin
-    Then 点击第13个选项
+  场景: 选择目标位置的列表选项
+    当搜索CukeTest目录下的.
+    那么点击第13个选项
 
-  Scenario: 选择列表选项
-    When 搜索CukeTest安装路径下的.
-    Then 点击选项version
+  场景: 选择列表选项
+    当搜索CukeTest目录下的./plugins
+    那么点击选项platforms
 
-  Scenario: 操作列表选项对象
-    Given 操作对象为列表中的第11个选项
-    Then 跳转到目标选项位置
-    Then 点击目标选项
+  场景: 操作列表选项对象
+    假如操作对象为列表中的第3个选项
+    那么跳转到目标选项位置
+    那么点击目标选项

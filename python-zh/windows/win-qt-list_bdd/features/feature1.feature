@@ -1,13 +1,12 @@
-Feature: QtList自动化
-针对Qt的ListView组件开发的列表窗口进行操作和自动化测试。
+# language: zh-CN
+功能: QtList自动化
+使用Windows自动化技术对基于Qt框架开发的应用中的ListView组件进行操作和验证。通过这个项目，我们将能够学习如何使用Windows技术来模拟用户对Qt列表窗口的各种操作，包括点击、滚动和搜索等。
 
-  Scenario: 操作目标选项
-    Given 单击目标项.
-    Given 选中目标项..
-
-  Scenario: 滚动列表
-    Given 使用列表方法进行滚动
-
-  Scenario: 搜索后选中目标
-    When 在搜索框中输入路径C:/Windows
-    Then 判断搜索结果中是否存在目标项notepad.exe
+  场景: 操作目标选项
+    假如单击目标项.
+    那么选中目标项..
+  场景: 滚动列表
+    假如使用列表方法进行滚动
+  场景: 搜索后选中目标
+    当在搜索框中输入路径C:/Windows
+    那么判断搜索结果中是否存在目标项notepad.exe

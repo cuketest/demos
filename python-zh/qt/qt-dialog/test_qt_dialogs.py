@@ -1,6 +1,7 @@
 from leanproAuto import QtAuto, Util
 from pytest_html import extras
 
+# 加载Qt应用程序的UI模型文件
 model = QtAuto.loadModel('model1.tmodel')
 
 
@@ -16,9 +17,13 @@ def test_qt_int_dialog(extra):
     Util.delay(1000)
     model.getButton("OK").click()
     labelControl = model.getButton("QInputDialog::getInt()").next("Label")
-    inputValue = int(labelControl.text().replace("%", ""))
+
+    # 添加截图到测试报告中
     extra.append(extras.image(model.getWindow("Standard_Dialogs").takeScreenshot()))
-    assert inputValue == value, "没有成功修改数值"
+
+    # 检查按钮的下一个Label控件的text属性值是否为预期值,否则显示输出信息
+    labelControl.checkProperty("text", f'{value}%', '没有成功修改数值')
+
 
 
 # 验证下拉框选择对话框
@@ -32,9 +37,12 @@ def test_qt_select_dialog(extra):
     Util.delay(1000)
     model.getButton("OK").click()
     labelControl = model.getButton("QInputDialog::getItem()").next("Label")
-    selectedValue = labelControl.text()
+
+    # 添加截图到测试报告中
     extra.append(extras.image(model.getWindow("Standard_Dialogs").takeScreenshot()))
-    assert selectedValue == season, "没有成功修改下拉框"
+
+    # 检查按钮的下一个Label控件的text属性值是否为预期值,否则显示输出信息
+    labelControl.checkProperty('text', season, '没有成功修改下拉框')
 
 
 # 验证多行文本输入对话框
@@ -50,6 +58,9 @@ def test_qt_multiline_dialog(extra):
     Util.delay(1000)
     model.getButton("OK").click()
     labelControl = model.getButton("QInputDialog::getMultiLineTex").next("Label")
-    textValue = labelControl.text()
+
+    # 添加截图到测试报告中
     extra.append(extras.image(model.getWindow("Standard_Dialogs").takeScreenshot()))
-    assert textValue == docString, "没有成功修改文本框内容"
+
+    # 检查按钮的下一个Label控件的text属性值是否为预期值,否则显示输出信息
+    labelControl.checkProperty('text', docString, '没有成功修改文本框内容')

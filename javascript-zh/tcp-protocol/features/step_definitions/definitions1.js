@@ -1,16 +1,18 @@
 const assert = require('assert');
 const { BeforeAll, AfterAll, Given, When, Then } = require('cucumber');
-const { readFileSync } = require('fs')
+const { readFileSync } = require('fs');
 const { fork } = require('child_process');
-const TCPClient = require('../support/client')
+const TCPClient = require('../support/client');
 //// 你的步骤定义 /////
 let sub;
+
 BeforeAll(async function () {
     sub = fork('./features/support/server.js');
-})
+});
+
 AfterAll(async function () {
     sub.kill()
-})
+});
 
 Given("发送文本{string}并检验", async function (str) {
     let tcp = new TCPClient();

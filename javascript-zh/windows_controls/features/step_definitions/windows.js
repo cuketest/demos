@@ -108,8 +108,7 @@ setDefinitionFunctionWrapper(function (fn) {
 
 
     Then("获取button的name属性值应该为{string}", async function (name) {
-        let nameval = await model.getButton("Default").property('name');
-        return assert.strictEqual(nameval, name);
+        await model.getButton("Default").checkProperty('name', name)
     });
 
     When("获取button控件所有属性", async function () {
@@ -124,20 +123,17 @@ setDefinitionFunctionWrapper(function (fn) {
 {
     Then("勾选Normal复选框", async function () {
         await model.getCheckBox("Normal1").check(true);
-        let checked = await model.getCheckBox("Normal1").checkState();
-        assert.equal(checked, true);
+        await model.getCheckBox("Normal1").checkProperty('checkState', true, "Normal复选框未选中")
     });
 
     When("判断checked控件已经被选中", async function () {
         await model.getCheckBox("Checked").check(true);
-        let checkState = await model.getCheckBox("Checked").checkState();
-        return assert.equal(checkState, true)
+        await model.getCheckBox("Checked").checkProperty('checkState', true, "checked控件未选中")
     });
 
     Then("取消选中checked控件", async function () {
         await model.getCheckBox("Checked").check(false);
-        let checkState = await model.getCheckBox("Checked").checkState();
-        return assert.equal(checkState, false);
+        await model.getCheckBox("Checked").checkProperty('checkState', false, "checked控件未取消选中")
     });
 
     When("获取checked控件特有属性", async function () {
@@ -164,16 +160,14 @@ setDefinitionFunctionWrapper(function (fn) {
     Then("输入文本内容{string}", async function (val) {
         await model.getEdit("Edit").set(val);
         await model.getEdit("Edit1").click();
-        let editContent = await model.getEdit("Edit").value();
-        assert.strictEqual(editContent, val, `值不为"${val}"，是否被输入法影响了？`)
+        await model.getEdit("Edit").checkProperty('value', val, `值不为"${val}"，是否被输入法影响了？`)
     });
 
     Then("使用presskey输入特殊键", async function () {
         await model.getEdit("Edit").click(0, 0, 1);
         await model.getEdit("Edit").pressKeys("^a");
         await model.getEdit("Edit").pressKeys("{BS}");
-        let blankContent = await model.getEdit("Edit").text();
-        assert.strictEqual(blankContent, '', "输入框内容没有全部删除");
+        await model.getEdit("Edit").checkProperty('text', '', '输入框内容没有全部删除')
     });
 
     When("获取edittext控件特有属性", async function () {
@@ -194,8 +188,7 @@ setDefinitionFunctionWrapper(function (fn) {
 {
     When("选中RadioButton", async function () {
         await model.getRadioButton("Checked1").check(true);
-        let bool = await model.getRadioButton("Checked1").checked();
-        return assert.equal(bool, true);
+        await model.getRadioButton("Checked1").checkProperty('checked', true)
     });
 
     When("获取RadioButton控件特有属性", async function () {
@@ -221,9 +214,7 @@ setDefinitionFunctionWrapper(function (fn) {
     When("选择{string}选项", async function (choice) {
         // await Util.delay(500);
         await model.getComboBox("ComboBox1").select(choice);
-        let selectedName = await model.getComboBox("ComboBox1").selectedName();
-
-        assert.strictEqual(choice, selectedName);
+        await model.getComboBox("ComboBox1").checkProperty('selectedName', choice)
     });
 
     When("获取Combox控件特有属性", async function () {
@@ -299,8 +290,7 @@ setDefinitionFunctionWrapper(function (fn) {
     When("选中第{int}个选项", async function (index) {
         let item = await model.getList("List").scrollTo(index);
         let expected = await model.getList("List").itemName(index);
-        let itemName = await item.name();
-        assert.strictEqual(itemName, expected);
+        await item.checkProperty('name', expected);
     });
 
     When("获取ListBox控件特有属性", async function () {
@@ -329,7 +319,7 @@ setDefinitionFunctionWrapper(function (fn) {
 
     Then("使用scrollTo方法获取子元素属性", async function () {
         let item = await model.getList("List").scrollTo(0);
-        assert.strictEqual(await item.name(), 'First Normal Item');
+        await item.checkProperty('name', 'First Normal Item')
         let val = await model.getList("List").columnName(0);
         assert.strictEqual(val, '');
     });
@@ -474,8 +464,7 @@ setDefinitionFunctionWrapper(function (fn) {
     When("先获取DataGrid的第{int}行，再获取该行的第{int}列的单元格的值，并为{string}", async function (row, col, expect) {
         let tableRow = await model.getDataGrid("DataGrid").row(row);
         let tableCell = await tableRow.cell(col);
-        let actual = await tableCell.value();
-        assert.strictEqual(actual, expect);
+        await tableCell.checkProperty('value', expect, "与预期值不符")
     });
 }
 
@@ -486,12 +475,12 @@ setDefinitionFunctionWrapper(function (fn) {
         let node = ["Top One", "Sub Four"];
         for(let n of node){
             await model.getTree("Tree").getTreeItem(n).expand();
-            assert.strictEqual(await model.getTreeItem(n).expandState(), 1);
+            await model.getTreeItem(n).checkProperty('expandState', 1, "未展开")
             await Util.delay(600);
         }
         for (let n of node.reverse()) {
             await model.getTree("Tree").getTreeItem(n).collapse();
-            assert.strictEqual(await model.getTreeItem(n).expandState(), 0);
+            await model.getTreeItem(n).checkProperty('expandState', 0)
             await Util.delay(600);
         }
 
@@ -542,17 +531,17 @@ setDefinitionFunctionWrapper(function (fn) {
         for (node of node_list) {
             await model.getTreeItem(node).expand();
             await model.getTreeItem(node).highlight(5);
-            assert.strictEqual(await model.getTreeItem(node).expandState(), 1);
+            await model.getTreeItem(node).checkProperty('expandState', 1, "未展开")
         }
     });
 
     Then("选中一个TreeItem控件", async function () {
         await model.getTreeItem("Top One").expand();
-        assert.strictEqual(await model.getTreeItem("Top One").expandState(), 1);
+        await model.getTreeItem("Top One").checkProperty('expandState', 1, "Top One未展开")
         await model.getTreeItem("Sub Four").expand();
-        assert.strictEqual(await model.getTreeItem("Sub Four").expandState(), 1);
+        await model.getTreeItem("Sub Four").checkProperty('expandState', 1, "Sub Four未展开")
         await model.getTreeItem("Sub Three1").select();
-        assert.strictEqual(await model.getTreeItem("Sub Three1").focused(), true);
+        await model.getTreeItem("Sub Three1").checkProperty('focused', true, "Sub Three1未选中")
     });
     
     When("获取TreeItem控件特有属性", async function () {
@@ -675,26 +664,24 @@ Then("翻至第{int}页", async function (arg1) {
         let replaceType = ""
         replaceType = "Only method"
         await model.getGeneric("Edit").set(replaceType)
-        actualValue = await model.getGeneric("Edit").value();
-        assert.strictEqual(actualValue, replaceType);
+        await model.getGeneric("Edit").checkProperty('value', replaceType, "不符合预期值")
 
         replaceType = "Just Criteria"
         let control = await model.getWindow('Window').getEdit({ "type": "Edit", "className": "TextBox" })
         // let control = await model.getGeneric({"type": "Edit", "className": "TextBox" })
-        console.log(control)
         await control.set(replaceType)
         actualValue = await model.getGeneric("Edit").value();
-        assert.strictEqual(actualValue, replaceType);
+        await model.getGeneric("Edit").checkProperty('value', replaceType)
 
         replaceType = "Replace with Criteria part"
         await model.getGeneric("Edit", { "type": "Edit" }).set(replaceType)
         actualValue = await model.getGeneric("Edit").value();
-        assert.strictEqual(actualValue, replaceType);
+        await model.getGeneric("Edit").checkProperty('value', replaceType)
 
         replaceType = "Replace with All Criteria"
         await model.getGeneric("Edit", { "type": "Edit", "className": "TextBox" }).set(replaceType)
         actualValue = await model.getGeneric("Edit").value();
-        assert.strictEqual(actualValue, replaceType);
+        await model.getGeneric("Edit").checkProperty('value', replaceType)
     });
 
     Given("使用{string}的方式调用getGeneric", async function (type) {
@@ -735,8 +722,7 @@ Then("翻至第{int}页", async function (arg1) {
                 "className": "TextBox"
             }
         ]).set(str)
-        let actualValue = await model.getGeneric("Edit").value();
-        assert.strictEqual(actualValue, str);
+        await model.getGeneric("Edit").checkProperty('value', str, "不符合预期值")
     });
     Then("使用findControls遍历应用内控件", async function () {
         const window = model.getWindow("Window")
@@ -747,8 +733,7 @@ Then("翻至第{int}页", async function (arg1) {
         criteria[`${field}~`] = param;
         this.control = await model.getGeneric(name, criteria);
         this.controls = await model.findControls(name, criteria);
-        console.log(this.controls)
-        console.log(this.controls.length)
+        console.log('controls length', this.controls.length)
     });
     When("验证匹配到控件应该{string}", async function (state) {
         const isExist = await this.control.exists();

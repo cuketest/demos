@@ -13,22 +13,16 @@
 
 # 验证整型数值对话框
 def test_qt_int_dialog(extra):
-    with sync_auto() as auto:        
-        # ...
-        value = 10
-        # ...
-        labelControl = model.getButton("QInputDialog::getInt()").next("Label")
-        inputValue = int(labelControl.text().replace("%", ""))
-        # ...
-        assert inputValue == value, "没有成功修改数值"
+    # ...
+    value = 10
+    # ...
+    labelControl.checkProperty("text", f'{value}%', '没有成功修改数值')
 ```
 
 也会将**应用截图上传**到报告中加以呈现，如：
 ```py
 def test_button(extra):
-    with sync_auto() as auto:        
-        # ...
-        extra.append(extras.image(model.getWindow("Standard_Dialogs").takeScreenshot()))
+    extra.append(extras.image(model.getWindow("Standard_Dialogs").takeScreenshot()))
 ```
 
 也可以引入Hook来管理测试运行前后的**准备和清理工作**，如`conftest.py`文件中的：

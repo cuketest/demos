@@ -1,13 +1,19 @@
 from leanproAuto import WinAuto, Util
 from pytest_bdd import scenarios, given, when, then, parsers
-from pytest_html import extras
 
+# 加载Windows应用程序的UI模型文件
 model = WinAuto.loadModel("./models/model1.tmodel")
+
+# 加载位于"../features"目录下的所有BDD剧本文件
 scenarios("../features")
 
 MAX_DEPTH = 3  # 遍历的最大深度，如3就代表最多展开三级节点
 result = []  # 记录遍历节点的名称和深度信息用于生成记录，成员为{name, depth}对象
 
+""" 
+- @given, @when, @then: pytest-bdd装饰器，用于定义测试的前提条件（Given）、操作步骤（When）和预期结果（Then）。
+- parsers.parse: 解析器，用于解析步骤中的参数。
+"""
 
 @given("打开资源管理器")
 def open_explorer():
@@ -15,6 +21,8 @@ def open_explorer():
     if model.getWindow("Window").exists():
         model.getWindow("Window").restore()
     else:
+
+        # 启动资源管理器
         Util.launchProcess("explorer")
     if not model.getWindow("Window").exists(5):
         raise Exception("资源管理器没有正常启动")
@@ -32,13 +40,13 @@ def expand_tree(tree):
 
 
 @then("将结果附件")
-def attach_result(extra):
+def attach_result(request):
     report = ""
     for row in result:
         print(row)
         rowString = '\t' * row['depth'] + row['name'] + '\n'
         report += rowString
-    extra.append(extras.text(report))
+    request.attach(report)
 
 
 def expandChild(node, depth):

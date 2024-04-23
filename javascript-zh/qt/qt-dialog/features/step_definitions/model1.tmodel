@@ -220,7 +220,10 @@
           "identifyProperties": {
             "type": "Window",
             "className": "Dialog",
-            "text": "QInputDialog::getInteger()"
+            "text": {
+              "type": "startWith",
+              "text": "QInputDialog::getInt"
+            }
           },
           "cachedProperties": {
             "className": "Dialog",
@@ -366,7 +369,10 @@
                   "identifyProperties": {
                     "type": "Button",
                     "className": "QPushButton",
-                    "text": "OK"
+                    "text": {
+                      "type": "regex",
+                      "text": "OK|确定"
+                    }
                   },
                   "cachedProperties": {
                     "className": "QPushButton",

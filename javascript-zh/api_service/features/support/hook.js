@@ -11,20 +11,21 @@ BeforeAll(async function () {
     // restore mock server data file
     let text = readFileSync(join(root, 'data_origin.json'), {encoding: "utf-8"});
     writeFileSync(join(root,'data.json'), text);
-    if (isLinux()){ // Handle different between Linux and Windows
-        spawn(join(root, 'node_modules/.bin/json-server'), ['data.json'], { detached: true, shell: false })
-    }else{
+    if (isWindows()){ // Handle different between Linux, Mac and Windows
         spawn(join(root, 'node_modules/.bin/json-server.cmd'), ['data.json'], { detached: true, shell: false })
+    } else {
+        spawn(join(root, 'node_modules/.bin/json-server'), ['data.json'], { detached: true, shell: false })
     }
     // If want disable the command prompt, instead below code of above.
     // child_process.spawn('npm.cmd', ['run', 'json-server'])
 
+    await Util.delay(2000)
 })
 AfterAll(async function () {
     kill('3000'); // 关闭json-server进程
     await Util.delay(1000);
 })
-function isLinux(){
+function isWindows(){
     const osType = type();
-    return osType === "Linux";     
+    return osType === "Windows_NT";     
 }

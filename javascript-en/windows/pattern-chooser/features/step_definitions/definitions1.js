@@ -1,27 +1,44 @@
 const assert = require('assert');
 const { Given, When, Then, Before, After, setDefaultTimeout } = require('cucumber');
 const { WinAuto } = require('leanpro.win');
-const { QtAuto } = require('leanpro.qt')
+const { QtAuto } = require('leanpro.qt');
 const { Util } = require('leanpro.common');
 const path = require('path');
-const os = require('os')
+const fs = require('fs');
+const os = require('os');
 
-let model = WinAuto.loadModel(__dirname + "/model1.tmodel");
-let modelQt = QtAuto.loadModel(__dirname + "/model1.tmodel");
-setDefaultTimeout(60 * 1000);
+// Load model based on the operating system platform
+let model = os.platform() == "win32" 
+    ? WinAuto.loadModel(__dirname + "/model1.tmodel")
+    : QtAuto.loadModel(__dirname + "/model1.tmodel");
+
+// Set the default timeout to 1000 seconds
+setDefaultTimeout(1000 * 1000);
 
 //// your step definition /////
 
 let childProcess;
 const animationDur = 1000;
 
+// Run before each scenario with the tag @only-windows
 Before({ tags: "@only-windows" }, async function () {
-    if (os.platform() !== "win32") return "skipped"
+    if (os.platform() !== "win32") return "skipped";
 })
 
+// Run before each scenario with the tag @only-full
+Before({ tags: "@only-full"}, async function () {
+    try{
+        // Load the UI model file for Qt applications
+        this.modelQt = QtAuto.loadModel(__dirname + "/model1.tmodel");
+    }catch(e){
+        return "skipped"
+    }
+})
+
+// Capture the screenshot of the current window and attach it to the test report, then close the process after each test scenario
 After(async function (testCase) {
     try {
-        let image = await modelQt.getGraphicsView("GraphicsView").takeScreenshot();
+        let image = await this.window.takeScreenshot();
         this.attach(image, "image/png");
         Util.stopProcess(childProcess);
     } catch (e) {
@@ -29,9 +46,12 @@ After(async function (testCase) {
     }
 })
 
+// {int} Placeholder receives a string type parameter, which is passed to the variable count
 When("Cycle through the four patterns {int} times and count the recognition time", async function (count) {
     let reports = [];
     const ptns = ["camera", "glasses", "dictionary", "icon"];
+    
+    // Perform multiple click operations and record the duration of each operation, then append the results in JSON format to the test report.
     for (let i = 0; i < count; i++) {
         let report = {};
         for (let ptn of ptns) {
@@ -51,11 +71,42 @@ Then("close the app", async function () {
 });
 
 Given("Launch the app and wait", async function () {
-    childProcess = QtAuto.launchQtProcess([
+
+    // Pass multiple startup paths for different systems, and the available path will be automatically selected
+    const possibleAppPathes = [
         path.join(path.dirname(process.execPath), "bin/appchooser.exe"),
-        path.join(path.dirname(process.execPath), "bin/appchooser")
-    ]);
-    await model.getPattern('camera').wait(5);
+        path.join(path.dirname(process.execPath), "bin/appchooser"),
+        // Mac
+        '/Applications/CukeTest.app/Contents/Frameworks/appchooser',
+    ]
+    const [appPath, ..._] = possibleAppPathes.filter((appPath) => fs.existsSync(appPath));
+
+    // For different systems, invoke different methods to start the application.
+    if (os.platform() == 'win32') {
+        childProcess = await Util.launchProcess(appPath);
+        this.window = model.getWindow("Window");
+    } else {
+        childProcess = await QtAuto.launchQtProcessAsync(appPath);
+        this.window = model.getWindow("GraphicsView");
+    }
+
+    // Wait for the application to start and activate the window.
+    await this.window.exists(5);
+    await this.window.activate();
+});
+
+Given("Launch the Qt app and wait", async function () {
+
+    // Provide multiple launch paths based on system to automatically select an available path.
+    const possibleAppPathes = [
+        path.join(path.dirname(process.execPath), "bin/appchooser.exe"),
+        path.join(path.dirname(process.execPath), "bin/appchooser"),
+        // Mac
+        '/Applications/CukeTest.app/Contents/Frameworks/appchooser', 
+    ]
+    childProcess = await QtAuto.launchQtProcessAsync(possibleAppPathes);
+    this.window = this.modelQt.getWindow("GraphicsView");
+    await this.window.exists(5);
 });
 
 When("Verify that the camera is not centered at this time", async function () {
@@ -115,9 +166,9 @@ Then("Output comparison", async function () {
 
 When("Click on the cascade virtual control {string}", async function (virtualName) {
     if (virtualName.search('Qt') > -1) {
-        await modelQt.getVirtual(virtualName).click()
+        await this.modelQt.getVirtual(virtualName).click();
     } else {
-        await model.getVirtual(virtualName).click()
+        await model.getVirtual(virtualName).click();
     }
 });
 
@@ -128,9 +179,11 @@ Then("Click on the top right corner by Windows Control Virtualization", async fu
     await virtual.click(rect.width - 50, 50)
 });
 
-Then("Click on the top left corner by Qt control virtualization", async function () {
-    let panel = modelQt.getGraphicsView("GraphicsView");
-    let rect = await panel.rect()
+Then("Virtualize clicking the top-left corner through Windows controls", async function () {
+    let panel = model.getGeneric("Custom");
+    let rect = await panel.rect();
     let virtual = panel.getVirtual();
-    await virtual.click(50, 50)
+
+    // 在虚拟控件上点击坐标 (50, 50)
+    await virtual.click(50, 50);
 });

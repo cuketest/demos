@@ -8,7 +8,7 @@
 
   场景大纲: 订单录入
     那么点击“新建”按钮，读取excel文件"./support/order.xlsx"，根据"<orderNo>"将订单数据录入到系统
-    同时 检查填写结果是否为"<expected>"
+    同时检查填写结果是否为"<expected>"
     例子: 
       #data_source: support/data.csv
 

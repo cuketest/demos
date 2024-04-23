@@ -4,6 +4,7 @@ For example: Notepad's [Format]--[Font], [File]--[Save]
 
   Scenario: Edit the content and save
     When Open the Windows Notepad app
+    And Click [File]--[New]
     When Enter the text "hello world" in Notepad
     And Click [File]--[Save]
     And Save as "helloworld.txt" in the project path in the file dialog box

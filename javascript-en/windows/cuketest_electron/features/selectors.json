@@ -15,5 +15,6 @@
     "New Project dialog-Browse button": "#dialog-new-project-browse-btn",    
     "Output Bar": "#outputmessage",
     "Model Manager": ".glyphicon.glyphicon-modal.gi-2x",
-    "Model prompt is not opened": ".no-model-file"
+    "Model prompt is not opened": ".no-model-file",
+    "Stop Run": "#toolbar-stop-run"
 }

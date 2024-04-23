@@ -1,5 +1,7 @@
 const path = require('path');
 const xlsx = require('leanpro.xlsx');
+const { Util } = require('leanpro.common');
+
 /**
  * 获取页面中的订单表格中的数据。如果存在多页会自动翻页获取。
  * @param {Page} 当前页面的对象
@@ -111,8 +113,18 @@ function readXlsx(file) {
     const xlsxData = xlsx.utils.sheet_to_json(workbook.Sheets[workbook.SheetNames[0]]);
     return xlsxData;
 }
+/**
+ * 用于获取最新的通知
+ */
+async function getLatestMessage(page) {
+    await Util.delay(100)
+    const messageboxes = await page.$$(`.ant-message-notice`)
+    const msgs = await Promise.all(messageboxes.map(ele => ele.innerText()))
+    return msgs.pop()
+}
 exports.readXlsx = readXlsx;
 exports.getOrders = getOrders;
 exports.getHeader = getHeader;
 exports.formatExcelTime = formatExcelTime;
 exports.arrayToJson = arrayToJson;
+exports.getLatestMessage = getLatestMessage;

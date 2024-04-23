@@ -4,6 +4,8 @@ from pytest_html import extras
 # 你的步骤定义
 MAX_DEPTH = 3  # 遍历的最大深度，如3就代表最多展开三级节点
 result = []  # 记录遍历节点的名称和深度信息用于生成记录，成员为{name, depth}对象
+
+# 加载Windows应用程序的UI模型文件
 model = WinAuto.loadModel('model1.tmodel')
 
 

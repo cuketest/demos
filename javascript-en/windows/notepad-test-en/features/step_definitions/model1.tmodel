@@ -26,13 +26,24 @@
             "automationId": "15",
             "type": "Document",
             "className": "Edit",
-            "name": "文本编辑器",
+            "name": "Text Editor",
             "boundingRectangle": "195,197,1191,543"
           },
           "image": {
-            "imgPath": "文本编辑器.png",
-            "rect": "0,0,751,444"
-          }
+            "imgPath": "uia.png",
+            "rect": "0,0,1920,975"
+          },
+          "children": [
+            {
+              "ntype": "virtual",
+              "nname": "virtual",
+              "identifyProperties": {
+                "boundingRectangle": "2,5,489,136",
+                "align": 0
+              },
+              "cachedProperties": {}
+            }
+          ]
         },
         {
           "ntype": "uia",
@@ -146,6 +157,26 @@
                 "imgPath": "保存(S)1.png",
                 "rect": "0,0,223,22"
               }
+            },
+            {
+              "ntype": "uia",
+              "nname": "New",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "name": "New"
+              },
+              "cachedProperties": {
+                "type": "MenuItem",
+                "automationId": "1",
+                "name": "New",
+                "accessKey": "Ctrl+N",
+                "value": false,
+                "boundingRectangle": "[115,157,223,22]"
+              },
+              "image": {
+                "imgPath": "uia1.png",
+                "rect": "0,0,223,22"
+              }
             }
           ]
         },
@@ -182,7 +213,7 @@
               "children": [
                 {
                   "ntype": "uia",
-                  "nname": "File name:1",
+                  "nname": "File_name:1",
                   "identifyProperties": {
                     "type": "Edit",
                     "automationId": "1001"

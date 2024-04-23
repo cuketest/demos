@@ -1,0 +1,290 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "qt",
+      "nname": "calculator-qml",
+      "identifyProperties": {
+        "type": "Application",
+        "appName": "calculator-qml"
+      },
+      "cachedProperties": {
+        "type": "Application",
+        "appName": "calculator-qml",
+        "appPath": "C:/Qt/Qt5.12.4/5.12.4/msvc2017_64/bin/calculator-qml.exe"
+      },
+      "children": [
+        {
+          "ntype": "qt",
+          "nname": "QQuickItem_QML_1",
+          "identifyProperties": {
+            "type": "QuickItem",
+            "className": "QQuickItem_QML_1"
+          },
+          "cachedProperties": {
+            "className": "QQuickItem_QML_1",
+            "type": "QuickItem",
+            "boundingRectangle": "[]"
+          },
+          "children": [
+            {
+              "ntype": "qt",
+              "nname": "1",
+              "identifyProperties": {
+                "type": "QuickItem",
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "1"
+              },
+              "cachedProperties": {
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "1",
+                "type": "QuickItem",
+                "boundingRectangle": "[]"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "2",
+              "identifyProperties": {
+                "type": "QuickItem",
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "2"
+              },
+              "cachedProperties": {
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "2",
+                "type": "QuickItem",
+                "boundingRectangle": "[]"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "3",
+              "identifyProperties": {
+                "type": "QuickItem",
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "3"
+              },
+              "cachedProperties": {
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "3",
+                "type": "QuickItem",
+                "boundingRectangle": "[]"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "=",
+              "identifyProperties": {
+                "type": "QuickItem",
+                "className": "Button_QMLTYPE_0",
+                "text": "="
+              },
+              "cachedProperties": {
+                "className": "Button_QMLTYPE_0",
+                "text": "=",
+                "type": "QuickItem",
+                "boundingRectangle": "[]"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "4",
+              "identifyProperties": {
+                "type": "QuickItem",
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "4"
+              },
+              "cachedProperties": {
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "4",
+                "type": "QuickItem",
+                "boundingRectangle": "[]"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "5",
+              "identifyProperties": {
+                "type": "QuickItem",
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "5"
+              },
+              "cachedProperties": {
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "5",
+                "type": "QuickItem",
+                "boundingRectangle": "[]"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "6",
+              "identifyProperties": {
+                "type": "QuickItem",
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "6"
+              },
+              "cachedProperties": {
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "6",
+                "type": "QuickItem",
+                "boundingRectangle": "[]"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "7",
+              "identifyProperties": {
+                "type": "QuickItem",
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "7"
+              },
+              "cachedProperties": {
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "7",
+                "type": "QuickItem",
+                "boundingRectangle": "[]"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "8",
+              "identifyProperties": {
+                "type": "QuickItem",
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "8"
+              },
+              "cachedProperties": {
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "8",
+                "type": "QuickItem",
+                "boundingRectangle": "[]"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "9",
+              "identifyProperties": {
+                "type": "QuickItem",
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "9"
+              },
+              "cachedProperties": {
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "9",
+                "type": "QuickItem",
+                "boundingRectangle": "[]"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "÷",
+              "identifyProperties": {
+                "type": "QuickItem",
+                "className": "Button_QMLTYPE_0_QML_2",
+                "text": "÷"
+              },
+              "cachedProperties": {
+                "className": "Button_QMLTYPE_0_QML_2",
+                "text": "÷",
+                "type": "QuickItem",
+                "boundingRectangle": "[]"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "×",
+              "identifyProperties": {
+                "type": "QuickItem",
+                "className": "Button_QMLTYPE_0_QML_2",
+                "text": "×"
+              },
+              "cachedProperties": {
+                "className": "Button_QMLTYPE_0_QML_2",
+                "text": "×",
+                "type": "QuickItem",
+                "boundingRectangle": "[]"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "+",
+              "identifyProperties": {
+                "type": "QuickItem",
+                "className": "Button_QMLTYPE_0_QML_2",
+                "text": "+"
+              },
+              "cachedProperties": {
+                "className": "Button_QMLTYPE_0_QML_2",
+                "text": "+",
+                "type": "QuickItem",
+                "boundingRectangle": "[]"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "-",
+              "identifyProperties": {
+                "type": "QuickItem",
+                "className": "Button_QMLTYPE_0_QML_2",
+                "text": "-"
+              },
+              "cachedProperties": {
+                "className": "Button_QMLTYPE_0_QML_2",
+                "text": "-",
+                "type": "QuickItem",
+                "boundingRectangle": "[]"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "C",
+              "identifyProperties": {
+                "type": "QuickItem",
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "C"
+              },
+              "cachedProperties": {
+                "className": "Button_QMLTYPE_0_QML_3",
+                "text": "C",
+                "type": "QuickItem",
+                "boundingRectangle": "[]"
+              }
+            }
+          ]
+        },
+        {
+          "ntype": "qt",
+          "nname": "QQuickRectangle",
+          "identifyProperties": {
+            "type": "QuickItem",
+            "className": "QQuickRectangle"
+          },
+          "cachedProperties": {
+            "className": "QQuickRectangle",
+            "type": "QuickItem",
+            "boundingRectangle": "[]"
+          },
+          "children": [
+            {
+              "ntype": "qt",
+              "nname": "ret",
+              "identifyProperties": {
+                "type": "QuickItem",
+                "className": "QQuickText"
+              },
+              "cachedProperties": {
+                "className": "QQuickText",
+                "text": "25",
+                "type": "QuickItem",
+                "boundingRectangle": "[]"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

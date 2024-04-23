@@ -138,7 +138,8 @@
       "ntype": "ptn",
       "nname": "相机",
       "identifyProperties": {
-        "imagePath": "pattern.png"
+        "imagePath": "pattern.png",
+        "similarity": "0.96"
       },
       "cachedProperties": {
         "boundingRectangle": "[0,0,71,57]"
@@ -152,7 +153,8 @@
       "ntype": "ptn",
       "nname": "眼镜",
       "identifyProperties": {
-        "imagePath": "pattern1.png"
+        "imagePath": "pattern1.png",
+        "similarity": "0.96"
       },
       "cachedProperties": {
         "boundingRectangle": "[0,0,61,59]"
@@ -166,7 +168,8 @@
       "ntype": "ptn",
       "nname": "图标",
       "identifyProperties": {
-        "imagePath": "pattern2.png"
+        "imagePath": "pattern2.png",
+        "similarity": "0.96"
       },
       "cachedProperties": {
         "boundingRectangle": "[0,0,65,64]"
@@ -180,7 +183,8 @@
       "ntype": "ptn",
       "nname": "字典",
       "identifyProperties": {
-        "imagePath": "pattern3.png"
+        "imagePath": "pattern3.png",
+        "similarity": "0.96"
       },
       "cachedProperties": {
         "boundingRectangle": "[0,0,65,60]"
@@ -194,7 +198,8 @@
       "ntype": "ptn",
       "nname": "居中相机",
       "identifyProperties": {
-        "imagePath": "pattern4.png"
+        "imagePath": "pattern4.png",
+        "similarity": "0.96"
       },
       "cachedProperties": {
         "boundingRectangle": "[0,0,138,102]"

@@ -1,0 +1,205 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "qt",
+      "nname": "validators",
+      "identifyProperties": {
+        "type": "Application",
+        "appName": "validators"
+      },
+      "cachedProperties": {
+        "type": "Application",
+        "appName": "validators",
+        "appPath": "C:/vsonline/WallE/bin/validators.exe"
+      },
+      "children": [
+        {
+          "ntype": "qt",
+          "nname": "ValidatorsForm",
+          "identifyProperties": {
+            "type": "Window",
+            "className": "ValidatorWidget",
+            "name": "ValidatorsForm",
+            "text": "Validators"
+          },
+          "cachedProperties": {
+            "className": "ValidatorWidget",
+            "name": "ValidatorsForm",
+            "text": "Validators",
+            "type": "Window",
+            "boundingRectangle": "[697,293,542,443]"
+          },
+          "children": [
+            {
+              "ntype": "qt",
+              "nname": "localeSelector",
+              "identifyProperties": {
+                "type": "ComboBox",
+                "className": "QComboBox",
+                "name": "localeSelector"
+              },
+              "cachedProperties": {
+                "className": "QComboBox",
+                "name": "localeSelector",
+                "type": "ComboBox",
+                "boundingRectangle": "[706,302,405,21]"
+              },
+              "image": {
+                "imgPath": "qt.png",
+                "rect": "0,0,405,21"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "groupBox",
+              "identifyProperties": {
+                "type": "GroupBox",
+                "className": "QGroupBox",
+                "name": "groupBox",
+                "text": "QIntValidator"
+              },
+              "cachedProperties": {
+                "className": "QGroupBox",
+                "name": "groupBox",
+                "text": "QIntValidator",
+                "type": "GroupBox",
+                "boundingRectangle": "[706,329,524,148]"
+              },
+              "children": [
+                {
+                  "ntype": "qt",
+                  "nname": "minVal",
+                  "identifyProperties": {
+                    "type": "SpinBox",
+                    "className": "QSpinBox",
+                    "name": "minVal"
+                  },
+                  "cachedProperties": {
+                    "className": "QSpinBox",
+                    "name": "minVal",
+                    "type": "SpinBox",
+                    "boundingRectangle": "[754,357,304,24]"
+                  },
+                  "image": {
+                    "imgPath": "qt2.png",
+                    "rect": "0,0,304,24"
+                  }
+                },
+                {
+                  "ntype": "qt",
+                  "nname": "maxVal",
+                  "identifyProperties": {
+                    "type": "SpinBox",
+                    "className": "QSpinBox",
+                    "name": "maxVal"
+                  },
+                  "cachedProperties": {
+                    "className": "QSpinBox",
+                    "name": "maxVal",
+                    "type": "SpinBox",
+                    "boundingRectangle": "[754,390,304,24]"
+                  },
+                  "image": {
+                    "imgPath": "qt3.png",
+                    "rect": "0,0,304,24"
+                  }
+                },
+                {
+                  "ntype": "qt",
+                  "nname": "editor",
+                  "identifyProperties": {
+                    "type": "Edit",
+                    "className": "QLineEdit",
+                    "name": "editor"
+                  },
+                  "cachedProperties": {
+                    "className": "QLineEdit",
+                    "name": "editor",
+                    "type": "Edit",
+                    "boundingRectangle": "[716,443,504,24]"
+                  },
+                  "image": {
+                    "imgPath": "qt4.png",
+                    "rect": "0,0,504,24"
+                  }
+                }
+              ]
+            },
+            {
+              "ntype": "qt",
+              "nname": "pushButton",
+              "identifyProperties": {
+                "type": "Button",
+                "className": "QPushButton",
+                "name": "pushButton",
+                "text": "Quit"
+              },
+              "cachedProperties": {
+                "className": "QPushButton",
+                "name": "pushButton",
+                "text": "Quit",
+                "type": "Button",
+                "boundingRectangle": "[1137,699,93,28]"
+              },
+              "image": {
+                "imgPath": "qt6.png",
+                "rect": "0,0,93,28"
+              }
+            }
+          ]
+        },
+        {
+          "ntype": "qt",
+          "nname": "Window",
+          "identifyProperties": {
+            "type": "Window",
+            "className": "QComboBoxPrivateContainer"
+          },
+          "cachedProperties": {
+            "className": "QComboBoxPrivateContainer",
+            "type": "Window",
+            "boundingRectangle": "[706,322,405,152]"
+          },
+          "children": [
+            {
+              "ntype": "qt",
+              "nname": "List",
+              "identifyProperties": {
+                "type": "List",
+                "className": "QListView"
+              },
+              "cachedProperties": {
+                "className": "QListView",
+                "type": "List",
+                "boundingRectangle": "[707,323,403,150]"
+              },
+              "children": [
+                {
+                  "ntype": "qt",
+                  "nname": "Burmese/Myanmar",
+                  "identifyProperties": {
+                    "type": "ListItem",
+                    "itemPath": "[50]",
+                    "text": "Burmese/Myanmar"
+                  },
+                  "cachedProperties": {
+                    "itemPath": "[50]",
+                    "text": "Burmese/Myanmar",
+                    "type": "ListItem",
+                    "boundingRectangle": "[707,353,382,15]"
+                  },
+                  "image": {
+                    "imgPath": "qt1.png",
+                    "rect": "0,0,382,15"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

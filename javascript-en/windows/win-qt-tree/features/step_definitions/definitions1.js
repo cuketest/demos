@@ -1,7 +1,6 @@
 const { Given, When, Then, BeforeAll, AfterAll, setDefaultTimeout } = require('cucumber');
 const { WinAuto } = require('leanpro.win');
 const { Util } = require('leanpro.common');
-const assert = require('assert');
 const path = require("path");
 
 setDefaultTimeout(60 * 1000);
@@ -55,10 +54,8 @@ Given("Access and select the {string} file", async function (relativePath) {
 });
 
 Then("{string} node selected", async function (expectedItemName) {
-    let itemName = await this.item.name();
-    assert.strictEqual(itemName, expectedItemName);
-    let selected = await this.item.focused();
-    assert.strictEqual(selected, true);
+    await this.item.checkProperty('name', expectedItemName, "");
+    await this.item.checkProperty('focused', true);
 });
 
 async function getDiskName(deskSign){

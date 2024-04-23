@@ -25,12 +25,12 @@
           "children": [
             {
               "ntype": "uia",
-              "nname": "Windows  (C:)",
+              "nname": "C:",
               "identifyProperties": {
                 "type": "TreeItem",
                 "name": {
                   "type": "include",
-                  "text": "(C:)"
+                  "text": "C:"
                 }
               },
               "cachedProperties": {

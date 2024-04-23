@@ -3,14 +3,14 @@ Use cross-platform Qt technology to automate the ListView control in Qt, which c
 The app used for automation is the FetchMore app
 
   Scenario: Select list option for destination location
-    When Search for "./resources/api" in the CukeTest installation path
+    When Search for "./" in the CukeTest installation path
     Then Click on option 13
 
   Scenario: select list option
-    When Search for "./" in the CukeTest installation path
-    Then Click on the option "version"
+    When Search for "./plugins" in the CukeTest installation path
+    Then Click on the option "platforms"
 
   Scenario: Action list options object
-    When The action object is the 11th option in the list
+    When The operation is performed on the item with the index 3 in the list
     Then Jump to target option position
     Then Click on the target option

@@ -3,6 +3,7 @@ var { Given, When, Then, setDefaultTimeout } = require('cucumber');
 var got = require('got');
 var assert = require('assert');
 
+// 设置步骤的超时时间为60秒
 setDefaultTimeout(60 * 1000)
 
 var jsonFormat = {

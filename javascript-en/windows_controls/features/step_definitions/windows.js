@@ -97,8 +97,7 @@ setDefinitionFunctionWrapper(function (fn) {
 
 
     Then("Button control's name attribute should be {string}", async function (name) {
-        let nameval = await model.getButton("Default").getProperty('name');
-        return assert.strictEqual(nameval, name);
+        await model.getButton("Default").checkProperty('name', name)
     });
 
     When("Get button control's common attribute", async function () {
@@ -113,20 +112,17 @@ setDefinitionFunctionWrapper(function (fn) {
 {
     Then("Check Normal checkbox", async function () {
         await model.getCheckBox("Normal1").check(true);
-        let checked = await model.getCheckBox("Normal1").checkState();
-        assert.equal(checked, true);
+        await model.getCheckBox("Normal1").checkProperty('checkState', true, "Normal checkbox is unchecked")
     });
 
     When("Determines whether checkbox control has been checked", async function () {
         await model.getCheckBox("Checked").check(true);
-        let checkState = await model.getCheckBox("Checked").checkState();
-        return assert.equal(checkState, true)
+        await model.getCheckBox("Checked").checkProperty('checkState', true, "The checked control is unchecked.")
     });
 
     Then("Uncheck Normal checkbox", async function () {
         await model.getCheckBox("Checked").check(false);
-        let checkState = await model.getCheckBox("Checked").checkState();
-        return assert.equal(checkState, false);
+        await model.getCheckBox("Checked").checkProperty('checkState', false, "Checked control is not unchecked")
     });
 
     When("Get checked control's unique attribute", async function () {
@@ -152,16 +148,14 @@ setDefinitionFunctionWrapper(function (fn) {
     Then("Input text {string}", async function (val) {
         await model.getEdit("Edit").set(val);
         await model.getEdit("Edit1").click();
-        let editContent = await model.getEdit("Edit").value();
-        assert.strictEqual(editContent, val, `Value is not "${val}".`)
+        await model.getEdit("Edit").checkProperty('value', val, `值不为"${val}"，是否被输入法影响了？`)
     });
 
     Then("Enter control-key by pressKeys method", async function () {
         await model.getEdit("Edit").click(0, 0, 1);
         await model.getEdit("Edit").pressKeys("^a");
         await model.getEdit("Edit").pressKeys("{BS}");
-        let blankContent = await model.getEdit("Edit").text();
-        assert.strictEqual(blankContent, '', "Edit box not empty");
+        await model.getEdit("Edit").checkProperty('text', '', '输入框内容没有全部删除')
     });
 
     When("Get edittext control's unique attribute", async function () {
@@ -182,8 +176,7 @@ setDefinitionFunctionWrapper(function (fn) {
 {
     When("Check RadioButton control", async function () {
         await model.getRadioButton("Checked1").check(true);
-        let bool = await model.getRadioButton("Checked1").checked();
-        return assert.equal(bool, true);
+        await model.getRadioButton("Checked1").checkProperty('checked', true)
     });
 
     When("Get RadioButton control's unique attribute", async function () {
@@ -209,9 +202,7 @@ setDefinitionFunctionWrapper(function (fn) {
     When("Select {string} item", async function (choice) {
         // await Util.delay(500);
         await model.getComboBox("ComboBox1").select(choice);
-        let selectedName = await model.getComboBox("ComboBox1").selectedName();
-
-        assert.strictEqual(choice, selectedName);
+        await model.getComboBox("ComboBox1").checkProperty('selectedName', choice)
     });
 
     When("Get Combox control's unique attribute", async function () {
@@ -287,8 +278,7 @@ setDefinitionFunctionWrapper(function (fn) {
     When("Check the {int}th. item", async function (index) {
         let item = await model.getList("List").scrollTo(index);
         let expected = await model.getList("List").itemName(index);
-        let itemName = await item.name();
-        assert.strictEqual(itemName, expected);
+        await item.checkProperty('name', expected);
     });
 
     When("Get ListBox control's unique attribute", async function () {
@@ -317,7 +307,7 @@ setDefinitionFunctionWrapper(function (fn) {
 
     Then("Get child element attribute by using scrollTo method", async function () {
         let item = await model.getList("List").scrollTo(0);
-        assert.strictEqual(await item.name(), 'First Normal Item');
+        await item.checkProperty('name', 'First Normal Item')
         let val = await model.getList("List").columnName(0);
         assert.strictEqual(val, '');
     });
@@ -465,8 +455,7 @@ setDefinitionFunctionWrapper(function (fn) {
     When("Get the {int} row, then get its {int} column cell value is {string}", async function (row, col, expect) {
         let tableRow = await model.getDataGrid("DataGrid").row(row);
         let tableCell = await tableRow.cell(col);
-        await tableCell.value()
-            .then((actual) => assert.strictEqual(actual, expect));
+        await tableCell.checkProperty('value', expect, "Not as expected")
     });
 }
 
@@ -538,12 +527,12 @@ setDefinitionFunctionWrapper(function (fn) {
         let node = ["Top One", "Sub Four"];
         for (let n of node) {
             await model.getTree("Tree").getTreeItem(n).expand();
-            assert.strictEqual(await model.getTreeItem(n).expandState(), 1);
+            await model.getTreeItem(n).checkProperty('expandState', 1, "unexpanded")
             await Util.delay(600);
         }
         for (let n of node.reverse()) {
             await model.getTree("Tree").getTreeItem(n).collapse();
-            assert.strictEqual(await model.getTreeItem(n).expandState(), 0);
+            await model.getTreeItem(n).checkProperty('expandState', 0, "unfolded")
             await Util.delay(600);
         }
 
@@ -553,13 +542,21 @@ setDefinitionFunctionWrapper(function (fn) {
         node_list = ["Top One", "Sub Four", "Top Two"]
         for (node of node_list) {
             await model.getTreeItem(node).expand();
+            for (node of node_list) {
+                await model.getTreeItem(node).expand();
+                await model.getTreeItem(node).highlight(5);
+                await model.getTreeItem(node).checkProperty('expandState', 1, "unexpanded")
+            }
         }
     });
 
     Then("Select a TreeItem control", async function () {
         await model.getTreeItem("Top One").expand();
+        await model.getTreeItem("Top One").checkProperty('expandState', 1, "Top One unexpanded")
         await model.getTreeItem("Sub Four").expand();
+        await model.getTreeItem("Sub Four").checkProperty('expandState', 1, "Sub Four not expanded")
         await model.getTreeItem("Sub Three1").setSelect(true);
+        await model.getTreeItem("Sub Three1").checkProperty('focused', true, "Sub Three1 unfocused")
     });
     
     When("Get TreeItem control's unique attribute", async function () {
@@ -681,26 +678,24 @@ Then("Turn to page {int}", async function (arg1) {
         let replaceType = ""
         replaceType = "Only method"
         await model.getGeneric("Edit").set(replaceType)
-        actualValue = await model.getGeneric("Edit").value();
-        assert.strictEqual(actualValue, replaceType);
+        await model.getGeneric("Edit").checkProperty('value', replaceType, "Not as expected")
 
         replaceType = "Just Criteria"
         let control = await model.getWindow('Window').getEdit({ "type": "Edit", "className": "TextBox" })
         // let control = await model.getGeneric({"type": "Edit", "className": "TextBox" })
         console.log(control)
         await control.set(replaceType)
-        actualValue = await model.getGeneric("Edit").value();
-        assert.strictEqual(actualValue, replaceType);
+        await model.getGeneric("Edit").checkProperty('value', replaceType, "Not as expected")
 
         replaceType = "Replace with Criteria part"
         await model.getGeneric("Edit", { "type": "Edit" }).set(replaceType)
         actualValue = await model.getGeneric("Edit").value();
-        assert.strictEqual(actualValue, replaceType);
+        await model.getGeneric("Edit").checkProperty('value', replaceType, "Not as expected")
 
         replaceType = "Replace with All Criteria"
         await model.getGeneric("Edit", { "type": "Edit", "className": "TextBox" }).set(replaceType)
         actualValue = await model.getGeneric("Edit").value();
-        assert.strictEqual(actualValue, replaceType);
+        await model.getGeneric("Edit").checkProperty('value', replaceType, "Not as expected")
     });
 
     Given("Use {string} to call getGeneric", async function (type) {
@@ -741,8 +736,7 @@ Then("Turn to page {int}", async function (arg1) {
                 "className": "TextBox"
             }
         ]).set(str)
-        let actualValue = await model.getGeneric("Edit").value();
-        assert.strictEqual(actualValue, str);
+        await model.getGeneric("Edit").checkProperty('value', str, "Not as expected")
     });
     Then("Traverse in-app controls with findControls", async function () {
         const window = model.getWindow("Window")

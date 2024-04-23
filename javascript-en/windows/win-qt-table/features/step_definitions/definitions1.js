@@ -6,9 +6,8 @@ const { Util } = require('leanpro.common');
 const { CukeTest } = require('cuketest');
 const path = require('path');
 const db = require('../support/db');
-const assert = require('assert');
 
-setDefaultTimeout(60 * 1000);
+setDefaultTimeout(120 * 1000);
 const model = WinAuto.loadModel(__dirname + "\\model1.tmodel");
 let child;
 
@@ -73,9 +72,8 @@ Then("Write to the spreadsheet", async function () {
             await cell.set(cellData);
             await cell.pressKeys('~');
             await Util.delay(300);
-            let actual = await cell.value();
             // let actual = await tableModel.cellValue(row,header);
-            assert.equal(actual, cellData);
+            await cell.checkProperty('value', cellData, "Write data not as expected")
             console.log(`Successfully wrote ${cellData} at row ${row}, column ${header}`);
         }
     }

@@ -3,7 +3,10 @@ const { JavaModel, JavaAuto } = require("leanpro.java");
 const { Util } = require('leanpro.common');
 const CarRental = require('./car-rental.js');
 
-setDefaultTimeout(60 * 1000); //set step timeout to be 60 seconds
+// 设置步骤超时时间为60秒
+setDefaultTimeout(60 * 1000);
+
+// 加载Java应用的UI模型文件
 let model = JavaModel.loadModel(__dirname + "/model1.tmodel");
 
 //// 你的步骤定义 /////

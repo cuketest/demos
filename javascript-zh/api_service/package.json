@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "json-server": "^0.16.1",
+    "json-server": "0.16.3",
     "kill-port": "^1.6.1"
   }
 }

@@ -1,0 +1,1 @@
+lite: '--format html --tags "not skip_on_lite"'

@@ -3,9 +3,11 @@ let { BeforeAll, AfterAll, Given, When, Then, setDefaultTimeout } = require('cuc
 let assert = require('assert')
 const { chromium } = require('leanpro.web');
 
+// Set the timeout for steps to 60 seconds
 setDefaultTimeout(60 * 1000);
 let browser, context, page;
 
+// Before all tests, launch the browser and create a new browser context
 BeforeAll(async function () {
     browser = await chromium.launch({
         // executablePath: "/usr/bin/lbrowser",
@@ -16,14 +18,19 @@ BeforeAll(async function () {
 
 });
 
+// After all tests, clean up the session and close the browser
 AfterAll(async function () {
     // Clear the session and close the browser
     // ---------------------
     await context.close();
 });
 
+// {string} placeholder to receive a string parameter passed to the variable url
 Given("open the browser and navigate to {string}", async function (url) {
+    // Navigate to the specified URL with a timeout of 60 seconds
     await page.goto(url);
+
+    // Assert if the page title matches the specified value
     let pageTitle = await page.title();
     return assert.equal(pageTitle, "Flux Cart");
 })
@@ -39,13 +46,17 @@ Then("Add to Cart button should be {string}", async function (message) {
 
 });
 
+// {string} placeholder to receive a string parameter passed to the variable message
 Then("the total should be {string}", async function (bill) {
     await Util.delay(1000);
     let text = await page.innerText('.total');
+
+    // Assert text == message
     return assert.deepEqual(text, bill);
 
 });
 
+// {int} placeholder to receive an integer parameter passed to the variable count, {string} placeholder to receive a string parameter passed to the variable itemName
 When("Add {int} {string} to cart", async function (count, itemName) {
     // Item info which matching the option in page.
     const itemList = {
@@ -59,7 +70,11 @@ When("Add {int} {string} to cart", async function (count, itemName) {
             value: 2, price: 19.99
         }
     }
+
+    // If total price does not exist, initialize it to 0
     this.total = this.total ? this.total : 0;
+
+    // Loop to add items to the cart
     let addBtn = await page.$('#addToCart');
     for (let i = 0; i < count; i++) {
         await sleep();

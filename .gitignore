@@ -1,6 +1,5 @@
 node_modules
 **/reports/**
-**/*_files/*.png
 !**/*_files/pattern*.png
 **/.*/**
 **/obj/**

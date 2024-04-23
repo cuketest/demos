@@ -1,15 +1,17 @@
-Feature: 数学计算
+# language: zh-CN
+功能: 数学计算
   加法测试，剧本用法演示样例
-  Scenario: 简单数学计算
-    Given 初始值设为1
-    When 现在再加1
-    Then 结果为2
 
-  Scenario Outline: 混合场景
-    Given 初始值设为<var>
-    When 现在再加<increment>
-    Then 结果为<result>
-    Examples:
+  场景: 简单数学计算
+    假如初始值设为1
+    当现在再加1
+    那么结果为2
+
+  场景大纲: 混合场景
+    假如初始值设为<var>
+    当现在再加<increment>
+    那么结果为<result>
+    例子: 
       | var | increment | result |
       | 100 | 5         | 105    |
       | 101 | 5         | 106    |

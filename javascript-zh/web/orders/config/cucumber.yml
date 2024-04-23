@@ -1,0 +1,6 @@
+Firefox: '--format html --custom firefox --video'
+Chrome: '--format html --custom chrome --video'
+Edge: '--format html --custom edge --video'
+CustomBrowser: >-
+  --format html --custom "C:\Program Files\Google\Chrome\Application\chrome.exe"
+  --video

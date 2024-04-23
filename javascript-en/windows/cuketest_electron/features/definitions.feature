@@ -24,7 +24,7 @@ Verify the following functions:
     * Wait for the run to finish
     * The running results appear in the output column include the following
       """
-      Run Project
+      run project
       """
 
   Scenario: Run Feature/Script
@@ -40,7 +40,7 @@ Verify the following functions:
     * Click "Run Script" button
     * The running results appear in the output column include the following
       """
-      Run Script
+      run script
       """
 
   Scenario: Open Model Manager

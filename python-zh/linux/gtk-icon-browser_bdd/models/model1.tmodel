@@ -1,0 +1,246 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "atk",
+      "nname": "gtk3-icon-browser",
+      "identifyProperties": {
+        "type": "Application",
+        "name": "gtk3-icon-browser",
+        "roleName": "Application"
+      },
+      "cachedProperties": {
+        "type": "Application",
+        "name": "gtk3-icon-browser",
+        "roleName": "Application"
+      },
+      "children": [
+        {
+          "ntype": "atk",
+          "nname": "Icon_Browser",
+          "identifyProperties": {
+            "type": "Pane",
+            "name": "Icon Browser",
+            "roleName": "Frame"
+          },
+          "cachedProperties": {
+            "type": "Pane",
+            "name": "Icon Browser",
+            "roleName": "Frame",
+            "boundingRectangle": "[826,82,1052,842]"
+          },
+          "children": [
+            {
+              "ntype": "atk",
+              "nname": "Pane",
+              "identifyProperties": {
+                "type": "Pane",
+                "roleName": "Filler"
+              },
+              "cachedProperties": {
+                "type": "Pane",
+                "roleName": "Filler",
+                "boundingRectangle": "[840,142,1024,768]"
+              },
+              "children": [
+                {
+                  "ntype": "atk",
+                  "nname": "List",
+                  "identifyProperties": {
+                    "type": "List",
+                    "roleName": "ListBox"
+                  },
+                  "cachedProperties": {
+                    "type": "List",
+                    "roleName": "ListBox",
+                    "boundingRectangle": "[840,142,209,768]"
+                  }
+                },
+                {
+                  "ntype": "atk",
+                  "nname": "Pane1",
+                  "identifyProperties": {
+                    "type": "Pane",
+                    "roleName": "Filler"
+                  },
+                  "cachedProperties": {
+                    "type": "Pane",
+                    "roleName": "Filler",
+                    "boundingRectangle": "[418,81,808,768]"
+                  },
+                  "children": [
+                    {
+                      "ntype": "atk",
+                      "nname": "Pane2",
+                      "identifyProperties": {
+                        "type": "Pane",
+                        "roleName": "ScrollPane"
+                      },
+                      "cachedProperties": {
+                        "type": "Pane",
+                        "roleName": "ScrollPane",
+                        "boundingRectangle": "[418,81,808,768]"
+                      },
+                      "children": [
+                        {
+                          "ntype": "atk",
+                          "nname": "Pane3",
+                          "identifyProperties": {
+                            "type": "Pane",
+                            "roleName": "LayeredPane"
+                          },
+                          "cachedProperties": {
+                            "type": "Pane",
+                            "roleName": "LayeredPane",
+                            "boundingRectangle": "[418,81,808,768]"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "ntype": "atk",
+                      "nname": "搜索",
+                      "identifyProperties": {
+                        "type": "Edit",
+                        "roleName": "Text",
+                        "name": {
+                          "type": "regex",
+                          "text": "搜索|Search"
+                        }
+                      },
+                      "cachedProperties": {
+                        "type": "Edit",
+                        "name": "搜索",
+                        "roleName": "Text",
+                        "boundingRectangle": "[527,128,166,32]"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "ntype": "atk",
+              "nname": "Pane4",
+              "identifyProperties": {
+                "type": "Pane",
+                "roleName": "Panel"
+              },
+              "cachedProperties": {
+                "type": "Pane",
+                "roleName": "Panel",
+                "boundingRectangle": "[-10,76,1024,46]"
+              },
+              "children": [
+                {
+                  "ntype": "atk",
+                  "nname": "Button",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "roleName": "ToggleButton"
+                  },
+                  "cachedProperties": {
+                    "type": "Button",
+                    "roleName": "ToggleButton",
+                    "boundingRectangle": "[849,76,32,46]"
+                  }
+                },
+                {
+                  "ntype": "atk",
+                  "nname": "Pane5",
+                  "identifyProperties": {
+                    "type": "Pane",
+                    "roleName": "Filler"
+                  },
+                  "cachedProperties": {
+                    "type": "Pane",
+                    "roleName": "Filler",
+                    "boundingRectangle": "[887,76,121,46]"
+                  },
+                  "children": [
+                    {
+                      "ntype": "atk",
+                      "nname": "最小化",
+                      "identifyProperties": {
+                        "type": "Button",
+                        "name": "最小化",
+                        "roleName": "PushButton"
+                      },
+                      "cachedProperties": {
+                        "type": "Button",
+                        "name": "最小化",
+                        "roleName": "PushButton",
+                        "boundingRectangle": "[900,77,32,44]"
+                      }
+                    },
+                    {
+                      "ntype": "atk",
+                      "nname": "最大化",
+                      "identifyProperties": {
+                        "type": "Button",
+                        "name": "最大化",
+                        "roleName": "PushButton"
+                      },
+                      "cachedProperties": {
+                        "type": "Button",
+                        "name": "最大化",
+                        "roleName": "PushButton",
+                        "boundingRectangle": "[938,77,32,44]"
+                      }
+                    },
+                    {
+                      "ntype": "atk",
+                      "nname": "关闭",
+                      "identifyProperties": {
+                        "type": "Button",
+                        "name": "关闭",
+                        "roleName": "PushButton"
+                      },
+                      "cachedProperties": {
+                        "type": "Button",
+                        "name": "关闭",
+                        "roleName": "PushButton",
+                        "boundingRectangle": "[976,77,32,44]"
+                      }
+                    },
+                    {
+                      "ntype": "atk",
+                      "nname": "Normal",
+                      "identifyProperties": {
+                        "type": "RadioButton",
+                        "name": "Normal",
+                        "roleName": "RadioButton"
+                      },
+                      "cachedProperties": {
+                        "type": "RadioButton",
+                        "name": "Normal",
+                        "roleName": "RadioButton",
+                        "boundingRectangle": "[494,110,84,44]"
+                      }
+                    },
+                    {
+                      "ntype": "atk",
+                      "nname": "Symbolic",
+                      "identifyProperties": {
+                        "type": "RadioButton",
+                        "name": "Symbolic",
+                        "roleName": "RadioButton"
+                      },
+                      "cachedProperties": {
+                        "type": "RadioButton",
+                        "name": "Symbolic",
+                        "roleName": "RadioButton",
+                        "boundingRectangle": "[578,110,96,44]"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

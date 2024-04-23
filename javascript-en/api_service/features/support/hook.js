@@ -13,6 +13,7 @@ BeforeAll(async function () {
     // If want disable the command prompt, instead below code of above.
     // child_process.spawn('npm.cmd', ['run', 'json-server'])
 
+    await Util.delay(2000)
 })
 AfterAll(async function () {
     kill('3000'); // kill json-server process

@@ -1,0 +1,383 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "uia",
+      "nname": "Notepad",
+      "identifyProperties": {
+        "type": "Window",
+        "className": "Notepad"
+      },
+      "cachedProperties": {
+        "type": "Window",
+        "className": "Notepad",
+        "title": "Untitled - Notepad",
+        "value": false,
+        "boundingRectangle": "[7,115,1440,677]",
+        "appName": "Notepad",
+        "appPath": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsNotepad_11.2112.32.0_x64__8wekyb3d8bbwe\\Notepad\\Notepad.exe"
+      },
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "Text Editor",
+          "identifyProperties": {
+            "type": "Document",
+            "className": "RichEditD2DPT",
+            "name": "RichEdit Control",
+            "searchHint": "fromPoint"
+          },
+          "cachedProperties": {
+            "type": "Document",
+            "className": "RichEditD2DPT",
+            "name": "RichEdit Control",
+            "boundingRectangle": "[13,187,1428,567]"
+          },
+          "image": {
+            "imgPath": "uia.png",
+            "rect": "0,0,1920,828"
+          },
+          "children": [
+            {
+              "ntype": "virtual",
+              "nname": "virtual",
+              "identifyProperties": {
+                "boundingRectangle": "2,5,484,146",
+                "align": 0
+              },
+              "cachedProperties": {}
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "Application",
+          "identifyProperties": {
+            "type": "MenuBar",
+            "automationId": "MenuBar"
+          },
+          "cachedProperties": {
+            "type": "MenuBar",
+            "automationId": "MenuBar",
+            "value": false,
+            "boundingRectangle": "[13,147,159,39]"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "File",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "className": "Microsoft.UI.Xaml.Controls.MenuBarItem",
+                "name": "File"
+              },
+              "cachedProperties": {
+                "type": "MenuItem",
+                "className": "Microsoft.UI.Xaml.Controls.MenuBarItem",
+                "name": "File",
+                "value": false,
+                "boundingRectangle": "[17,151,41,32]"
+              },
+              "image": {
+                "imgPath": "uia1.png",
+                "rect": "0,0,41,32"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "Format",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "className": "Microsoft.UI.Xaml.Controls.MenuBarItem",
+                "name": "Edit"
+              },
+              "cachedProperties": {
+                "type": "MenuItem",
+                "className": "Microsoft.UI.Xaml.Controls.MenuBarItem",
+                "name": "Edit",
+                "value": false,
+                "boundingRectangle": "[66,151,44,32]"
+              },
+              "image": {
+                "imgPath": "uia2.png",
+                "rect": "0,0,44,32"
+              }
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "File1",
+          "identifyProperties": {
+            "type": "Menu",
+            "className": "MenuFlyout"
+          },
+          "cachedProperties": {
+            "type": "Menu",
+            "className": "MenuFlyout",
+            "value": false,
+            "boundingRectangle": "[17,183,232,276]"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "New",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "className": "MenuFlyoutItem",
+                "name": "New tab"
+              },
+              "cachedProperties": {
+                "type": "MenuItem",
+                "className": "MenuFlyoutItem",
+                "name": "New tab",
+                "accessKey": "Ctrl+N",
+                "value": false,
+                "boundingRectangle": "[67,131,222,29]"
+              },
+              "image": {
+                "imgPath": "uia3.png",
+                "rect": "0,0,222,29"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "Save",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "className": "MenuFlyoutItem",
+                "name": "Save"
+              },
+              "cachedProperties": {
+                "type": "MenuItem",
+                "className": "MenuFlyoutItem",
+                "name": "Save",
+                "accessKey": "Ctrl+S",
+                "value": false,
+                "boundingRectangle": "[22,287,222,29]"
+              },
+              "image": {
+                "imgPath": "uia4.png",
+                "rect": "0,0,222,29"
+              }
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "Format1",
+          "identifyProperties": {
+            "type": "Menu",
+            "className": "MenuFlyout"
+          },
+          "cachedProperties": {
+            "type": "Menu",
+            "className": "MenuFlyout",
+            "value": false,
+            "boundingRectangle": "[258,177,232,447]"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "Font...",
+              "identifyProperties": {
+                "type": "MenuItem",
+                "className": "MenuFlyoutItem",
+                "name": "Font"
+              },
+              "cachedProperties": {
+                "type": "MenuItem",
+                "className": "MenuFlyoutItem",
+                "name": "Font",
+                "value": false,
+                "boundingRectangle": "[263,590,222,29]"
+              }
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "Font:",
+          "identifyProperties": {
+            "type": "ComboBox",
+            "automationId": "FontFamilyComboBox",
+            "name": "Family"
+          },
+          "cachedProperties": {
+            "type": "ComboBox",
+            "automationId": "FontFamilyComboBox",
+            "className": "ComboBox",
+            "name": "Family",
+            "value": false,
+            "boundingRectangle": "[949,365,206,40]"
+          },
+          "image": {
+            "imgPath": "uia6.png",
+            "rect": "0,0,206,40"
+          }
+        },
+        {
+          "ntype": "uia",
+          "nname": "Font style:",
+          "identifyProperties": {
+            "type": "ComboBox",
+            "automationId": "FontStyleComboBox",
+            "name": "Style"
+          },
+          "cachedProperties": {
+            "type": "ComboBox",
+            "automationId": "FontStyleComboBox",
+            "className": "ComboBox",
+            "name": "Style",
+            "value": false,
+            "boundingRectangle": "[949,422,206,40]"
+          },
+          "image": {
+            "imgPath": "uia7.png",
+            "rect": "0,0,206,40"
+          }
+        },
+        {
+          "ntype": "uia",
+          "nname": "Size:",
+          "identifyProperties": {
+            "type": "ComboBox",
+            "automationId": "FontSizeComboBox",
+            "name": "Size"
+          },
+          "cachedProperties": {
+            "type": "ComboBox",
+            "automationId": "FontSizeComboBox",
+            "className": "ComboBox",
+            "name": "Size",
+            "value": false,
+            "boundingRectangle": "[949,479,206,40]"
+          },
+          "image": {
+            "imgPath": "uia8.png",
+            "rect": "0,0,206,40"
+          }
+        },
+        {
+          "ntype": "uia",
+          "nname": "OK",
+          "identifyProperties": {
+            "type": "Button",
+            "name": "Back",
+            "automationId": "Button"
+          },
+          "cachedProperties": {
+            "type": "Button",
+            "automationId": "Button",
+            "className": "Button",
+            "name": "Back",
+            "value": false,
+            "boundingRectangle": "[76,114,30,24]"
+          },
+          "image": {
+            "imgPath": "uia9.png",
+            "rect": "0,0,30,24"
+          }
+        },
+        {
+          "ntype": "uia",
+          "nname": "Save_as",
+          "identifyProperties": {
+            "type": "Window",
+            "className": "#32770",
+            "title": "Save as"
+          },
+          "cachedProperties": {
+            "type": "Window",
+            "className": "#32770",
+            "title": "Save as",
+            "value": false,
+            "boundingRectangle": "[71,110,960,489]"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "Save1",
+              "identifyProperties": {
+                "type": "Button",
+                "className": "Button",
+                "name": "Save"
+              },
+              "cachedProperties": {
+                "type": "Button",
+                "automationId": "1",
+                "className": "Button",
+                "name": "Save",
+                "value": false,
+                "boundingRectangle": "[818,553,88,26]"
+              },
+              "image": {
+                "imgPath": "uia11.png",
+                "rect": "0,0,88,26"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "File_name:",
+              "identifyProperties": {
+                "type": "ComboBox",
+                "automationId": "FileNameControlHost",
+                "name": "File name:"
+              },
+              "cachedProperties": {
+                "type": "ComboBox",
+                "automationId": "FileNameControlHost",
+                "className": "AppControlHost",
+                "name": "File name:",
+                "accessKey": "Alt+n",
+                "value": "*.txt",
+                "boundingRectangle": "[204,485,814,23]"
+              },
+              "children": [
+                {
+                  "ntype": "uia",
+                  "nname": "File_name:1",
+                  "identifyProperties": {
+                    "type": "Edit",
+                    "className": "Edit",
+                    "name": "File name:"
+                  },
+                  "cachedProperties": {
+                    "type": "Edit",
+                    "automationId": "1001",
+                    "className": "Edit",
+                    "name": "File name:",
+                    "value": "*.txt",
+                    "boundingRectangle": "[207,488,791,17]"
+                  },
+                  "image": {
+                    "imgPath": "uia10.png",
+                    "rect": "0,0,791,17"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "Close",
+          "identifyProperties": {
+            "type": "Button",
+            "automationId": "Light Dismiss",
+            "name": "Close"
+          },
+          "cachedProperties": {
+            "type": "Button",
+            "automationId": "Light Dismiss",
+            "className": "ComboBoxLightDismiss",
+            "name": "Close",
+            "value": false,
+            "boundingRectangle": "[0,0,0,0]"
+          }
+        }
+      ]
+    }
+  ]
+}

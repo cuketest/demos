@@ -1,20 +1,40 @@
-const { BeforeAll } = require('cucumber');
-const { Given, When, Then, setDefaultTimeout } = require('cucumber');
+const { Given, When, Then, After, setDefaultTimeout } = require('cucumber');
 const { WinAuto } = require('leanpro.win');
 const { Util } = require('leanpro.common');
 
+// Clear the default timeout
 setDefaultTimeout(-1);
 
+// Load the UI model file of the Windows application
 let model = WinAuto.loadModel(__dirname + "/model1.tmodel");
 
 //// your step definition /////
-const MAX_DEPTH = 3; // The maximum depth of traversal, such as 3 means to expand at most three levels of nodes
-const result = []; // The name and depth information of the record traversal node is used to generate the record, and the members are {name, depth} objects
+// The maximum depth of traversal, such as 3 means to expand at most three levels of nodes
+const MAX_DEPTH = 3; 
+// The name and depth information of the record traversal node is used to generate the record, and the members are {name, depth} objects
+const result = []; 
 
+// After each test scenario, check if there is a dialog with the window class name #32770, if so, close it
+After(async function () {
+    if (await model.getWindow("Window").getWindow({ "className": "#32770" }).exists()){
+        await model.getWindow("Window").getWindow({ "className": "#32770" }).close();
+    }
+
+    // Minimize window
+    await model.getWindow("Window").minimize();
+})
+
+// {string} placeholder receives a string parameter passed to the variable tree
 When("Traverse the expanded tree {string}", async function (tree) {
     let depth = 0
-    await model.getTree(tree).scrollToTop()
-    let RootNode = await model.getTree(tree).firstChild("TreeItem"); // Get the first `TreeItem` child node in the tree
+
+    // Scroll the tree to the top
+    await model.getTree(tree).scrollToTop();
+
+    // Get the first `TreeItem` child node in the tree
+    let RootNode = await model.getTree(tree).firstChild("TreeItem"); 
+
+    // If the root node exists, recursively expand its child nodes
     if (RootNode) {
         await expandChild(RootNode, depth);
     } else {
@@ -41,6 +61,8 @@ Then("Attach the results", async function () {
         let rowString = '\t'.repeat(row.depth)+row.name+'\n';
         report += rowString;
     }
+
+    // Add the value of `report` to the test report
     this.attach(report);
 });
 

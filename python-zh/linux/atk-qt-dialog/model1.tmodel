@@ -1,0 +1,686 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "qt",
+      "nname": "fetchmore",
+      "identifyProperties": {
+        "type": "Application",
+        "appName": "fetchmore"
+      },
+      "cachedProperties": {
+        "appName": "fetchmore",
+        "appPath": "/usr/lib/cuketest/bin/fetchmore",
+        "type": "Application"
+      },
+      "children": [
+        {
+          "ntype": "qt",
+          "nname": "Fetch_More_Example",
+          "identifyProperties": {
+            "type": "Window",
+            "className": "Window",
+            "text": "Fetch More Example"
+          },
+          "cachedProperties": {
+            "className": "Window",
+            "text": "Fetch More Example",
+            "type": "Window",
+            "boundingRectangle": "[701,167,278,445]"
+          },
+          "image": {
+            "imgPath": "image55.png",
+            "rect": "245,101,278,445"
+          },
+          "children": [
+            {
+              "ntype": "qt",
+              "nname": "Edit",
+              "identifyProperties": {
+                "type": "Edit",
+                "className": "QLineEdit"
+              },
+              "cachedProperties": {
+                "className": "QLineEdit",
+                "type": "Edit",
+                "boundingRectangle": "[784,178,184,27]"
+              },
+              "image": {
+                "imgPath": "image39.png",
+                "rect": "330,112,182,27"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "List",
+              "identifyProperties": {
+                "type": "List",
+                "className": "QListView"
+              },
+              "cachedProperties": {
+                "className": "QListView",
+                "type": "List",
+                "boundingRectangle": "[712,211,256,192]"
+              },
+              "image": {
+                "imgPath": "image54.png",
+                "rect": "256,145,256,192"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ntype": "atk",
+      "nname": "standarddialogs",
+      "identifyProperties": {
+        "type": "Application",
+        "name": "standarddialogs",
+        "roleName": "Application"
+      },
+      "cachedProperties": {
+        "type": "Application",
+        "name": "standarddialogs",
+        "roleName": "Application",
+        "description": "/usr/lib/cuketest/bin/standarddialogs"
+      },
+      "children": [
+        {
+          "ntype": "atk",
+          "nname": "Standard_Dialogs",
+          "identifyProperties": {
+            "type": "Pane",
+            "name": "Standard Dialogs",
+            "roleName": "Filler"
+          },
+          "cachedProperties": {
+            "type": "Pane",
+            "name": "Standard Dialogs",
+            "roleName": "Filler",
+            "boundingRectangle": "[150,113,480,582]"
+          },
+          "children": [
+            {
+              "ntype": "atk",
+              "nname": "Pane1",
+              "identifyProperties": {
+                "type": "Pane",
+                "roleName": "LayeredPane"
+              },
+              "cachedProperties": {
+                "type": "Pane",
+                "roleName": "LayeredPane",
+                "boundingRectangle": "[161,124,458,560]"
+              },
+              "children": [
+                {
+                  "ntype": "atk",
+                  "nname": "Pane2",
+                  "identifyProperties": {
+                    "type": "Pane",
+                    "roleName": "Filler"
+                  },
+                  "cachedProperties": {
+                    "type": "Pane",
+                    "roleName": "Filler",
+                    "boundingRectangle": "[161,153,458,415]"
+                  },
+                  "children": [
+                    {
+                      "ntype": "atk",
+                      "nname": "Pane3",
+                      "identifyProperties": {
+                        "type": "Pane",
+                        "roleName": "Filler"
+                      },
+                      "cachedProperties": {
+                        "type": "Pane",
+                        "roleName": "Filler",
+                        "boundingRectangle": "[161,153,458,401]"
+                      },
+                      "children": [
+                        {
+                          "ntype": "atk",
+                          "nname": "Pane4",
+                          "identifyProperties": {
+                            "type": "Pane",
+                            "roleName": "Filler"
+                          },
+                          "cachedProperties": {
+                            "type": "Pane",
+                            "roleName": "Filler",
+                            "boundingRectangle": "[161,153,479,401]"
+                          },
+                          "children": [
+                            {
+                              "ntype": "atk",
+                              "nname": "QInputDialog::getInt()",
+                              "identifyProperties": {
+                                "type": "Button",
+                                "name": "QInputDialog::getInt()",
+                                "roleName": "PushButton"
+                              },
+                              "cachedProperties": {
+                                "type": "Button",
+                                "name": "QInputDialog::getInt()",
+                                "roleName": "PushButton",
+                                "boundingRectangle": "[170,162,205,23]"
+                              }
+                            },
+                            {
+                              "ntype": "atk",
+                              "nname": "Label",
+                              "identifyProperties": {
+                                "type": "Label",
+                                "roleName": "Label"
+                              },
+                              "cachedProperties": {
+                                "type": "Label",
+                                "roleName": "Label",
+                                "boundingRectangle": "[381,162,250,23]"
+                              }
+                            },
+                            {
+                              "ntype": "atk",
+                              "nname": "QInputDialog::getDouble()",
+                              "identifyProperties": {
+                                "type": "Button",
+                                "name": "QInputDialog::getDouble()",
+                                "roleName": "PushButton"
+                              },
+                              "cachedProperties": {
+                                "type": "Button",
+                                "name": "QInputDialog::getDouble()",
+                                "roleName": "PushButton",
+                                "boundingRectangle": "[170,191,205,23]"
+                              }
+                            },
+                            {
+                              "ntype": "atk",
+                              "nname": "QInputDialog::getItem()",
+                              "identifyProperties": {
+                                "type": "Button",
+                                "name": "QInputDialog::getItem()",
+                                "roleName": "PushButton"
+                              },
+                              "cachedProperties": {
+                                "type": "Button",
+                                "name": "QInputDialog::getItem()",
+                                "roleName": "PushButton",
+                                "boundingRectangle": "[170,220,205,23]"
+                              }
+                            },
+                            {
+                              "ntype": "atk",
+                              "nname": "QInputDialog::getText()",
+                              "identifyProperties": {
+                                "type": "Button",
+                                "name": "QInputDialog::getText()",
+                                "roleName": "PushButton"
+                              },
+                              "cachedProperties": {
+                                "type": "Button",
+                                "name": "QInputDialog::getText()",
+                                "roleName": "PushButton",
+                                "boundingRectangle": "[170,249,205,23]"
+                              }
+                            },
+                            {
+                              "ntype": "atk",
+                              "nname": "QInputDialog::getMultiLineText",
+                              "identifyProperties": {
+                                "type": "Button",
+                                "name": "QInputDialog::getMultiLineText()",
+                                "roleName": "PushButton"
+                              },
+                              "cachedProperties": {
+                                "type": "Button",
+                                "name": "QInputDialog::getMultiLineText()",
+                                "roleName": "PushButton",
+                                "boundingRectangle": "[170,278,205,23]"
+                              }
+                            },
+                            {
+                              "ntype": "atk",
+                              "nname": "QFileDialog::getExistingDirect",
+                              "identifyProperties": {
+                                "type": "Button",
+                                "name": "QFileDialog::getExistingDirectory()",
+                                "roleName": "PushButton"
+                              },
+                              "cachedProperties": {
+                                "type": "Button",
+                                "name": "QFileDialog::getExistingDirectory()",
+                                "roleName": "PushButton",
+                                "boundingRectangle": "[0,0,0,0]"
+                              }
+                            },
+                            {
+                              "ntype": "atk",
+                              "nname": "QFileDialog::getOpenFileName()",
+                              "identifyProperties": {
+                                "type": "Button",
+                                "name": "QFileDialog::getOpenFileName()",
+                                "roleName": "PushButton"
+                              },
+                              "cachedProperties": {
+                                "type": "Button",
+                                "name": "QFileDialog::getOpenFileName()",
+                                "roleName": "PushButton",
+                                "boundingRectangle": "[0,0,0,0]"
+                              }
+                            },
+                            {
+                              "ntype": "atk",
+                              "nname": "QFileDialog::getOpenFileNames(",
+                              "identifyProperties": {
+                                "type": "Button",
+                                "name": "QFileDialog::getOpenFileNames()",
+                                "roleName": "PushButton"
+                              },
+                              "cachedProperties": {
+                                "type": "Button",
+                                "name": "QFileDialog::getOpenFileNames()",
+                                "roleName": "PushButton",
+                                "boundingRectangle": "[0,0,0,0]"
+                              }
+                            },
+                            {
+                              "ntype": "atk",
+                              "nname": "QFileDialog::getSaveFileName()",
+                              "identifyProperties": {
+                                "type": "Button",
+                                "name": "QFileDialog::getSaveFileName()",
+                                "roleName": "PushButton"
+                              },
+                              "cachedProperties": {
+                                "type": "Button",
+                                "name": "QFileDialog::getSaveFileName()",
+                                "roleName": "PushButton",
+                                "boundingRectangle": "[0,0,0,0]"
+                              }
+                            },
+                            {
+                              "ntype": "atk",
+                              "nname": "Options",
+                              "identifyProperties": {
+                                "type": "Pane",
+                                "name": "Options",
+                                "roleName": "Panel"
+                              },
+                              "cachedProperties": {
+                                "type": "Pane",
+                                "name": "Options",
+                                "roleName": "Panel",
+                                "boundingRectangle": "[0,0,0,0]"
+                              },
+                              "children": [
+                                {
+                                  "ntype": "atk",
+                                  "nname": "Do_not_use_native_dialog",
+                                  "identifyProperties": {
+                                    "type": "CheckBox",
+                                    "name": "Do not use native dialog",
+                                    "roleName": "CheckBox"
+                                  },
+                                  "cachedProperties": {
+                                    "type": "CheckBox",
+                                    "name": "Do not use native dialog",
+                                    "roleName": "CheckBox",
+                                    "boundingRectangle": "[0,0,0,0]"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "ntype": "atk",
+                  "nname": "Color_Dialog",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "name": "Color Dialog",
+                    "roleName": "PushButton"
+                  },
+                  "cachedProperties": {
+                    "type": "Button",
+                    "name": "Color Dialog",
+                    "roleName": "PushButton",
+                    "boundingRectangle": "[161,574,458,23]"
+                  }
+                },
+                {
+                  "ntype": "atk",
+                  "nname": "Font_Dialog",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "name": "Font Dialog",
+                    "roleName": "PushButton"
+                  },
+                  "cachedProperties": {
+                    "type": "Button",
+                    "name": "Font Dialog",
+                    "roleName": "PushButton",
+                    "boundingRectangle": "[161,603,458,23]"
+                  }
+                },
+                {
+                  "ntype": "atk",
+                  "nname": "File_Dialogs",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "name": "File Dialogs",
+                    "roleName": "PushButton"
+                  },
+                  "cachedProperties": {
+                    "type": "Button",
+                    "name": "File Dialogs",
+                    "roleName": "PushButton",
+                    "boundingRectangle": "[161,632,458,23]"
+                  }
+                },
+                {
+                  "ntype": "atk",
+                  "nname": "Message_Boxes",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "name": "Message Boxes",
+                    "roleName": "PushButton"
+                  },
+                  "cachedProperties": {
+                    "type": "Button",
+                    "name": "Message Boxes",
+                    "roleName": "PushButton",
+                    "boundingRectangle": "[161,661,458,23]"
+                  }
+                },
+                {
+                  "ntype": "atk",
+                  "nname": "Input_Dialogs",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "name": "Input Dialogs",
+                    "roleName": "PushButton"
+                  },
+                  "cachedProperties": {
+                    "type": "Button",
+                    "name": "Input Dialogs",
+                    "roleName": "PushButton",
+                    "boundingRectangle": "[155,178,458,23]"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ntype": "atk",
+          "nname": "QInputDialog::getInteger()",
+          "identifyProperties": {
+            "type": "Custom",
+            "name": "QInputDialog::getInteger()",
+            "roleName": "Dialog"
+          },
+          "cachedProperties": {
+            "type": "Custom",
+            "name": "QInputDialog::getInteger()",
+            "roleName": "Dialog",
+            "boundingRectangle": "[284,410,200,96]"
+          },
+          "children": [
+            {
+              "ntype": "atk",
+              "nname": "Pane5",
+              "identifyProperties": {
+                "type": "Pane",
+                "roleName": "Panel"
+              },
+              "cachedProperties": {
+                "type": "Pane",
+                "roleName": "Panel",
+                "boundingRectangle": "[295,472,178,23]"
+              },
+              "children": [
+                {
+                  "ntype": "atk",
+                  "nname": "OK",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "name": "OK",
+                    "roleName": "PushButton"
+                  },
+                  "cachedProperties": {
+                    "type": "Button",
+                    "name": "OK",
+                    "roleName": "PushButton",
+                    "boundingRectangle": "[393,472,80,23]"
+                  }
+                }
+              ]
+            },
+            {
+              "ntype": "atk",
+              "nname": "Percentage:",
+              "identifyProperties": {
+                "type": "Button",
+                "name": "Percentage:",
+                "roleName": "SpinButton"
+              },
+              "cachedProperties": {
+                "type": "Button",
+                "name": "Percentage:",
+                "roleName": "SpinButton",
+                "boundingRectangle": "[295,442,178,24]"
+              }
+            }
+          ]
+        },
+        {
+          "ntype": "atk",
+          "nname": "QInputDialog::getItem()1",
+          "identifyProperties": {
+            "type": "Custom",
+            "name": "QInputDialog::getItem()",
+            "roleName": "Dialog"
+          },
+          "cachedProperties": {
+            "type": "Custom",
+            "name": "QInputDialog::getItem()",
+            "roleName": "Dialog",
+            "boundingRectangle": "[284,410,200,95]"
+          },
+          "children": [
+            {
+              "ntype": "atk",
+              "nname": "Spring",
+              "identifyProperties": {
+                "type": "ComboBox",
+                "name": "Spring",
+                "roleName": "ComboBox"
+              },
+              "cachedProperties": {
+                "type": "ComboBox",
+                "name": "Spring",
+                "roleName": "ComboBox",
+                "boundingRectangle": "[295,442,178,23]"
+              },
+              "children": [
+                {
+                  "ntype": "atk",
+                  "nname": "Custom1",
+                  "identifyProperties": {
+                    "type": "Custom",
+                    "roleName": "List"
+                  },
+                  "cachedProperties": {
+                    "type": "Custom",
+                    "roleName": "List",
+                    "boundingRectangle": "[0,0,0,0]"
+                  },
+                  "children": [
+                    {
+                      "ntype": "atk",
+                      "nname": "Spring1",
+                      "identifyProperties": {
+                        "type": "ListItem",
+                        "name": "Spring",
+                        "roleName": "ListItem"
+                      },
+                      "cachedProperties": {
+                        "type": "ListItem",
+                        "name": "Spring",
+                        "roleName": "ListItem",
+                        "boundingRectangle": "[0,0,753,23]"
+                      }
+                    },
+                    {
+                      "ntype": "atk",
+                      "nname": "Summer",
+                      "identifyProperties": {
+                        "type": "ListItem",
+                        "name": "Summer",
+                        "roleName": "ListItem"
+                      },
+                      "cachedProperties": {
+                        "type": "ListItem",
+                        "name": "Summer",
+                        "roleName": "ListItem",
+                        "boundingRectangle": "[0,23,753,23]"
+                      }
+                    },
+                    {
+                      "ntype": "atk",
+                      "nname": "Fall",
+                      "identifyProperties": {
+                        "type": "ListItem",
+                        "name": "Fall",
+                        "roleName": "ListItem"
+                      },
+                      "cachedProperties": {
+                        "type": "ListItem",
+                        "name": "Fall",
+                        "roleName": "ListItem",
+                        "boundingRectangle": "[0,46,753,23]"
+                      }
+                    },
+                    {
+                      "ntype": "atk",
+                      "nname": "Winter",
+                      "identifyProperties": {
+                        "type": "ListItem",
+                        "name": "Winter",
+                        "roleName": "ListItem"
+                      },
+                      "cachedProperties": {
+                        "type": "ListItem",
+                        "name": "Winter",
+                        "roleName": "ListItem",
+                        "boundingRectangle": "[0,69,753,23]"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "ntype": "atk",
+              "nname": "Pane6",
+              "identifyProperties": {
+                "type": "Pane",
+                "roleName": "Panel"
+              },
+              "cachedProperties": {
+                "type": "Pane",
+                "roleName": "Panel",
+                "boundingRectangle": "[295,471,178,23]"
+              },
+              "children": [
+                {
+                  "ntype": "atk",
+                  "nname": "OK1",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "name": "OK",
+                    "roleName": "PushButton"
+                  },
+                  "cachedProperties": {
+                    "type": "Button",
+                    "name": "OK",
+                    "roleName": "PushButton",
+                    "boundingRectangle": "[393,471,80,23]"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ntype": "atk",
+          "nname": "QInputDialog::getMultiLineText1",
+          "identifyProperties": {
+            "type": "Custom",
+            "name": "QInputDialog::getMultiLineText()",
+            "roleName": "Dialog"
+          },
+          "cachedProperties": {
+            "type": "Custom",
+            "name": "QInputDialog::getMultiLineText()",
+            "roleName": "Dialog",
+            "boundingRectangle": "[245,326,278,264]"
+          },
+          "children": [
+            {
+              "ntype": "atk",
+              "nname": "Edit1",
+              "identifyProperties": {
+                "type": "Edit",
+                "roleName": "Text"
+              },
+              "cachedProperties": {
+                "type": "Edit",
+                "roleName": "Text",
+                "boundingRectangle": "[256,358,256,192]"
+              }
+            },
+            {
+              "ntype": "atk",
+              "nname": "Pane7",
+              "identifyProperties": {
+                "type": "Pane",
+                "roleName": "Panel"
+              },
+              "cachedProperties": {
+                "type": "Pane",
+                "roleName": "Panel",
+                "boundingRectangle": "[256,556,256,23]"
+              },
+              "children": [
+                {
+                  "ntype": "atk",
+                  "nname": "OK2",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "name": "OK",
+                    "roleName": "PushButton"
+                  },
+                  "cachedProperties": {
+                    "type": "Button",
+                    "name": "OK",
+                    "roleName": "PushButton",
+                    "boundingRectangle": "[432,556,80,23]"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

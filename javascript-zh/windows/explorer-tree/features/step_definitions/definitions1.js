@@ -1,36 +1,57 @@
-const { BeforeAll } = require('cucumber');
-const { Given, When, Then, setDefaultTimeout } = require('cucumber');
+const { Given, When, Then, After, setDefaultTimeout } = require('cucumber');
 const { WinAuto } = require('leanpro.win');
 const { Util } = require('leanpro.common');
 
+// 清除默认超时
 setDefaultTimeout(-1);
+
+// 加载Windows应用的UI模型文件
 let model = WinAuto.loadModel(__dirname + "/model1.tmodel");
 
 //// 你的步骤定义 /////
-const MAX_DEPTH = 3; // 遍历的最大深度，如3就代表最多展开三级节点
-const result = []; // 记录遍历节点的名称和深度信息用于生成记录，成员为{name, depth}对象
+// 遍历的最大深度，如3就代表最多展开三级节点
+const MAX_DEPTH = 3; 
 
+// 记录遍历节点的名称和深度信息用于生成记录，成员为{name, depth}对象
+const result = []; 
+
+// 在每个测试场景执行之后检查是否存在窗口类名为 #32770 的对话框,存在则关闭
+After(async function () {
+    if(await model.getWindow("Window").getWindow({ "className": "#32770" }).exists()){
+        await model.getWindow("Window").getWindow({ "className": "#32770" }).close();
+    }
+
+    // 最小化窗口
+    await model.getWindow("Window").minimize();
+})
+
+// {string} 占位符接收一个字符串类型参数，字符串传递给变量tree
 When("遍历展开树{string}", async function (tree) {
     let depth = 0
-    await model.getTree(tree).scrollToTop()
-    let RootNode = await model.getTree(tree).firstChild("TreeItem"); // 获取树中的第一个`TreeItem`子节点
+
+    // 滚动树至顶部
+    await model.getTree(tree).scrollToTop();
+
+    // 获取树中的第一个`TreeItem`子节点
+    let RootNode = await model.getTree(tree).firstChild("TreeItem"); 
+    
+    // 如果根节点存在，则递归展开其子节点
     if (RootNode) {
         await expandChild(RootNode, depth);
     } else {
-        throw Error(`当前${tree}树中没有任何树节点。`)
+        throw Error(`当前${tree}树中没有任何树节点。`);
     }
 });
 
 Given("打开资源管理器", async function () {
     // 如果当前有资源管理器窗口打开就直接用当前窗口
     if (await model.getWindow("Window").exists()) {
-        await model.getWindow("Window").restore()
+        await model.getWindow("Window").restore();
     }else{
         await Util.launchProcess("explorer");
     }
-    if (!await model.getWindow("Window").exists(5))
-    {
-        throw Error("资源管理器没有正常启动")
+    if (!await model.getWindow("Window").exists(5)) {
+        throw Error("资源管理器没有正常启动");
     }
 });
 
@@ -40,6 +61,8 @@ Then("将结果附件", async function () {
         let rowString = '\t'.repeat(row.depth)+row.name+'\n';
         report += rowString;
     }
+
+    // 将report值添加到测试报告中
     this.attach(report);
 });
 

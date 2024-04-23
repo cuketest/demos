@@ -3,7 +3,7 @@ let { driver } = require('../support/web_driver')
 var assert = require('assert')
 
 ///// Your step definitions /////
-
+// Set the timeout for steps to 60 seconds
 setDefaultTimeout(60 * 1000)
 
 Given(/^open the browser$/, function () {

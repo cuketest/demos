@@ -3,6 +3,7 @@ from pytest_html import extras
 import openpyxl
 import csv
 
+# 加载Qt应用程序的UI模型文件
 model = QtAuto.loadModel('model.tmodel')
 
 
@@ -19,8 +20,7 @@ def test_qt_table_import(extra):
         for col in range(col_number):
             value = worksheet.cell(row + 2, col + 1).value
             model.getTable("Table").setCellValue(row, col, value)
-    screenshot = model.getWindow("Dock_Widgets").takeScreenshot()
-    extra.append(extras.image(screenshot))
+    attachImage(extra)
 
 
 # 场景: 从应用中导出数据到其它应用中
@@ -29,6 +29,8 @@ def test_qt_table_export(extra):
     data = model.getTable("Table").data()  # 表格数据
     header = model.getTable("Table").columnHeaders()  # 表头（每列）
     rowHeaders = model.getTable("Table").rowHeaders()  # 表头（每行）
+
+    # 将数据转换为 JSON 格式并添加到测试报告中
     extra.append(extras.json(data))
     extra.append(extras.json(header))
     extra.append(extras.json(rowHeaders))
@@ -50,6 +52,7 @@ def test_qt_table_export(extra):
     writer = csv.writer(csvFile)
     writer.writerow(header)
     writer.writerows(data)
+    attachImage(extra)
 
 
 # 场景: 单元格操作
@@ -65,8 +68,15 @@ def test_qt_table_cell_manipulation(extra):
     value = "New Value!"
     extra.append(extras.text(targetCell.value()))
     targetCell.set(value)
-    actualValue = targetCell.value()
-    assert actualValue == value, '修改后的值不为' + repr(value)
+
+    # 检查控件value属性是否为期待值,否则输出指定信息
+    targetCell.checkProperty("value", value, '修改后的值不为' + repr(value))
 
     # 那么滚动到目标单元格
     targetCell.scrollIntoView()
+    attachImage(extra)
+
+# 截屏并添加到测试报告中
+def attachImage(extra):
+    screenshot = model.getWindow("Dock_Widgets").takeScreenshot()
+    extra.append(extras.image(screenshot))

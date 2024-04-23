@@ -3,6 +3,7 @@ from pytest_html import extras
 import os
 import json
 
+# 加载Qt应用程序的UI模型文件
 model = QtAuto.loadModel('model.tmodel')
 
 
@@ -30,12 +31,12 @@ def test_qt_tree_expand_and_select(extra):
     # 假如展开到"./__pycache__"文件夹所在树节点
     relativePath = "__pycache__"
     workPath = os.path.join(os.getcwd(), relativePath)
-    dirNamePath = workPath.split('\\')  # 将路径拆分成路径节点数组
+    dirNamePath = workPath.split(os.path.sep)  # 将路径拆分成路径节点数组
     extra.append(extras.json(dirNamePath))
     tree = model.getTree('Dir_View')
     root = dirNamePath[0]  # 路径根节点需要特殊处理：
     if root == '':
-        targetItem = tree.findItem('/')  # Linux系统中为`/`，在pathNodes中表现为空字符''
+        targetItem = tree.findItem(os.path.sep)  # Linux系统中根目录为`/`，在pathNodes中表现为空字符''
     else:
         rootNodeList = tree.children()
         for node in rootNodeList:
@@ -53,6 +54,8 @@ def test_qt_tree_expand_and_select(extra):
 
 
 def append_screenshot(model, extra):
+
+    # 控件截图并添加到测试报告中
     screenshot = model.getTree("Dir_View").takeScreenshot()
     extra.append(extras.image(screenshot))
 
@@ -61,5 +64,6 @@ def select_and_check_target_item(model, itemPath):
     targetItem = model.getTree('Dir_View').getItem(itemPath)
     targetItem.scrollIntoView()  # 如果目标不在可点击区域内则会展开到该节点位置
     targetItem.expand()
-    isChecked = targetItem.expanded()
-    assert isChecked == True, "没有选中目标树节点"
+
+    # 检查节点是否展开,否则输出指定信息
+    targetItem.checkProperty("expanded", True, "没有选中目标树节点")

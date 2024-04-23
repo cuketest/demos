@@ -1,0 +1,563 @@
+{
+  "ntype": "app",
+  "process": "",
+  "controls": [
+    {
+      "ntype": "qt",
+      "nname": "notepad",
+      "identifyProperties": {
+        "type": "Application",
+        "appName": "notepad"
+      },
+      "cachedProperties": {
+        "type": "Application",
+        "appName": "notepad",
+        "appPath": "/usr/lib/cuketest/bin/notepad"
+      },
+      "children": [
+        {
+          "ntype": "qt",
+          "nname": "Notepad1",
+          "identifyProperties": {
+            "type": "Window",
+            "className": "MainWindow",
+            "name": "Notepad"
+          },
+          "cachedProperties": {
+            "className": "MainWindow",
+            "name": "Notepad",
+            "text": "Notepad",
+            "type": "Window",
+            "boundingRectangle": "[360,302,800,400]"
+          },
+          "children": [
+            {
+              "ntype": "qt",
+              "nname": "textEdit",
+              "identifyProperties": {
+                "type": "Edit",
+                "className": "QTextEdit",
+                "name": "textEdit"
+              },
+              "cachedProperties": {
+                "className": "QTextEdit",
+                "name": "textEdit",
+                "type": "Edit",
+                "boundingRectangle": "[360,359,800,320]"
+              },
+              "image": {
+                "imgPath": "qt.png",
+                "rect": "0,0,800,320"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "mainToolBar",
+              "identifyProperties": {
+                "type": "ToolBar",
+                "className": "QToolBar",
+                "name": "mainToolBar"
+              },
+              "cachedProperties": {
+                "className": "QToolBar",
+                "name": "mainToolBar",
+                "type": "ToolBar",
+                "boundingRectangle": "[360,325,800,34]"
+              },
+              "children": [
+                {
+                  "ntype": "qt",
+                  "nname": "Font",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "className": "QToolButton",
+                    "text": "Font",
+                    "toolTip": "Font"
+                  },
+                  "cachedProperties": {
+                    "className": "QToolButton",
+                    "text": "Font",
+                    "toolTip": "Font",
+                    "type": "Button",
+                    "boundingRectangle": "[690,327,31,30]"
+                  },
+                  "image": {
+                    "imgPath": "qt1.png",
+                    "rect": "0,0,31,30"
+                  }
+                },
+                {
+                  "ntype": "qt",
+                  "nname": "Save",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "className": "QToolButton",
+                    "text": "Save",
+                    "toolTip": "Save file"
+                  },
+                  "cachedProperties": {
+                    "className": "QToolButton",
+                    "text": "Save",
+                    "toolTip": "Save file",
+                    "type": "Button",
+                    "boundingRectangle": "[432,327,31,30]"
+                  },
+                  "image": {
+                    "imgPath": "qt6.png",
+                    "rect": "0,0,31,30"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ntype": "qt",
+          "nname": "Select_Font",
+          "identifyProperties": {
+            "type": "Window",
+            "className": "Dialog",
+            "text": "Select Font"
+          },
+          "cachedProperties": {
+            "className": "Dialog",
+            "text": "Select Font",
+            "type": "Window",
+            "boundingRectangle": "[500,282,500,360]"
+          },
+          "children": [
+            {
+              "ntype": "qt",
+              "nname": "FontListView",
+              "identifyProperties": {
+                "type": "List",
+                "className": "QListView",
+                "index": 0
+              },
+              "cachedProperties": {
+                "className": "QListView",
+                "type": "List",
+                "boundingRectangle": "[510,336,248,109]"
+              },
+              "children": [
+                {
+                  "ntype": "qt",
+                  "nname": "Serif",
+                  "identifyProperties": {
+                    "type": "ListItem",
+                    "itemPath": "[280]",
+                    "text": "Serif"
+                  },
+                  "cachedProperties": {
+                    "itemPath": "[280]",
+                    "text": "Serif",
+                    "type": "ListItem",
+                    "boundingRectangle": "[511,373,233,18]"
+                  },
+                  "image": {
+                    "imgPath": "qt2.png",
+                    "rect": "0,0,233,18"
+                  }
+                }
+              ]
+            },
+            {
+              "ntype": "qt",
+              "nname": "QDialogButtonBox",
+              "identifyProperties": {
+                "type": "Pane",
+                "className": "QDialogButtonBox"
+              },
+              "cachedProperties": {
+                "className": "QDialogButtonBox",
+                "type": "Pane",
+                "boundingRectangle": "[510,607,480,25]"
+              },
+              "children": [
+                {
+                  "ntype": "qt",
+                  "nname": "OK",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "className": "QPushButton",
+                    "text": "OK"
+                  },
+                  "cachedProperties": {
+                    "className": "QPushButton",
+                    "text": "OK",
+                    "type": "Button",
+                    "boundingRectangle": "[825,607,80,25]"
+                  },
+                  "image": {
+                    "imgPath": "qt5.png",
+                    "rect": "0,0,80,25"
+                  }
+                }
+              ]
+            },
+            {
+              "ntype": "qt",
+              "nname": "StyleListView",
+              "identifyProperties": {
+                "type": "List",
+                "className": "QListView",
+                "index": "1"
+              },
+              "cachedProperties": {
+                "className": "QListView",
+                "type": "List",
+                "boundingRectangle": "[510,262,156,109]"
+              },
+              "children": [
+                {
+                  "ntype": "qt",
+                  "nname": "Italic",
+                  "identifyProperties": {
+                    "type": "ListItem",
+                    "itemPath": "[1]",
+                    "text": "Italic"
+                  },
+                  "cachedProperties": {
+                    "itemPath": "[1]",
+                    "text": "Italic",
+                    "type": "ListItem",
+                    "boundingRectangle": "[764,355,154,18]"
+                  },
+                  "image": {
+                    "imgPath": "qt3.png",
+                    "rect": "0,0,154,18"
+                  }
+                }
+              ]
+            },
+            {
+              "ntype": "qt",
+              "nname": "SizeListView",
+              "identifyProperties": {
+                "type": "List",
+                "className": "QListView",
+                "index": "2"
+              },
+              "cachedProperties": {
+                "className": "QListView",
+                "type": "List",
+                "boundingRectangle": "[510,262,156,109]"
+              },
+              "children": [
+                {
+                  "ntype": "qt",
+                  "nname": "12",
+                  "identifyProperties": {
+                    "type": "ListItem",
+                    "itemPath": "[6]",
+                    "text": "12"
+                  },
+                  "cachedProperties": {
+                    "itemPath": "[6]",
+                    "text": "12",
+                    "type": "ListItem",
+                    "boundingRectangle": "[925,391,51,18]"
+                  },
+                  "image": {
+                    "imgPath": "qt4.png",
+                    "rect": "0,0,51,18"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ntype": "qt",
+          "nname": "QFileDialog",
+          "identifyProperties": {
+            "type": "Window",
+            "className": "Dialog",
+            "name": "QFileDialog",
+            "text": "Save"
+          },
+          "cachedProperties": {
+            "className": "Dialog",
+            "name": "QFileDialog",
+            "text": "Save",
+            "type": "Window",
+            "boundingRectangle": "[441,256,619,413]"
+          },
+          "children": [
+            {
+              "ntype": "qt",
+              "nname": "fileNameEdit",
+              "identifyProperties": {
+                "type": "Edit",
+                "className": "QLineEdit",
+                "name": "fileNameEdit"
+              },
+              "cachedProperties": {
+                "className": "QLineEdit",
+                "name": "fileNameEdit",
+                "type": "Edit",
+                "boundingRectangle": "[527,602,438,26]"
+              },
+              "image": {
+                "imgPath": "qt7.png",
+                "rect": "0,0,438,26"
+              }
+            },
+            {
+              "ntype": "qt",
+              "nname": "buttonBox",
+              "identifyProperties": {
+                "type": "Pane",
+                "className": "QDialogButtonBox",
+                "name": "buttonBox"
+              },
+              "cachedProperties": {
+                "className": "QDialogButtonBox",
+                "name": "buttonBox",
+                "type": "Pane",
+                "boundingRectangle": "[970,602,80,57]"
+              },
+              "children": [
+                {
+                  "ntype": "qt",
+                  "nname": "Save1",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "className": "QPushButton",
+                    "text": "Save"
+                  },
+                  "cachedProperties": {
+                    "className": "QPushButton",
+                    "text": "Save",
+                    "type": "Button",
+                    "boundingRectangle": "[970,602,80,25]"
+                  },
+                  "image": {
+                    "imgPath": "qt8.png",
+                    "rect": "0,0,80,25"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ntype": "qt",
+          "nname": "SaveDialog",
+          "identifyProperties": {
+            "type": "Window",
+            "className": "Dialog",
+            "text": "Save"
+          },
+          "cachedProperties": {
+            "className": "Dialog",
+            "text": "Save",
+            "type": "Window",
+            "boundingRectangle": "[778,185,213,91]"
+          },
+          "children": [
+            {
+              "ntype": "qt",
+              "nname": "qt_msgbox_buttonbox",
+              "identifyProperties": {
+                "type": "Pane",
+                "className": "QDialogButtonBox",
+                "name": "qt_msgbox_buttonbox"
+              },
+              "cachedProperties": {
+                "className": "QDialogButtonBox",
+                "name": "qt_msgbox_buttonbox",
+                "type": "Pane",
+                "boundingRectangle": "[788,241,193,25]"
+              },
+              "children": [
+                {
+                  "ntype": "qt",
+                  "nname": "Yes",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "className": "QPushButton",
+                    "text": "Yes"
+                  },
+                  "cachedProperties": {
+                    "className": "QPushButton",
+                    "text": "Yes",
+                    "type": "Button",
+                    "boundingRectangle": "[816,241,80,25]"
+                  },
+                  "image": {
+                    "imgPath": "qt14.png",
+                    "rect": "0,0,80,25"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ntype": "uia",
+      "nname": "Notepad_win",
+      "identifyProperties": {
+        "type": "Window",
+        "automationId": "Notepad"
+      },
+      "cachedProperties": {
+        "type": "Window",
+        "automationId": "Notepad",
+        "className": "Notepad",
+        "title": "Notepad",
+        "boundingRectangle": "[209,236,800,409]",
+        "appName": "notepad",
+        "appPath": "C:\\Program Files\\LeanPro\\CukeTest\\bin\\notepad.exe"
+      },
+      "image": {
+        "imgPath": "uia1.png",
+        "rect": "0,0,800,409"
+      },
+      "children": [
+        {
+          "ntype": "uia",
+          "nname": "Save2",
+          "identifyProperties": {
+            "type": "Window",
+            "className": "#32770",
+            "title": "Save"
+          },
+          "cachedProperties": {
+            "type": "Window",
+            "className": "#32770",
+            "title": "Save",
+            "value": false,
+            "boundingRectangle": "[2480,320,768,480]"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "Confirm_Save_As",
+              "identifyProperties": {
+                "type": "Window",
+                "className": "#32770",
+                "title": "Confirm Save As"
+              },
+              "cachedProperties": {
+                "type": "Window",
+                "className": "#32770",
+                "title": "Confirm Save As",
+                "value": false,
+                "boundingRectangle": "[769,368,366,140]"
+              },
+              "children": [
+                {
+                  "ntype": "uia",
+                  "nname": "Yes1",
+                  "identifyProperties": {
+                    "type": "Button",
+                    "automationId": "CommandButton_6",
+                    "name": "Yes"
+                  },
+                  "cachedProperties": {
+                    "type": "Button",
+                    "automationId": "CommandButton_6",
+                    "className": "CCPushButton",
+                    "name": "Yes",
+                    "accessKey": "Alt+Y",
+                    "value": false,
+                    "boundingRectangle": "[975,468,68,23]"
+                  },
+                  "image": {
+                    "imgPath": "uia5.png",
+                    "rect": "0,0,68,23"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ntype": "uia",
+          "nname": "Save_window",
+          "identifyProperties": {
+            "type": "Window",
+            "className": "#32770",
+            "title": "Save"
+          },
+          "cachedProperties": {
+            "type": "Window",
+            "className": "#32770",
+            "title": "Save",
+            "value": false,
+            "boundingRectangle": "[170,229,960,489]"
+          },
+          "image": {
+            "imgPath": "uia6.png",
+            "rect": "0,0,960,489"
+          },
+          "children": [
+            {
+              "ntype": "uia",
+              "nname": "Save3",
+              "identifyProperties": {
+                "type": "Button",
+                "className": "Button",
+                "name": "Save"
+              },
+              "cachedProperties": {
+                "type": "Button",
+                "automationId": "1",
+                "className": "Button",
+                "name": "Save",
+                "value": false,
+                "boundingRectangle": "[956,679,88,26]"
+              },
+              "image": {
+                "imgPath": "uia4.png",
+                "rect": "0,0,88,26"
+              }
+            },
+            {
+              "ntype": "uia",
+              "nname": "File_name:",
+              "identifyProperties": {
+                "type": "ComboBox",
+                "automationId": "FileNameControlHost",
+                "name": "File name:"
+              },
+              "cachedProperties": {
+                "type": "ComboBox",
+                "automationId": "FileNameControlHost",
+                "className": "AppControlHost",
+                "name": "File name:",
+                "accessKey": "Alt+n",
+                "boundingRectangle": "[342,611,814,23]"
+              },
+              "children": [
+                {
+                  "ntype": "uia",
+                  "nname": "File_name:1",
+                  "identifyProperties": {
+                    "type": "Edit",
+                    "className": "Edit",
+                    "name": "File name:"
+                  },
+                  "cachedProperties": {
+                    "type": "Edit",
+                    "automationId": "1001",
+                    "className": "Edit",
+                    "name": "File name:",
+                    "boundingRectangle": "[345,614,791,17]"
+                  },
+                  "image": {
+                    "imgPath": "uia3.png",
+                    "rect": "0,0,791,17"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

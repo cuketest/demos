@@ -10,6 +10,7 @@
         "className": "QWidget",
         "title": "Dir View"
       },
+      "cachedProperties": {},
       "children": [
         {
           "ntype": "uia",
@@ -27,7 +28,10 @@
               "nname": "Windows  (C:)",
               "identifyProperties": {
                 "type": "TreeItem",
-                "name": "Windows  (C:)"
+                "name": {
+                  "type": "include",
+                  "text": "C:"
+                }
               },
               "cachedProperties": {
                 "type": "TreeItem",

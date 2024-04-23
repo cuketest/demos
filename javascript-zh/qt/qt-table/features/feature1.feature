@@ -1,6 +1,6 @@
 # language: zh-CN
 功能: Qt Table自动化
-使用跨平台Qt技术实现Qt TableView/TableWidget控件的自动化，可在各个平台（如Windows、Linux）上执行。
+使用跨平台Qt技术实现Qt TableView/TableWidget控件的自动化，可在各个平台（如Windows、Linux）上执行。通过这个项目，我们可以学到如何将本地xlsx数据导入到Qt应用表格中，Qt应用表格中的数据如何导出到本地xlsx文件和csv文件中，还有Qt应用表格单元格的操作，包括获取单元格数据、修改单元格数据和滚动到单元格视图。
 
   场景: 从xlsx文件中导入数据
     当读取"origin.xlsx"文件中的数据
