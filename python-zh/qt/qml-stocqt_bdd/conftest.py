@@ -7,7 +7,10 @@ context = {}
 
 # 等效于 BeforeAll Hook，在第一个测试开始前被调用
 def pytest_sessionstart(session):
-    context["pid"] = QtAuto.launchQtProcessAsync("D:\\stocqt\\stocqt.exe")
+    context["pid"] = QtAuto.launchQtProcessAsync([
+        "C:\Program Files\LeanPro\CukeTest\bin\stocqt.exe",
+        "/usr/lib/cuketest/bin/stocqt.exe"
+    ])
     modelQt.getApplication("stocqt").exists(30);
 
 

@@ -102,19 +102,21 @@
                               "ntype": "qt",
                               "nname": "QQuickRectangle",
                               "identifyProperties": {
-                                "type": "QuickItem",
-                                "className": "QQuickRectangle",
-                                "index": 2
+                                "type": "QuickLabel",
+                                "className": "QQuickText",
+                                "id": "stockIdText",
+                                "text": "AAPL"
                               },
                               "cachedProperties": {
-                                "className": "QQuickRectangle",
-                                "index": 2,
-                                "type": "QuickItem",
-                                "boundingRectangle": "[1532,914,2000,204]"
+                                "className": "QQuickText",
+                                "id": "stockIdText",
+                                "text": "AMD",
+                                "type": "QuickLabel",
+                                "boundingRectangle": "[1953,255,42,27]"
                               },
                               "image": {
-                                "imgPath": "qt5.png",
-                                "rect": "0,0,2000,204"
+                                "imgPath": "_qt.png",
+                                "rect": "0,0,42,27"
                               }
                             }
                           ]

@@ -13,7 +13,10 @@ let modelQt = QtAuto.loadModel(__dirname + "/model1.tmodel");
 
 // 在所有测试场景执行之前准备测试环境，启动被测应用并等待其出现。
 BeforeAll(async function () {
-    await QtAuto.launchQtProcessAsync("D:\\stocqt\\stocqt.exe");
+    await QtAuto.launchQtProcessAsync([
+        "C:\Program Files\LeanPro\CukeTest\bin\stocqt.exe",
+        "/usr/lib/cuketest/bin/stocqt.exe"
+    ]);
     await modelQt.getApplication("stocqt").exists(30);
 })
 
